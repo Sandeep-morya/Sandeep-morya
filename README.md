@@ -23,7 +23,7 @@
 [<img src="public/logos/vite.png" width="44px" alt="Vite" min-width="50px" height="70px" />](#)
 [<img src="public/logos/netlify.png" width="44px" alt="Netlify" min-width="50px" height="70px" />](#)
 [<img src="public/logos/figma.png" width="44px" min-width="50px" height="70px" />](#)
-[<img src="public/logos/heroku.png"  alt="Heroku"min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/heroku.png"  alt="Heroku" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/redux.png" width="44px" alt="Redux"min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/typescript.png"  alt="Typescript"min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/tailwind.png" alt="Tailwind"min-width="50px" height="70px" />](#)&nbsp;
