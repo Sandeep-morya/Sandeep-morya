@@ -5,7 +5,7 @@
 - ⭐ I am Full Stack Developer
 -  <img src="public/logos/mern.png"  alt="Mern-stack" min-width="50px" height="60px"  />
 
-- ❤️ The libraries, i Know are listed below:
+- ❤️ The libraries/framework/languages, i Know are listed below:
 
 [<img src="public/logos/react.png" alt="React" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/node.png" alt="Node" min-width="50px" height="60px"  />](#)&nbsp;
