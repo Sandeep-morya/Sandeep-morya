@@ -3,7 +3,7 @@
   <img src="https://github.com/Sandeep-morya/Sandeep-morya/blob/main/public/plante.svg" alt="contributions" />
 
 - ⭐ I am Full Stack Developer
-  <img src="public/logos/mern.png"  alt="Mern-stack" min-width="50px" height="60px"  />
+-  <img src="public/logos/mern.png"  alt="Mern-stack" min-width="50px" height="60px"  />
 
 - ❤️ The libraries, i Know are listed below:
 
