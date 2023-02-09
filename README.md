@@ -28,7 +28,7 @@
 [<img src="public/logos/strapi.png" width="40px" alt="Strapi"/>](#)&nbsp;
 [<img src="public/logos/npm.png" width="40px" alt="NPM"/>](#)&nbsp;
 
-<img src="public.planet.svg" />
+<img src="https://github.com/Sandeep-morya/Sandeep-morya/blob/main/public/plante.svg" alt="contributions" />
 
 
 - Website is live on : https://sandeep-morya.vercel.app/
