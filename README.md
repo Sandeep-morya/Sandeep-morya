@@ -20,14 +20,14 @@
 [<img src="public/logos/next.png" alt="Next_JS" min-width="50px" height="70px" />](#)
 [<img src="public/logos/express.png" width="48px" alt="Express" min-width="50px" height="70px" />](#)
 [<img src="public/logos/postman.png" alt="Postman" min-width="50px" height="70px" />](#)
-[<img src="public/logos/vite.png" width="44px" alt="Vite" min-width="50px" height="70px" />](#)
-[<img src="public/logos/netlify.png" width="44px" alt="Netlify" min-width="50px" height="70px" />](#)
-[<img src="public/logos/figma.png" width="44px" min-width="50px" height="70px" />](#)
+[<img src="public/logos/vite.png"  alt="Vite" min-width="50px" height="70px" />](#)
+[<img src="public/logos/netlify.png"  alt="Netlify" min-width="50px" height="70px" />](#)
+[<img src="public/logos/figma.png"  min-width="50px" height="70px" />](#)
 [<img src="public/logos/heroku.png"  alt="Heroku" min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/redux.png" width="44px" alt="Redux"min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/typescript.png"  alt="Typescript"min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/tailwind.png" alt="Tailwind"min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/strapi.png"  alt="Strapi"min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/npm.png"  alt="NPM"min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/redux.png"  alt="Redux" min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/typescript.png"  alt="Typescript" min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/tailwind.png" alt="Tailwind" min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/strapi.png"  alt="Strapi" min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/npm.png"  alt="NPM" min-width="50px" height="70px" />](#)&nbsp;
 
 - Website is live on : https://sandeep-morya.vercel.app/
