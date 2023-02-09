@@ -34,5 +34,6 @@
 [<img src="public/logos/mantine-ui.png"  alt="MANTINE-UI" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/chakra-ui.png"  alt="CHAKRA-UI" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/material-ui.png"  alt="material-ui" min-width="50px" height="60px"  />](#)&nbsp;
+[<img src="public/logos/mern.png"  alt="Mern-stack" min-width="50px" height="60px"  />](#)&nbsp;
 
 - Portfolio Website is "in Progress" on : https://sandeep-morya.vercel.app/
