@@ -10,7 +10,6 @@
 [<img src="public/logos/mongo.png" alt="MongoDB" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/html.png" alt="HTML" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/css.png" alt="CSS" min-width="50px" height="60px"  />](#)&nbsp;
-[<img src="public/logos/firebase.png" alt="Firebase" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/mongoose.png" alt="Mongoose" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/git.png" alt="Git" min-width="50px" height="60px"  />](#)&nbsp;
 [<img src="public/logos/bootstrap.png" alt="Bootstrap" min-width="50px" height="60px"  />](#)&nbsp;
