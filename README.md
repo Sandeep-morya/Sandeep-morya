@@ -18,7 +18,7 @@
 [<img src="public/logos/linux.png" alt="Linux" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/vscode.png" alt="VSCode" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/next.png" alt="Next_JS" min-width="50px" height="70px" />](#)&nbsp;
-[<img src="public/logos/express.png" width="48px" alt="Express" min-width="50px" height="70px" />](#)&nbsp;
+[<img src="public/logos/express.png" alt="Express" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/postman.png" alt="Postman" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/vite.png"  alt="Vite" min-width="50px" height="70px" />](#)&nbsp;
 [<img src="public/logos/netlify.png"  alt="Netlify" min-width="50px" height="70px" />](#)
