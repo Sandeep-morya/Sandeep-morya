@@ -28,7 +28,7 @@
 [<img src="public/logos/strapi.png" width="40px" alt="Strapi"/>](#)&nbsp;
 [<img src="public/logos/npm.png" width="40px" alt="NPM"/>](#)&nbsp;
 
-<img src="https://raw.githubusercontent.com/Furqaaan/Furqaaan/master/github-user-contribution.svg" />
+<img src="public.planet.svg" />
 
 
 - Website is live on : https://sandeep-morya.vercel.app/
