@@ -1,12 +1,11 @@
 export type mode = "dark" | "light";
 
 export const colors = {
-	dark: "#000000",
-	light: "#ffffff",
+	dark: "#112",
+	light: "#eed",
 	primary: "#dc143c",
 	secondary: "#ff4400",
 } as const;
-
 
 const createTheme = (mode: mode) => ({
 	bg: mode === "dark" ? colors.dark : colors.light,
