@@ -16,10 +16,15 @@ const App = () => {
 	/* Rendering */
 	return (
 		<div style={{ backgroundColor: theme.bg, color: theme.c }}>
-			{!hidden && <Boot />}
-			<Navbar />
-			<MiddleComp />
-			<Footer />
+			{!hidden ? (
+				<Boot />
+			) : (
+				<div>
+					<Navbar />
+					<MiddleComp />
+					{/* <Footer /> */}
+				</div>
+			)}
 		</div>
 	);
 };

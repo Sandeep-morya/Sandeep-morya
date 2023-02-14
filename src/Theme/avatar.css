@@ -8,6 +8,7 @@
 	position: absolute;
 	top: -1.25rem;
 }
+
 .avatar .box_1 {
 	transform: rotate(-135deg);
 }
@@ -16,7 +17,7 @@
     justify-content: center;
     align-items: center;
 	background-color: #1a1a19;
-    color: rgba(255,255,255,0.5);
+    color: rgba(244, 191, 0,1);
     text-transform: uppercase;
     padding: .01rem;
     font-weight: 500;

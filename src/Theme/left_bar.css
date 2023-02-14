@@ -1,0 +1,15 @@
+﻿.left_bar{
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    gap: 0.5rem;
+    position: fixed;
+}
+.left_bar img{
+    width: 30px !important;
+    height: 30px !important;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    padding: .5rem;
+    border-radius: 50%;
+    box-sizing: content-box;
+}

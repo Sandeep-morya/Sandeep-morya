@@ -1,0 +1,25 @@
+﻿.middle_comp{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 80fr 10fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 5rem;
+    z-index: -1;
+}
+/* .content_div{
+
+} */
+.left_bar_div{
+ display: flex;
+ height: 95vh;
+ justify-content: flex-start;
+ align-items: center;
+}
+.right_bar_div{
+    display: flex;
+ height: 95vh;
+ justify-content: flex-end;
+ align-items: center;
+}
