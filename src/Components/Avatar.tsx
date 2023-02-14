@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import "../theme/avatar.css";
+import "../Theme/avatar.css";
 
 type Props = {};
 
