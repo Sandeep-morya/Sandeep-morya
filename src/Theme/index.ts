@@ -1,9 +1,9 @@
 export type mode = "dark" | "light";
 
 export const colors = {
-	dark: "#112",
+	dark: "#1a1a19",
 	light: "#eed",
-	primary: "#dc143c",
+	primary: "rgb(244, 191, 0)",
 	secondary: "#ff4400",
 } as const;
 

@@ -1,0 +1,23 @@
+﻿.avatar {
+	position: relative;
+}
+.avatar > div {
+	width: 2.5rem;
+	aspect-ratio: 1;
+	border: 0.2rem solid rgb(244, 191, 0);
+	position: absolute;
+	top: -1.25rem;
+}
+.avatar .box_1 {
+	transform: rotate(-135deg);
+}
+.avatar .box_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #1a1a19;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    padding: .01rem;
+    font-weight: 500;
+}

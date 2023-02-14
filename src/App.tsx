@@ -1,18 +1,25 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import Boot from "./Components/Boot";
+import Footer from "./Components/Footer";
+import MiddleComp from "./Components/MiddleComp";
+import Navbar from "./Components/Navbar";
 import { ThemeContext } from "./Provider/ThemeContextProvider";
 const App = () => {
+	/* To hide the Loader  */
+	const [hidden, setHidden] = useState(false);
+	setTimeout(() => {
+		setHidden(true);
+	}, 3000);
+
+	/* Theme consumer */
 	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
+	/* Rendering */
 	return (
 		<div style={{ backgroundColor: theme.bg, color: theme.c }}>
-			i will start to create this website after 20 february <br />
-			till then :visit <a href="https://sandeepmorya.netlify.app/"> See my Projects create with vanilla js
-			</a>
-			<button
-				style={{ backgroundColor: theme.bg, color: theme.c }}
-				onClick={toggleColorMode}>
-
-				Toggle
-			</button>
+			{!hidden && <Boot />}
+			<Navbar />
+			<MiddleComp />
+			<Footer />
 		</div>
 	);
 };

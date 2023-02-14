@@ -8,12 +8,12 @@ let ThemeContext: React.Context<{
 }>;
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-	const [colorMode, setColorMode] = React.useState<mode>("light");
+	const [colorMode, setColorMode] = React.useState<mode>("dark");
 
 	const theme = React.useMemo(() => {
 		return createTheme(colorMode);
 	}, [colorMode]);
-	
+
 
 	const context = {
 		theme: theme,

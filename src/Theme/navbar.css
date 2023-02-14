@@ -1,0 +1,25 @@
+﻿.navbar {
+	background-color: transparent;
+	display: flex;
+	width: 100%;
+	height: 4rem;
+	justify-content: space-around;
+	align-items: center;
+	 box-shadow: 0 8px 6px -6px black;
+}
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.navlinks a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navlinks a:hover {
+	color: rgb(244, 191, 0);
+}
