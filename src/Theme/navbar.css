@@ -8,6 +8,7 @@
 	 box-shadow: 0 8px 6px -6px black;
 	 position: fixed;
 	 background-color: #1a1a19f5;
+	 z-index: 3;
 }
 .navlinks {
     display: flex;

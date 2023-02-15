@@ -4,6 +4,8 @@
     border-collapse: collapse;
     gap: 0.5rem;
     position: fixed;
+    top:35vh;
+    left:0;
 }
 .left_bar img{
     width: 30px !important;

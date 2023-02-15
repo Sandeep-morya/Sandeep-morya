@@ -24,6 +24,12 @@
 body::-webkit-scrollbar{
 	display: none;
 }
+/* *{
+	scroll-behavior: smooth;
+} */
+.highlight {
+	color: rgba(244, 191, 0, 1);
+}
 
 /* .cursor {
 	left: 0;

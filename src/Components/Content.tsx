@@ -10,7 +10,7 @@ const Content = (props: Props) => {
 			<div className="content_intro">
 				<span>Hi, my name is</span>
 				<span>Sandeep Morya.</span>
-				<span>I build things for the web.</span>
+				<span>I build things for <br /> the web.</span>
 			</div>
 			<div>
 				I’m a software engineer specializing in building (and occasionally

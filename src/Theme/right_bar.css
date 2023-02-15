@@ -8,4 +8,7 @@
     letter-spacing: 1px;
     margin-right: 1rem;
     position: fixed;
+    position: fixed;
+    top:35vh;
+    right:0;
 }

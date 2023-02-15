@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     z-index: -1;
 }
 /* .content_div{
@@ -15,11 +15,11 @@
  display: flex;
  height: 95vh;
  justify-content: flex-start;
- align-items: center;
+ align-items: flex-start;
 }
 .right_bar_div{
     display: flex;
  height: 95vh;
  justify-content: flex-end;
- align-items: center;
+align-items: flex-start
 }
