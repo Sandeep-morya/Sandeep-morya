@@ -39,17 +39,22 @@
     top: 0;
     left: 0;
     filter: grayscale();
-    transition: filter .3s;
+    transition: all .5s;
 }
 .profile_pic>div{
     width: inherit;
     height: inherit;
-    border: .2rem solid rgba(244, 191, 0, 1);
+    border: .1rem solid rgba(244, 191, 0, 1);
     position: absolute;
     top: 1rem;
     left: 1rem;
     border-radius: .3rem;
+    transition: all .5s;
 }
 .profile_pic>img:hover{
     filter: none;
+}
+.profile_pic>img:hover + div{
+    top: -1rem;
+    left: -1rem;
 }

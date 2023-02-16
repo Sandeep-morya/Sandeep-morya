@@ -10,26 +10,31 @@
 	border-radius: 0.3rem;
     position: relative;
     overflow: hidden;
-    background-color: rgba(244, 191, 0, 0);
-    transition: all 0.5s;
-    border: .2px solid rgba(244, 191, 0, 1)
+    border: .1rem solid rgba(244, 191, 0, 1)
 }
 
 .card::before{
     position: absolute;
-    top:-50px;
-    left: -50px;
+    top:-3rem;
+    left: -3rem;
     border-radius: 50%;
     content: "";
     width: 5rem;
     height: 5rem;
-    background-color: rgba(244, 191, 0, 1);
+    background-color: rgba(244, 191, 0, 0.7);
+    transition: all .7s
 }
 
-.card:hover{
-    background-color: rgba(244, 191, 0, 0.05);
+.card:hover::before{
+    top:-5rem;
+    left:-5rem;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(244, 191, 0, 0.2);
 }
-
+.card:hover .card_text{
+    color: rgba(244, 191, 0, 1);
+}
 
 
 .card_icon > * {
@@ -44,4 +49,6 @@
     text-align: center;
     word-wrap: break-word;
     filter: drop-shadow(0 0 5px black);
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s;
 }
