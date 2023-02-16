@@ -10,9 +10,9 @@ const Navbar = (props: Props) => {
 			<Avatar />
 			<div className="navlinks">
 				<a href="#">intro</a>
-				<a href="#">about me</a>
-				<a href="#">technologies</a>
-				<a href="#">projects</a>
+				<a href="#about">about me</a>
+				<a href="#projects">projects</a>
+				<a href="#tech">technologies</a>
 				<a href="#">contact</a>
 			</div>
 			<Button title="Download Resume" />

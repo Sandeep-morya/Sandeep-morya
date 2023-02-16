@@ -1,25 +1,8 @@
 ﻿.about {
-	margin-top: 5rem;
+	padding-top: 10rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-}
-.about_heading {
-	font-size: 1.2rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding: 0.5rem;
-	border-radius: 0.3rem;
-	outline: 1px solid rgba(255, 255, 255, 0.302);
-}
-.about_heading::after {
-	width: 20rem;
-	height: 1px;
-	content: "";
-	background-color: rgba(244, 191, 0, 1);
 }
 /* .about_heading::before{
     width: 10rem;
@@ -57,7 +40,6 @@
     left: 0;
     filter: grayscale();
     transition: filter .3s;
-     border: .2rem solid rgba(244, 191, 0, 1);
 }
 .profile_pic>div{
     width: inherit;

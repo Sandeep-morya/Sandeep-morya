@@ -9,7 +9,7 @@ const App = () => {
 	const [hidden, setHidden] = useState(false);
 	setTimeout(() => {
 		setHidden(true);
-	}, 3000);
+	}, 2000);
 
 	/* Theme consumer */
 	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
