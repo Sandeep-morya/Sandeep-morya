@@ -11,8 +11,9 @@ const Navbar = (props: Props) => {
 			<div className="navlinks">
 				<a href="#">intro</a>
 				<a href="#about">about me</a>
+				<a href="#skills">skills</a>
+				<a href="#skills">dev tools</a>
 				<a href="#projects">projects</a>
-				<a href="#tech">technologies</a>
 				<a href="#">contact</a>
 			</div>
 			<Button title="Download Resume" />

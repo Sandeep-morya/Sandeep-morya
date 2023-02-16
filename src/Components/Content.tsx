@@ -1,10 +1,9 @@
 ﻿import React from "react";
 import "../Theme/content.css";
 import About from "./About";
-import Button from "./Button";
 import Intro from "./Intro";
 import Projects from "./Projects";
-import Tech from "./Tech";
+import Skills from "./DevSkills"
 type Props = {};
 
 const Content = (props: Props) => {
@@ -12,8 +11,8 @@ const Content = (props: Props) => {
 		<div className="content">
 			<Intro />
 			<About />
-			{/* <Tech /> */}
-			<Projects />
+			<Skills />
+			{/* <Projects /> */}
 		</div>
 	);
 };
