@@ -13,6 +13,7 @@ const Content = (props: Props) => {
 			<Intro />
 			<About />
 			<Skills />
+			<Projects />
 			<DevTools />
 			{/* <Projects /> */}
 		</div>

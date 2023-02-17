@@ -1,6 +1,7 @@
 ﻿import React from "react";
 
 import "../Theme/about.css";
+import Button from "./Button";
 import Title from "./Title";
 
 const About = () => {
@@ -41,12 +42,16 @@ const About = () => {
 						aliquid quaerat.
 					</div>
 				</div>
-				<div className="profile_pic">
-					<img src="/profile.png" alt="sandeep-morya-profile-pic" />
-					<div></div>
+				<div className="profile">
+					<div className="profile_pic">
+						<img src="/profile.png" alt="sandeep-morya-profile-pic" />
+						<div></div>
+					</div>
+					<div>
+						<Button title="Download Resume"/>
+					</div>
 				</div>
 			</div>
-
 		</div>
 	);
 };

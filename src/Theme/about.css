@@ -10,6 +10,7 @@
     content: '';
     background-color: rgba(244, 191, 0,1);
 } */
+
 .about_description {
 	width: 100%;
 	display: flex;
@@ -25,6 +26,19 @@
 .texts * {
 	letter-spacing: 1px;
 	line-height: 2rem;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.profile button {
+    background-color: rgba(244, 191, 0, .1) !important;
+    color:rgba(244, 191, 0, 1);
+    text-shadow: 0 0 5px black;
+    padding: 1rem 2rem;
 }
 .profile_pic {
 	width: 20rem;
@@ -46,8 +60,8 @@
     height: inherit;
     border: .1rem solid rgba(244, 191, 0, 1);
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: -1rem;
+    left: -1rem;
     border-radius: .3rem;
     transition: all .5s;
 }
@@ -55,6 +69,6 @@
     filter: none;
 }
 .profile_pic>img:hover + div{
-    top: -1rem;
-    left: -1rem;
+    top: 1rem;
+    left: 1rem;
 }
