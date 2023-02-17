@@ -22,7 +22,7 @@
     width: 5rem;
     height: 5rem;
     background-color: rgba(244, 191, 0, 0.7);
-    transition: all .7s .2s
+    transition: all .7s;
 }
 
 .card:hover::before{
