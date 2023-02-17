@@ -4,7 +4,7 @@
 .avatar > div {
 	width: 2.5rem;
 	aspect-ratio: 1;
-	border: 0.2rem solid rgb(244, 191, 0);
+	border: 0.1rem solid rgb(244, 191, 0);
 	position: absolute;
 	top: -1.25rem;
 }

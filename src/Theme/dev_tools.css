@@ -1,0 +1,6 @@
+﻿.dev_tools{
+    padding-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}

@@ -1,16 +1,17 @@
 ﻿.intro{
     width: 100%;
-    padding:8rem 0;
+    padding:6rem 0;
 }
+
 .content_intro{
     display: flex;
     flex-direction: column;
+	line-height: 6rem;
 }
 .content_intro > :nth-child(1) {
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: 5rem;
     letter-spacing: 1px;
-    text-decoration: underline;
 	color:rgb(255, 255, 255,0.3)
 }
 .content_intro > :nth-child(2) {
@@ -24,7 +25,6 @@
 	color: rgba(255, 255, 255, 0.2);
 }
 .intro_desc {
-	margin-top: 2rem;
 	width: 60%;
 	font-style: italic;
 	color: rgba(255, 255, 255, 0.4);

@@ -4,6 +4,7 @@ import About from "./About";
 import Intro from "./Intro";
 import Projects from "./Projects";
 import Skills from "./DevSkills"
+import DevTools from "./DevTools";
 type Props = {};
 
 const Content = (props: Props) => {
@@ -12,6 +13,7 @@ const Content = (props: Props) => {
 			<Intro />
 			<About />
 			<Skills />
+			<DevTools />
 			{/* <Projects /> */}
 		</div>
 	);

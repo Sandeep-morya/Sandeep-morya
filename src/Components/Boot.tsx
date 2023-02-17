@@ -4,6 +4,7 @@ import "../Theme/boot.css";
 type Props = {};
 
 const Boot = (props: Props) => {
+
 	return (
 		// <!-- SPINNING SQUARES -->
 		<div className="boot_shield">
