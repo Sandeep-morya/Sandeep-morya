@@ -1,6 +1,4 @@
-﻿import React from "react";
-
-import "../Theme/skills.css";
+﻿import "../Theme/skills.css";
 import Title from "./Title";
 import Card from "./Card";
 import { MdOutlineDesignServices } from "react-icons/md";

@@ -1,9 +1,7 @@
-﻿import React from "react";
-
-import "../Theme/project_card.css";
+﻿import "../Theme/project_card.css";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import Button from "./Button";
+
 interface Props {
 	imageUrl: String;
 	imageTitle: String;

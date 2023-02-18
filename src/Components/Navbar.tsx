@@ -1,9 +1,8 @@
-﻿import React, { useContext, useState } from "react";
-import Button from "./Button";
+﻿import { useContext, useState } from "react";
 import "../Theme/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import { MdOutlineWbSunny, MdNightlight, MdPalette } from "react-icons/md";
+import { MdPalette } from "react-icons/md";
 import { colorPalettes } from "../Provider/ThemeContextProvider";
 
 const Navbar = () => {

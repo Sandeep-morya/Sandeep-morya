@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import { IconType } from "react-icons/lib/esm/iconBase";
+﻿import { IconType } from "react-icons/lib/esm/iconBase";
 import "../Theme/footer_item.css"
 
 

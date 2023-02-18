@@ -1,6 +1,4 @@
-﻿import React from "react";
-
-import "../Theme/projects.css";
+﻿import "../Theme/projects.css";
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
@@ -57,6 +55,8 @@ const Projects = () => {
 				Here, are some <span className="highlight">projects</span> that i have
 				worked on:
 			</div>
+
+			{/*  CARD 1 */}
 			<div className="project one">
 				<div className="project_left">
 					<ProjectCard
@@ -71,6 +71,8 @@ const Projects = () => {
 				</div>
 				<ProjectDesc project_data={projectDescList[0]} />
 			</div>
+
+			{/*  CARD 2 */}
 			<div className="project two">
 				<ProjectDesc project_data={projectDescList[1]} />
 				<div className="project_left">
@@ -86,6 +88,7 @@ const Projects = () => {
 				</div>
 			</div>
 
+			{/*  CARD 3 */}
 			<div className="project three">
 				<div className="project_left">
 					<ProjectCard
@@ -100,7 +103,6 @@ const Projects = () => {
 				</div>
 				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
-
 		</div>
 	);
 };

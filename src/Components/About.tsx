@@ -1,6 +1,4 @@
-﻿import React from "react";
-
-import "../Theme/about.css";
+﻿import "../Theme/about.css";
 import Button from "./Button";
 import Title from "./Title";
 

@@ -1,6 +1,4 @@
-﻿import React from "react";
-
-import "../Theme/project_desc.css";
+﻿import "../Theme/project_desc.css";
 import { ProjectItem } from "./Projects";
 interface Props {
 	project_data: ProjectItem;

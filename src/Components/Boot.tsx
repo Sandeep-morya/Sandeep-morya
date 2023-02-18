@@ -1,9 +1,7 @@
-﻿import React from "react";
-import "../Theme/boot.css";
+﻿import "../Theme/boot.css";
 
-type Props = {};
 
-const Boot = (props: Props) => {
+const Boot = () => {
 
 	return (
 		// <!-- SPINNING SQUARES -->

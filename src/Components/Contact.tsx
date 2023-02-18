@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import Title from './Title'
+﻿import Title from './Title'
 import "../Theme/contact.css"
 import Button from './Button';
 

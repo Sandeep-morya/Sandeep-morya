@@ -1,11 +1,8 @@
-﻿import React from "react";
-import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+﻿import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import "../Theme/footer.css";
 import FooterItem from "./FooterItem";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
 	return (
 		<div className="footer">
 			<div className="footer_top">

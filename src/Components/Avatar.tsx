@@ -1,6 +1,5 @@
 ﻿import React from "react";
 import "../Theme/avatar.css";
-import { IconType } from "react-icons/lib/esm/iconBase";
 
 interface Props{
 	title:String|React.ReactNode
