@@ -1,13 +1,56 @@
-﻿import React from 'react'
+﻿import React from "react";
 
-import "../Theme/projects.css"
-import Button from './Button'
-import ProjectCard from './ProjectCard'
-import ProjectDesc from './ProjectDesc'
-import Title from './Title'
+import "../Theme/projects.css";
+import Button from "./Button";
+import ProjectCard from "./ProjectCard";
+import ProjectDesc from "./ProjectDesc";
+import Title from "./Title";
+
+export interface ProjectItem{
+	title:String,
+	desc_body:String,
+	features:String[],
+	tech_stack:Number[]
+}
+
+const projectDescList:ProjectItem[] = [
+	{
+		title: "Railman",
+		desc_body:
+			"Railman is an unofficial, IRCTC unauthorized travel agent where train ticket bookings can be done online. Since everything is online on your website you need not call or email anyone. But neither IRCTC nor Railman will ever charge you anything and then confirm your ticket.",
+		features: [
+			"Online Ticket Booking",
+			"Pnr Stauts Enquiry",
+			"Check Trains Between Stations",
+			"Track Train Running Status",
+		],
+		tech_stack: [0, 2, 7, 8, 9, 10, 11],
+	},
+	{
+		title: "Youtube Clone",
+		desc_body:
+			"This is an open-source YouTube clone that lets you play YouTube videos on your smartphone and PC. It can be helpful for users want Ad free Youtube Experience",
+		features: [
+			"Youtube Clone",
+			"Pure HTML, CSS, JavaScript",
+			"Ad Free Experience",
+			"Light-weight",
+		],
+		tech_stack: [0, 8],
+	},
+	{
+		title: "Disney + Hotstar Clone",
+		desc_body:
+			"Disney+ Hotstar Clone (also known as Hotstar) is a subscription video on-demand over-the-top streaming service owned by The Walt Disney Company India and operated by Disney Entertainment, both divisions of The Walt Disney Company, featuring domestic Indian film, television and sport content for India itself and its worldwide diaspora.",
+		features: ["Light weight", "Fast", "Video Stream"],
+		tech_stack: [0, 8],
+	},
+];
+
+export const ProjectType = typeof projectDescList;
 
 const Projects = () => {
-  return (
+	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
 			<div className="sub_heading">
@@ -22,40 +65,40 @@ const Projects = () => {
 						imageTitle={"Railman"}
 					/>
 					<div className="project_btns">
-						<Button title="Deployment URL" />
-						<Button title="Github URL" />
+						<Button title="Visit to the Website" />
+						<Button title="Github Repository Link" />
 					</div>
 				</div>
-				<ProjectDesc title="Railman" />
+				<ProjectDesc project_data={projectDescList[0]} />
 			</div>
 			<div className="project two">
+				<ProjectDesc project_data={projectDescList[1]} />
 				<div className="project_left">
 					<ProjectCard
-						url={"https://railman.netlify.app/"}
-						imageUrl={"/railman.png"}
-						imageTitle={"Railman"}
+						url={"https://sandeepmorya.netlify.app/youtube_clone/"}
+						imageUrl={"/youtube_clone.png"}
+						imageTitle={"youtube_clone"}
 					/>
 					<div className="project_btns">
-						<Button title="Deployment URL" />
-						<Button title="Github URL" />
+						<Button title="Visit to the Website" />
+						<Button title="Github Repository Link" />
 					</div>
 				</div>
-				<ProjectDesc title="Railman" />
 			</div>
 
 			<div className="project three">
 				<div className="project_left">
 					<ProjectCard
-						url={"https://railman.netlify.app/"}
-						imageUrl={"/railman.png"}
-						imageTitle={"Railman"}
+						url={"https://sandeepmorya.netlify.app/disney_plus-hotstar_clone/"}
+						imageUrl={"/hotstar_clone.png"}
+						imageTitle={"hotstar_clone"}
 					/>
 					<div className="project_btns">
-						<Button title="Deployment URL" />
-						<Button title="Github URL" />
+						<Button title="Visit to the Website" />
+						<Button title="Github Repository Link" />
 					</div>
 				</div>
-				<ProjectDesc title="Railman" />
+				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
 
 			<div className="more">
@@ -67,6 +110,6 @@ const Projects = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Projects
+export default Projects;

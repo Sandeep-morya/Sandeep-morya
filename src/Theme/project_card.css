@@ -10,13 +10,18 @@
     width: 100%;
     height: 2.2rem;
     background-color: rgba(244,191,0,0.1);
-    border: .1rem solid rgba(244,191,0,1);
+    border: .1rem solid #f4bf00;
 }
 
 .project_card img{
     width: 100%;
     object-fit: cover;
-    filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 5px black) saturate(10%) sepia(40%) saturate(1071%) hue-rotate(13deg) brightness(80%);
+    transition: all .7s;
+
+}
+.project_card img:hover{
+    filter: none;
 }
 .head{
     position: relative;

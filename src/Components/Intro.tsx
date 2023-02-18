@@ -13,9 +13,7 @@ const Intro = () => {
 				</span>
 			</div>
 			<div className="intro_desc">
-				I’m a software engineer specializing in building (and occasionally
-				designing) exceptional digital experiences. Currently, I’m focused on
-				building accessible, human-centered products at Upstatement.
+				An engineer or developer who works on both the front end (client-side) and the back end (server-side) of a website or application is called a full-stack developer. They may handle projects involving databases, APIs, or designing user-facing websites, as well as interacting with clients during development.
 			</div>
 		</div>
 	);

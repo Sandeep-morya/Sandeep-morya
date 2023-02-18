@@ -15,8 +15,7 @@ const Navbar = () => {
 				<a href="#about">about me</a>
 				<a href="#skills">skills</a>
 				<a href="#projects">projects</a>
-				<a href="#dev_tools">dev tools</a>
-				<a href="#">contact</a>
+				<a href="#contact">contact</a>
 			</div>
 			<div className="themeIcon" style={{ color: theme.primary }}>
 				{colorMode === "dark" ? (

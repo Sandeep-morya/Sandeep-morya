@@ -30,7 +30,6 @@ const ProjectCard = (props: Props) => {
 				</div>
 			</div>
 			<img src={props.imageUrl.toString()} alt={props.imageTitle.toString()} />
-			
 		</div>
 	);
 };
