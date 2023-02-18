@@ -34,12 +34,8 @@
     align-items: center;
     gap: 4rem;
 }
-.profile button {
-    background-color: rgba(244, 191, 0, .1) !important;
-    color:rgba(244, 191, 0, 1);
-    text-shadow: 0 0 5px black;
-    padding: 1rem 2rem;
-}
+
+
 .profile_pic {
 	width: 20rem;
 	height: 20rem;

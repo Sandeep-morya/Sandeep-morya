@@ -1,6 +1,6 @@
 ﻿.project_card{
     position: relative;
-    width: 70%;
+    width: 100%;
     max-height:min-content;
     border-radius: .3rem;
     overflow: hidden;

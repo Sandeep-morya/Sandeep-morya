@@ -3,6 +3,7 @@
 import "../Theme/project_card.css";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import Button from "./Button";
 interface Props {
 	imageUrl: String;
 	imageTitle: String;
@@ -29,6 +30,7 @@ const ProjectCard = (props: Props) => {
 				</div>
 			</div>
 			<img src={props.imageUrl.toString()} alt={props.imageTitle.toString()} />
+			
 		</div>
 	);
 };

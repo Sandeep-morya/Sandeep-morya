@@ -1,6 +1,7 @@
 ﻿import React from 'react'
 
 import "../Theme/projects.css"
+import Button from './Button'
 import ProjectCard from './ProjectCard'
 import ProjectDesc from './ProjectDesc'
 import Title from './Title'
@@ -14,29 +15,49 @@ const Projects = () => {
 				worked on:
 			</div>
 			<div className="project one">
-				<ProjectCard
-					url={"https://railman.netlify.app/"}
-					imageUrl={"/railman.png"}
-					imageTitle={"Railman"}
-				/>
+				<div className="project_left">
+					<ProjectCard
+						url={"https://railman.netlify.app/"}
+						imageUrl={"/railman.png"}
+						imageTitle={"Railman"}
+					/>
+					<div className="project_btns">
+						<Button title="Deployment URL" />
+						<Button title="Github URL" />
+					</div>
+				</div>
 				<ProjectDesc title="Railman" />
 			</div>
 			<div className="project two">
+				<div className="project_left">
+					<ProjectCard
+						url={"https://railman.netlify.app/"}
+						imageUrl={"/railman.png"}
+						imageTitle={"Railman"}
+					/>
+					<div className="project_btns">
+						<Button title="Deployment URL" />
+						<Button title="Github URL" />
+					</div>
+				</div>
 				<ProjectDesc title="Railman" />
-				<ProjectCard
-					url={"https://railman.netlify.app/"}
-					imageUrl={"/railman.png"}
-					imageTitle={"Railman"}
-				/>
 			</div>
+
 			<div className="project three">
-				<ProjectCard
-					url={"https://railman.netlify.app/"}
-					imageUrl={"/railman.png"}
-					imageTitle={"Railman"}
-				/>
+				<div className="project_left">
+					<ProjectCard
+						url={"https://railman.netlify.app/"}
+						imageUrl={"/railman.png"}
+						imageTitle={"Railman"}
+					/>
+					<div className="project_btns">
+						<Button title="Deployment URL" />
+						<Button title="Github URL" />
+					</div>
+				</div>
 				<ProjectDesc title="Railman" />
 			</div>
+
 			<div className="more">
 				<h2>To see all Projects of my web devlopment journey</h2>
 				<br />
