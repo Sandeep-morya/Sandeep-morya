@@ -4,7 +4,7 @@ import "../Theme/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { MdOutlineWbSunny, MdNightlight, MdPalette } from "react-icons/md";
-import { FaHeart } from "react-icons/fa";
+import { colorPalettes } from "../Theme";
 
 const Navbar = () => {
 	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
@@ -26,11 +26,18 @@ const Navbar = () => {
 				<div
 					className="colorPalettes"
 					style={{ display: hidden ? "none" : "flex" }}>
-					<div className="orange_shadow"></div>
-					<div className="red_dragon"></div>
-					<div className="blue_whale"></div>
-					<div className="green_hacker"></div>
-					<div className="pink_Queen"></div>
+					<div
+						className="pink_Queen"
+						style={{ backgroundColor: colorPalettes.orange_shadow }}></div>
+					<div
+						className="red_dragon"
+						style={{ backgroundColor: colorPalettes.blue_whale }}></div>
+					<div
+						className="blue_whale"
+						style={{ backgroundColor: colorPalettes.green_hacker }}></div>
+					<div
+						className="green_hacker"
+						style={{ backgroundColor: colorPalettes.pink_Queen }}></div>
 				</div>
 			</div>
 		</div>

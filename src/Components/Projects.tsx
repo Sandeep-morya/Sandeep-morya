@@ -101,13 +101,6 @@ const Projects = () => {
 				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
 
-			<div className="more">
-				<h2>To see all Projects of my web devlopment journey</h2>
-				<br />
-				visit : https://sandeepmorya.netlify.app
-				<br />
-				github link : https://github.com/Sandeep-morya
-			</div>
 		</div>
 	);
 };

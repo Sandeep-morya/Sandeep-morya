@@ -3,7 +3,6 @@ import { useContext, useState, useEffect } from "react";
 import Boot from "./Components/Boot";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
-import MiddleComp from "./Components/MiddleComp";
 import Navbar from "./Components/Navbar";
 import { ThemeContext } from "./Provider/ThemeContextProvider";
 const App = () => {
