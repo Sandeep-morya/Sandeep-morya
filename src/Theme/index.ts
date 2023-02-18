@@ -1,5 +1,12 @@
 export type mode = "dark" | "light";
 
+export const colorPalettes = {
+	orange_shadow: "rgb(244, 191, 0)",
+	blue_whale: "rgb(0, 153, 255)",
+	green_hacker: "rgb(2, 235, 2)",
+	pink_Queen: "rgb(255, 0, 89)",
+};
+
 export const colors = {
 	dark: "#1a1a19",
 	light: "#eed",

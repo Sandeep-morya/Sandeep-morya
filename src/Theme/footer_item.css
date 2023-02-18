@@ -1,0 +1,17 @@
+﻿.footer_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.footer_item :first-child{
+    color: rgba(244,191,0,1);
+}
+.footer_item>div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer_item p{
+    color: rgba(255, 255, 255, 0.5);
+}

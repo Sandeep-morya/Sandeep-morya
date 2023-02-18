@@ -11,12 +11,12 @@
 	z-index: 3;
 }
 .navlinks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    font-weight: 500;
-    font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	font-weight: 500;
+	font-size: 1rem;
 }
 .navlinks a {
 	color: rgba(255, 255, 255, 0.5);
@@ -26,4 +26,23 @@
 }
 .navlinks a:hover {
 	color: rgb(244, 191, 0);
+}
+
+.themeIcon {
+	position: relative;
+}
+.colorPalettes {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 3rem;
+	left: 0rem;
+	gap: 1rem;
+	filter: drop-shadow(0 0 5px black);
+}
+.colorPalettes > div {
+	width: 2rem;
+	height: 2rem;
+	background-color: #fff;
+	border-radius: 50%;
 }

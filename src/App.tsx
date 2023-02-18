@@ -21,14 +21,14 @@ const App = () => {
 	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
 	/* Rendering */
 	return (
-		<div style={{ backgroundColor: theme.bg, color: theme.c }}>
+		<div>
 			{!hidden ? (
 				<Boot />
 			) : (
 				<div>
 					<Navbar />
 					<Content />
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			)}
 		</div>

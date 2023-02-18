@@ -1,6 +1,90 @@
-﻿.contact{
-    padding-top: 10rem;
+﻿.contact {
+	padding-top: 10rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
+.contact h1 {
+	margin: 2rem 0;
+	text-align: center;
+	color: rgba(244, 191, 0, 1);
+}
+
+.contact_body {
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: .3rem;
+	border: 1px solid rgba(244, 191, 0, 0.5);
+	position: relative;
+}
+.contact_body h2{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.contact_form {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+	place-items: center;
+	gap: 1rem;
+}
+.contact_form input,
+textarea {
+	background-color: rgba(244, 191, 0, 0.1);
+	border: none;
+	font-size: 1.1rem;
+	padding: 1rem;
+	width: 80%;
+	color: rgba(244, 191, 0, 1);
+	letter-spacing: 1px;
+	border-radius: 0.3rem;
+	outline: none;
+
+}
+.contact_form *:focus{
+	outline: .1rem dashed rgba(244, 191, 0, 1) ;
+
+}
+.contact_details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	background-color:rgba(244, 191, 0, 0.05) ;
+	box-shadow:-5px 0px 10px rgba(0, 0, 0, 0.1)
+}
+.contact_details img{
+	width: 8rem;
+	height: 8rem;
+	object-fit: cover;
+	border-radius: 50%;
+	outline: .1rem solid rgba(244, 191, 0, 1) ;
+	outline-offset: .3rem;
+	scale: 1;
+	transition: all 0.7s;
+}
+.contact_icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+.contact_icons>*{
+	color: rgba(244, 191, 0, 1);
+	font-size: 2.2rem;
+	transition: all 0.5s;
+	scale: 1;
+}
+.contact_icons>*:hover{
+	scale: 1.5;
+}
+
+.contact_details img:hover{
+	scale: 1.1;
+}
+

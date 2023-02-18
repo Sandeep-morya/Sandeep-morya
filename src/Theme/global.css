@@ -5,7 +5,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	cursor: none;
 	font-family: "Josefin Sans", "Gill Sans", "Gill Sans MT", Calibri,
 		"Trebuchet MS", sans-serif;
 }
@@ -89,3 +88,10 @@ body::-webkit-scrollbar {
 	width: 6px;
 	height: 6px;
 } */
+
+.colors{
+	color: rgb(0, 153, 255);
+	color: rgb(2, 235, 2);
+	color: rgb(255, 0, 89);
+	color: rgb(244, 191, 0);
+}
