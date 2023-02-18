@@ -4,7 +4,6 @@ import Boot from "./Components/Boot";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { ThemeContext } from "./Provider/ThemeContextProvider";
 const App = () => {
 	/* To hide the Loader  */
 	const [hidden, setHidden] = useState(false);
@@ -16,9 +15,6 @@ const App = () => {
 		}, 2000);
 	}, []);
 
-	/* Theme consumer */
-	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
-	/* Rendering */
 	return (
 		<div>
 			{!hidden ? (

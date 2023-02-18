@@ -4,10 +4,10 @@ import "../Theme/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { MdOutlineWbSunny, MdNightlight, MdPalette } from "react-icons/md";
-import { colorPalettes } from "../Theme";
+import { colorPalettes } from "../Provider/ThemeContextProvider";
 
 const Navbar = () => {
-	const { theme, colorMode, toggleColorMode } = useContext(ThemeContext);
+	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
 
 	return (
@@ -20,7 +20,7 @@ const Navbar = () => {
 				<a href="#projects">projects</a>
 				<a href="#contact">contact</a>
 			</div>
-			<div className="themeIcon" style={{ color: theme.primary }}>
+			<div className="themeIcon" style={{ color: color }}>
 				<MdPalette size={30} onClick={() => setHidden(!hidden)} />
 
 				<div
@@ -28,16 +28,20 @@ const Navbar = () => {
 					style={{ display: hidden ? "none" : "flex" }}>
 					<div
 						className="pink_Queen"
-						style={{ backgroundColor: colorPalettes.orange_shadow }}></div>
+						style={{ backgroundColor: colorPalettes.orange_shadow }}
+						onClick={() => setColor(colorPalettes.orange_shadow)}></div>
 					<div
 						className="red_dragon"
-						style={{ backgroundColor: colorPalettes.blue_whale }}></div>
+						style={{ backgroundColor: colorPalettes.blue_whale }}
+						onClick={() => setColor(colorPalettes.blue_whale)}></div>
 					<div
 						className="blue_whale"
-						style={{ backgroundColor: colorPalettes.green_hacker }}></div>
+						style={{ backgroundColor: colorPalettes.green_hacker }}
+						onClick={() => setColor(colorPalettes.green_hacker)}></div>
 					<div
 						className="green_hacker"
-						style={{ backgroundColor: colorPalettes.pink_Queen }}></div>
+						style={{ backgroundColor: colorPalettes.pink_Queen }}
+						onClick={() => setColor(colorPalettes.pink_Queen)}></div>
 				</div>
 			</div>
 		</div>

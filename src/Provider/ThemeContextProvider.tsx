@@ -1,31 +1,30 @@
 import React from "react";
-import createTheme, { mode, themeType } from "../Theme";
+export const colorPalettes = {
+	orange_shadow: "rgb(244, 191, 0)",
+	blue_whale: "rgb(0, 153, 255)",
+	green_hacker: "rgb(2, 235, 2)",
+	pink_Queen: "rgb(255, 0, 89)",
+};
+
+
 
 let ThemeContext: React.Context<{
-	theme: themeType;
-	colorMode: mode;
-	toggleColorMode: () => void;
+	color: string;
+	setColor: React.Dispatch<React.SetStateAction<string>>;
 }>;
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-	const [colorMode, setColorMode] = React.useState<mode>("dark");
+	const [color, setColor] = React.useState(colorPalettes.orange_shadow);
 
-	const theme = React.useMemo(() => {
-		return createTheme(colorMode);
-	}, [colorMode]);
-
-
-	const context = {
-		theme: theme,
-		colorMode: colorMode,
-		toggleColorMode: () =>
-			setColorMode((x) => (x === "dark" ? "light" : "dark")),
+	const theme = {
+		color,
+		setColor,
 	};
 
-	ThemeContext = React.createContext(context);
+	ThemeContext = React.createContext(theme);
 
 	return (
-		<ThemeContext.Provider value={context}>{children}</ThemeContext.Provider>
+		<ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
 	);
 };
 
