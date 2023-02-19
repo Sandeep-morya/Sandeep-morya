@@ -1,5 +1,4 @@
 ﻿.navbar {
-	background-color: transparent;
 	display: flex;
 	width: 100%;
 	height: 5rem;
@@ -7,9 +6,12 @@
 	align-items: center;
 	box-shadow: 0 8px 6px -6px black;
 	position: fixed;
-	background-color: #1a1a19f5;
+	top: 0;
+	left: 0;
 	z-index: 3;
+	backdrop-filter: blur(15px);
 }
+
 .navlinks {
 	display: flex;
 	justify-content: center;
@@ -19,17 +21,20 @@
 	font-size: 1rem;
 }
 .navlinks a {
-	color: rgba(255, 255, 255, 0.5);
+	color: inherit;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-weight: bold;
+	filter: drop-shadow(0 0 5px black);
 }
 .navlinks a:hover {
-	color: rgb(244, 191, 0);
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .themeIcon {
 	position: relative;
+	filter: drop-shadow(0 0 5px black)
 }
 .colorPalettes {
 	flex-direction: column;

@@ -22,7 +22,7 @@ const Contact = () => {
 			<h1 style={{ color: color.main }}>Hire Me</h1>
 			<div
 				className="contact_body"
-				style={{ borderColor: color.dimmed, boxShadow: `0 0 5px  ${color.dimmed}` }}>
+				style={{ borderColor: color.main, boxShadow: `0 0 5px  ${color.dimmed}` }}>
 				<form className="contact_form">
 					<h2>Leave me a Message</h2>
 					<input

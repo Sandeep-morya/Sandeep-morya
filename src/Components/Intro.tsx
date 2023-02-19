@@ -7,11 +7,10 @@ const Intro = () => {
 	const {color} = useContext(ThemeContext)
   return (
 		<div className="intro">
-			<div>
 				<div className="content_intro">
 					<span>Hi, my name is</span>
 					<span style={{color:color.main}}>Sandeep Morya</span>
-					<span>
+					<span >
 						I build things for the web.
 					</span>
 				</div>
@@ -22,10 +21,7 @@ const Intro = () => {
 					APIs, or designing user-facing websites, as well as interacting with
 					clients during development.
 				</div>
-			</div>
-			<div>
-				<img width={400} height={400} src="/user.svg" alt="" />
-			</div>
+				<div></div>
 		</div>
 	);
 }

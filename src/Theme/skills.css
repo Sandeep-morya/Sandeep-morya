@@ -1,5 +1,5 @@
 ﻿.skills {
-padding-top: 9rem;
+	padding: 0 7rem 7rem 7rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -16,6 +16,4 @@ padding-top: 9rem;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-
 }
-

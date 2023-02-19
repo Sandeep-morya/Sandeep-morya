@@ -8,52 +8,40 @@
 			name="description"
 			content="Sandeep Morya : Full Stack Web Developer" />
 		<title>I am - Sandeep Morya</title>
-		<style>.cursor {
-	left: 0;
-	top: 0;
-	width: 12px;
-	height: 12px;
-	border: 1px solid black;
-	position: absolute;
-	border-radius: 50%;
-	z-index: 5;
-}
-.follower {
-	transition: transform 0.3s;
-	width: 8px;
-	height: 8px;
-	z-index: 4;
-}
-</style>
+		<style>
+			.cursor {
+				left: 0;
+				top: 0;
+				width: 12px;
+				height: 12px;
+				border: 1px solid black;
+				position: absolute;
+				border-radius: 50%;
+				z-index: 5;
+				background-color: white;
+			}
+			.follower {
+				transition: transform 0.3s;
+				width: 10px;
+				height: 10px;
+				z-index: 4;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.tsx"></script>
 	</body>
 	<script>
-		const color =  JSON.parse(localStorage.getItem("theme"));
 		const root = document.querySelector("html");
 
-		// Real cursor element
-		const cursor = document.createElement("div");
-		cursor.classList.add("cursor");
-		cursor.style.backgroundColor= color.main;
-		cursor.style.boxShadow=`0px 0px 10px ${color.dimmed}`
-
-		root?.appendChild(cursor);
-
-		// Following extra cursor element
+		// Following  cursor element
 		const follower = document.createElement("div");
 		follower.classList.add("cursor", "follower");
-		follower.style.backgroundColor= color.main;
-		follower.style.boxShadow=`0px 0px 10px ${color.dimmed}`
 		root?.appendChild(follower);
 
 		root?.addEventListener("mousemove", (e) => {
-			cursor.style.transform = `translate3d(${e.pageX - 16}px, ${
-				e.pageY
-			}px, 0)`;
-			follower.style.transform = `translate3d(${e.pageX - 16}px, ${
+			follower.style.transform = `translate3d(${e.pageX - 10}px, ${
 				e.pageY
 			}px, 0)`;
 		});

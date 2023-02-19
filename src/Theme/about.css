@@ -1,5 +1,5 @@
 ﻿.about {
-	padding-top: 10rem;
+	padding: 7rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -20,8 +20,9 @@
 }
 
 .texts {
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.8);
 	flex: 1;
+    font-size: 1rem;
 }
 .texts * {
 	letter-spacing: 1px;
