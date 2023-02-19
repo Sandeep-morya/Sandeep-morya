@@ -1,8 +1,12 @@
-﻿import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+﻿import { useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
+
+import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import "../Theme/footer.css";
 import FooterItem from "./FooterItem";
 
 const Footer = () => {
+	const { color } = useContext(ThemeContext);
 	return (
 		<div className="footer">
 			<div className="footer_top">
@@ -24,7 +28,7 @@ const Footer = () => {
 					val={"saabmaurya@gmail.com"}
 				/>
 			</div>
-			<div className="footer_bottom">
+			<div className="footer_bottom" style={{borderColor:color.dimmed}}>
 				<p>
 					© Copyright 2023. &nbsp;&nbsp;<span>Made by - Sandeep Morya</span>
 				</p>

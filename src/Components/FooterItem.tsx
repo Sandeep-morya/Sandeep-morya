@@ -1,6 +1,7 @@
 ﻿import { IconType } from "react-icons/lib/esm/iconBase";
 import "../Theme/footer_item.css"
-
+import { useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 interface Props {
     title:String;
@@ -10,11 +11,12 @@ interface Props {
 
 
 const FooterItem = ({title,val,Icon}: Props) => {
+	const { color } = useContext(ThemeContext);
   return (
 		<div className='footer_item'>
-			<Icon size={40} />
+			<Icon size={40} color={color.main}/>
 			<div>
-				<h3>{title}</h3>
+				<h3 style={{color:color.main}}>{title}</h3>
 				<p>{val}</p>
 			</div>
 		</div>

@@ -1,31 +1,56 @@
-﻿import Title from './Title'
-import "../Theme/contact.css"
-import Button from './Button';
+﻿import Title from "./Title";
+import "../Theme/contact.css";
+import Button from "./Button";
+import { useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
 
-
-import { FaFacebook, FaGithub,FaInstagram,FaLinkedin, FaTwitter} from "react-icons/fa"
+import {
+	FaFacebook,
+	FaGithub,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+} from "react-icons/fa";
+import { MdSend } from "react-icons/md";
 
 const Contact = () => {
-  return (
+	const { color } = useContext(ThemeContext);
+
+	return (
 		<div className="contact" id="contact">
 			<Title title={"Contact"} />
-			<h1>Hire Me</h1>
-			<div className="contact_body">
+			<h1 style={{ color: color.main }}>Hire Me</h1>
+			<div
+				className="contact_body"
+				style={{ borderColor: color.dimmed, boxShadow: `0 0 5px  ${color.dimmed}` }}>
 				<form className="contact_form">
 					<h2>Leave me a Message</h2>
-					<input type="text" placeholder="Your Name" />
+					<input
+						type="text"
+						placeholder="Your Name"
+						style={{
+							color: color.main,
+							outlineColor: color.main,
+							backgroundColor: color.dimmed,
+						}}
+					/>
 					<textarea
-						name=""
-						id=""
 						cols={30}
 						rows={10}
+						style={{
+							color: color.main,
+							outlineColor: color.main,
+							backgroundColor: color.dimmed,
+						}}
 						placeholder={"Your Message"}></textarea>
-					<Button title="Send it to me !" />
+					<Button Icon={MdSend} title="Send it to me !" />
 				</form>
-				<div className="contact_details">
-					<img src="/profile.png" alt="" />
+				<div
+					className="contact_details"
+					style={{ backgroundColor: color.dimmed }}>
+					<img style={{ outlineColor: color.main }} src="/profile.png" alt="" />
 
-					<div className="contact_icons">
+					<div className="contact_icons" style={{ color: color.main }}>
 						<FaGithub />
 						<FaLinkedin />
 						<FaFacebook />
@@ -38,6 +63,6 @@ const Contact = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Contact
+export default Contact;

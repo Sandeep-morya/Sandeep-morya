@@ -1,5 +1,8 @@
 ﻿import "../Theme/project_desc.css";
 import { ProjectItem } from "./Projects";
+import { useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
+
 interface Props {
 	project_data: ProjectItem;
 }
@@ -18,12 +21,13 @@ const teach_list = [
 	"MongoDB",
 ];
 const ProjectDesc = (props: Props) => {
+	const { color } = useContext(ThemeContext);
 	return (
 		<div className="project_desc">
-			<h1>{props.project_data.title}</h1>
+			<h1 style={{color:color.main}}>{props.project_data.title}</h1>
 			<div className="desc_body">{props.project_data.desc_body}</div>
 			<div className="desc_features">
-				<h3>Top Features of Railman Website</h3>
+				<h3 style={{color:color.main}}>Top Features of Railman Website</h3>
 				<ul>
 					{props.project_data.features.map((e) => {
 						return <li key={e.toString()}>{e}</li>;

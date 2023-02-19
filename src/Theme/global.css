@@ -21,28 +21,26 @@ html:focus-within {
 .global_button {
 	font-size: 1rem;
 	font-weight: 500;
-	border: 0.1rem solid rgb(244, 191, 0);
+	border-width: 0.1rem;
+	border-style: solid;
 	border-radius: 0.3rem;
-	background-color: rgba(244, 191, 0, 0.1) !important;
-	color: rgba(244, 191, 0, 1);
-	text-shadow: 0 0 5px black;
 	padding: 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	text-shadow: 0 0 5px rgb(0, 0, 0);
 }
-
-.global_button:hover {
-	background-color: rgba(244, 191, 0, 0.1);
-	box-shadow: 0 0 10px 5px rgba(244, 191, 0, 0.1);
+.global_button :first-child {
+	filter: drop-shadow(0 0 5px black);
+	font-size: 1.1rem;
 }
 
 body::-webkit-scrollbar {
 	display: none;
 }
 *::selection {
-	background-color: rgba(244, 191, 0, 0.1);
-}
-
-.highlight {
-	color: rgba(244, 191, 0, 1);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .heading {
@@ -54,15 +52,11 @@ body::-webkit-scrollbar {
 	gap: 1rem;
 	padding: 0.5rem;
 	border-radius: 0.3rem;
-	outline: 1px solid rgba(255, 255, 255, 0.302);
-	color: rgba(244, 191, 0, 1);
+	outline: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.heading::after {
-	width: 20rem;
-	height: .1rem;
-	content: "";
-	background-color: rgba(244, 191, 0, 1);
+.heading > div {
+	width: 30%;
+	height: 0.07rem !important;
 }
 
 .sub_heading {
@@ -91,8 +85,8 @@ body::-webkit-scrollbar {
 	height: 6px;
 } */
 
-.colors{
-	color: rgb(0, 153, 255);
+.colors {
+	color: #0099ff;
 	color: rgb(2, 235, 2);
 	color: rgb(255, 0, 89);
 	color: rgb(244, 191, 0);

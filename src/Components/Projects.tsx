@@ -3,6 +3,8 @@ import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
 import Title from "./Title";
+import { FaLink, FaGitAlt } from "react-icons/fa";
+import Highlight from "./Highlight";
 
 export interface ProjectItem{
 	title:String,
@@ -52,7 +54,7 @@ const Projects = () => {
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
 			<div className="sub_heading">
-				Here, are some <span className="highlight">projects</span> that i have
+				Here, are some <Highlight>projects</Highlight> that i have
 				worked on:
 			</div>
 
@@ -65,8 +67,8 @@ const Projects = () => {
 						imageTitle={"Railman"}
 					/>
 					<div className="project_btns">
-						<Button title="Visit to the Website" />
-						<Button title="Github Repository Link" />
+						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>
 				<ProjectDesc project_data={projectDescList[0]} />
@@ -82,8 +84,8 @@ const Projects = () => {
 						imageTitle={"youtube_clone"}
 					/>
 					<div className="project_btns">
-						<Button title="Visit to the Website" />
-						<Button title="Github Repository Link" />
+						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>
 			</div>
@@ -97,8 +99,8 @@ const Projects = () => {
 						imageTitle={"hotstar_clone"}
 					/>
 					<div className="project_btns">
-						<Button title="Visit to the Website" />
-						<Button title="Github Repository Link" />
+						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>
 				<ProjectDesc project_data={projectDescList[2]} />

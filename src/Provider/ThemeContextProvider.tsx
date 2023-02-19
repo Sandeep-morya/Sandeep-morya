@@ -1,16 +1,34 @@
 import React from "react";
 export const colorPalettes = {
-	orange_shadow: "rgb(244, 191, 0)",
-	blue_whale: "rgb(0, 153, 255)",
-	green_hacker: "rgb(2, 235, 2)",
-	pink_Queen: "rgb(255, 0, 89)",
+	orange_shadow: {
+		main: "rgb(244, 191, 0)",
+		dimmed: "rgba(244, 191, 0,0.1)",
+	},
+	blue_whale: {
+		main: "rgb(0, 153, 255)",
+		dimmed: "rgba(0, 153, 255,0.1)",
+	},
+	green_hacker: {
+		main: "rgb(2, 235, 2)",
+		dimmed: "rgba(2, 235, 2,0.1)",
+	},
+	pink_Queen: {
+		main: "rgb(255, 0, 89)",
+		dimmed: "rgba(255, 0, 89,0.1)",
+	},
 };
 
-
-
 let ThemeContext: React.Context<{
-	color: string;
-	setColor: React.Dispatch<React.SetStateAction<string>>;
+	color: {
+		main: string;
+		dimmed: string;
+	};
+	setColor: React.Dispatch<
+		React.SetStateAction<{
+			main: string;
+			dimmed: string;
+		}>
+	>;
 }>;
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
@@ -22,6 +40,10 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 	};
 
 	ThemeContext = React.createContext(theme);
+
+	React.useEffect(() => {
+		localStorage.setItem("theme", JSON.stringify(color));
+	}, [color]);
 
 	return (
 		<ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>

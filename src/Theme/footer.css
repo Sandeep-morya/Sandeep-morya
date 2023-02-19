@@ -7,10 +7,10 @@
 
 }
 .footer_top {
-	display: flex;
+	display:grid;
 	width: 90%;
 	margin: auto;
-	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -22,7 +22,8 @@
 	padding-top: 2rem;
 	font-size: 0.8rem;
 	color: rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top-width: 1px ;
+	border-top-style: solid;
 }
 .footer_bottom span {
 	font-weight: 500;

@@ -1,12 +1,16 @@
-﻿import "../Theme/intro.css"
+﻿import { useState, useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
+import "../Theme/intro.css"
+
 
 const Intro = () => {
+	const {color} = useContext(ThemeContext)
   return (
 		<div className="intro">
 			<div>
 				<div className="content_intro">
 					<span>Hi, my name is</span>
-					<span>Sandeep Morya</span>
+					<span style={{color:color.main}}>Sandeep Morya</span>
 					<span>
 						I build things for the web.
 					</span>

@@ -54,7 +54,8 @@
 .profile_pic>div{
     width: inherit;
     height: inherit;
-    border: .1rem solid rgba(244, 191, 0, 1);
+    border-width: .1rem;
+    border-style:  solid ;
     position: absolute;
     top: -1rem;
     left: -1rem;

@@ -8,37 +8,17 @@
 	align-items: center;
 	gap: 2rem;
 	border-radius: 0.3rem;
-    position: relative;
-    overflow: hidden;
-    border: .1rem solid rgba(244, 191, 0, 1)
+    border-width: .1rem;
+    border-style: solid;
 }
 
-.card::before{
-    position: absolute;
-    top:-3rem;
-    left: -3rem;
-    border-radius: 50%;
-    content: "";
-    width: 5rem;
-    height: 5rem;
-    background-color: rgba(244, 191, 0, 0.7);
-    transition: all .7s;
-}
-
-.card:hover::before{
-    top:-10rem;
-    left:-10rem;
-    width: 50rem;
-    height: 50rem;
-    background-color: rgba(244, 191, 0, 0.2);
-}
 .card:hover .card_text{
-    color: rgba(244, 191, 0, 1);
+    color: inherit;
 }
 
 
 .card_icon > * {
-	color: rgba(244, 191, 0, 1);
+	color: inherit;
 	font-size: 5rem;
     filter: drop-shadow(0 0 5px black);
 }

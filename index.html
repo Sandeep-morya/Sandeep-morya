@@ -14,10 +14,8 @@
 	width: 12px;
 	height: 12px;
 	border: 1px solid black;
-	background-color: rgb(244, 191, 0);
 	position: absolute;
 	border-radius: 50%;
-	box-shadow: 0px 0px 10px rgb(244, 191, 0);
 	z-index: 5;
 }
 .follower {
@@ -33,16 +31,22 @@
 		<script type="module" src="/src/main.tsx"></script>
 	</body>
 	<script>
+		const color =  JSON.parse(localStorage.getItem("theme"));
 		const root = document.querySelector("html");
 
 		// Real cursor element
 		const cursor = document.createElement("div");
 		cursor.classList.add("cursor");
+		cursor.style.backgroundColor= color.main;
+		cursor.style.boxShadow=`0px 0px 10px ${color.dimmed}`
+
 		root?.appendChild(cursor);
 
 		// Following extra cursor element
 		const follower = document.createElement("div");
 		follower.classList.add("cursor", "follower");
+		follower.style.backgroundColor= color.main;
+		follower.style.boxShadow=`0px 0px 10px ${color.dimmed}`
 		root?.appendChild(follower);
 
 		root?.addEventListener("mousemove", (e) => {
