@@ -6,26 +6,21 @@ import "../Styles/card.css";
 interface Props {
 	title: String;
 	Icon: IconType;
+	techIcons: IconType[];
+	techNames: String[];
 }
 
-const Card = ({ Icon, title }: Props) => {
+const Card = ({ Icon, title, techIcons, techNames }: Props) => {
 	const { color } = useContext(ThemeContext);
 
 	return (
-		// <div
-		// 	className="card"
-		// 	style={{
-		// 		color: color.main,
-		// 		borderColor: color.main,
-		// 		backgroundColor: color.dimmed,
-		// 	}}>
-		// 	<div className="card_icon">
-		// 		<Icon />
-		// 	</div>
-		// 	<div className="card_text">{title}</div>
-		// </div>
 		<div className="container">
-			<div className="front" style={{ background: color.main }}>
+			<div
+				className="front"
+				style={{
+					border: "0.1rem solid " + color.main,
+					background: color.main,
+				}}>
 				<div className="inner">
 					<div>
 						<Icon size={80} color={color.main} />
@@ -33,12 +28,18 @@ const Card = ({ Icon, title }: Props) => {
 					<span>{title}</span>
 				</div>
 			</div>
-			<div className="back" style={{ background:"url(https://unsplash.it/502/502/)" }}>
+			<div
+				className="back"
+				style={{ background: "url(https://unsplash.it/502/502/)" }}>
 				<div className="inner">
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-						repellat velit quae suscipit c.
-					</p>
+					<div className="tech_skills">
+						{techIcons.map((LeftIcon, index) => (
+							<div key={index + Date.now()}>
+								<LeftIcon />
+								<div>{techNames[index]}</div>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
