@@ -1,7 +1,7 @@
 ﻿import Title from "./Title";
 import "../Styles/contact.css";
 import Button from "./Button";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 import {
@@ -13,8 +13,14 @@ import {
 } from "react-icons/fa";
 import { MdSend } from "react-icons/md";
 
+const initialValue = {
+	name: "",
+	message: "",
+};
+
 const Contact = () => {
 	const { color } = useContext(ThemeContext);
+	const [formData, setFormData] = useState(initialValue);
 
 	return (
 		<div className="contact" id="contact">
@@ -31,21 +37,27 @@ const Contact = () => {
 					<input
 						type="text"
 						placeholder="Your Name"
+						value={formData.name}
 						style={{
 							color: color.main,
 							outlineColor: color.main,
 							backgroundColor: color.dimmed,
 						}}
+						onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 					/>
 					<textarea
 						cols={30}
 						rows={10}
+						value={formData.message}
 						style={{
 							color: color.main,
 							outlineColor: color.main,
 							backgroundColor: color.dimmed,
 						}}
-						placeholder={"Your Message"}></textarea>
+						placeholder={"Your Message"}
+						onChange={(e) =>
+							setFormData({ ...formData, message: e.target.value })
+						}></textarea>
 					<Button Icon={MdSend} title="Send it to me !" />
 				</form>
 				<div
