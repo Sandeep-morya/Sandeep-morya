@@ -1,4 +1,4 @@
-﻿import "../Theme/projects.css";
+﻿import "../Styles/projects.css";
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
@@ -6,14 +6,14 @@ import Title from "./Title";
 import { FaLink, FaGitAlt } from "react-icons/fa";
 import Highlight from "./Highlight";
 
-export interface ProjectItem{
-	title:String,
-	desc_body:String,
-	features:String[],
-	tech_stack:Number[]
+export interface ProjectItem {
+	title: String;
+	desc_body: String;
+	features: String[];
+	tech_stack: Number[];
 }
 
-const projectDescList:ProjectItem[] = [
+const projectDescList: ProjectItem[] = [
 	{
 		title: "Railman",
 		desc_body:
@@ -54,8 +54,7 @@ const Projects = () => {
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
 			<div className="sub_heading">
-				Here, are some <Highlight>projects</Highlight> that i have
-				worked on:
+				Here, are some <Highlight>projects</Highlight> that i have worked on:
 			</div>
 
 			{/*  CARD 1 */}

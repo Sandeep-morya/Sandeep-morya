@@ -1,5 +1,5 @@
 ﻿import { useContext, useState } from "react";
-import "../Theme/navbar.css";
+import "../Styles/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { HiColorSwatch } from "react-icons/hi";
@@ -10,7 +10,9 @@ const Navbar = () => {
 	const [hidden, setHidden] = useState(true);
 
 	return (
-		<div className="navbar" style={{backgroundColor:color.dimmed,color:color.main}}>
+		<div
+			className="navbar"
+			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<Avatar title="sm" />
 			<div className="navlinks">
 				<a href="#">intro</a>

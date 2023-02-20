@@ -58,6 +58,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
 	React.useEffect(() => {
 		localStorage.setItem("theme", JSON.stringify(color));
+		window.scrollTo(0, 0);
 	}, [color]);
 
 	return (

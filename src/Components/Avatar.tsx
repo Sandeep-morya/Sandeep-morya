@@ -1,15 +1,14 @@
 ﻿import React from "react";
-import "../Theme/avatar.css";
+import "../Styles/avatar.css";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
+interface Props {
+	title: String | React.ReactNode;
+}
 
-interface Props{
-	title:String|React.ReactNode
-};
-
-const Avatar = ({title}:Props) => {
-	const {color} = useContext(ThemeContext)
+const Avatar = ({ title }: Props) => {
+	const { color } = useContext(ThemeContext);
 	return (
 		<div className="avatar" id="#">
 			{/* <div className="box_1" style={{borderColor:color.main}}></div>

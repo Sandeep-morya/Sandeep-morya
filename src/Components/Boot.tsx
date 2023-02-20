@@ -1,4 +1,4 @@
-﻿import "../Theme/boot.css";
+﻿import "../Styles/boot.css";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 

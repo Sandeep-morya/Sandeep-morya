@@ -1,7 +1,7 @@
 ﻿import { IconType } from "react-icons/lib/esm/iconBase";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import "../Theme/card.css";
+import "../Styles/card.css";
 
 interface Props {
 	title: String;
@@ -14,7 +14,11 @@ const Card = ({ Icon, title }: Props) => {
 	return (
 		<div
 			className="card"
-			style={{ color: color.main, borderColor: color.main }}>
+			style={{
+				color: color.main,
+				borderColor: color.main,
+				backgroundColor: color.dimmed,
+			}}>
 			<div className="card_icon">
 				<Icon />
 			</div>

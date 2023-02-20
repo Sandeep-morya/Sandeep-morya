@@ -1,10 +1,9 @@
-﻿import "../Theme/content.css";
+﻿import "../Styles/content.css";
 import About from "./About";
 import Intro from "./Intro";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
-
 
 const Content = () => {
 	return (

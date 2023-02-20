@@ -1,5 +1,5 @@
 ﻿.skills {
-	padding: 0 7rem 7rem 7rem;
+	padding: 7rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -10,10 +10,7 @@
 	gap: 0; */
 	margin-top: 7rem;
 	width: inherit;
-	display: flex;
-	column-gap: 8rem;
-	row-gap: 7rem;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 7rem;
 }

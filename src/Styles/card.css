@@ -1,6 +1,5 @@
 ﻿.card {
-    flex: 1 25%;
-	width: 15rem;
+	width: auto;
 	height: 20rem;
 	display: flex;
 	justify-content: center;
