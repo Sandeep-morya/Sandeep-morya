@@ -63,7 +63,18 @@ const Contact = () => {
 				<div
 					className="contact_details"
 					style={{ backgroundColor: color.dimmed }}>
-					<img style={{ outlineColor: color.main }} src="/profile.png" alt="" />
+					<div
+						style={{
+							backgroundColor: color.main,
+							borderRadius: "50%",
+							height: "8rem",
+						}}>
+						<img
+							style={{ outlineColor: color.main }}
+							src="/vector.png"
+							alt=""
+						/>
+					</div>
 
 					<div className="contact_icons" style={{ color: color.main }}>
 						<FaGithub />

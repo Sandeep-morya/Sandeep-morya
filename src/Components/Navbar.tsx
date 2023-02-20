@@ -1,4 +1,4 @@
-﻿import { useContext, useState } from "react";
+﻿import { useContext, useEffect, useState } from "react";
 import "../Styles/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
@@ -8,6 +8,7 @@ import { colorPalettes } from "../Provider/ThemeContextProvider";
 const Navbar = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
+	const [hash,setHash] = useState(window.location.hash)
 
 	return (
 		<div
@@ -15,7 +16,7 @@ const Navbar = () => {
 			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<Avatar title="sm" />
 			<div className="navlinks">
-				<a href="#">intro</a>
+				<a href="#" >intro</a>
 				<a href="#about">about me</a>
 				<a href="#skills">skills</a>
 				<a href="#projects">projects</a>

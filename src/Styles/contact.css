@@ -41,10 +41,11 @@ textarea {
 	letter-spacing: 1px;
 	border-radius: 0.3rem;
 	outline: none;
+	text-transform:capitalize;
 
 }
 .contact_form *:focus{
-	outline-width: .1rem;
+	outline-width: 2px;
 	outline-style: dashed;
 }
 .contact_details {
@@ -53,19 +54,20 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
-	box-shadow:-5px 0px 10px rgba(0, 0, 0, 0.1)
+	box-shadow:-5px 0px 10px rgba(0, 0, 0, 0.1);
+
 }
 .contact_details img{
 	width: 8rem;
-	height: 8rem;
+	height: inherit;
 	object-fit: cover;
 	border-radius: 50%;
 	outline-width: .1rem;
 	outline-style: solid;
-	outline-offset: .3rem;
-	scale: 1;
+	scale: 1.1;
+	filter:drop-shadow(0 0 5px black) brightness(80%);
 	/*  */
-	transition: all 0.7s;
+	transition: all 0.2s;
 }
 .contact_icons{
 	display: flex;
@@ -76,14 +78,15 @@ textarea {
 .contact_icons>*{
 	color: inherit;
 	font-size: 2.2rem;
-	transition: all 0.5s;
-	scale: 1;
+	transition: all 0.2s;
+	scale: 1.2;
+	filter: drop-shadow(0 0 5px black);
 }
 .contact_icons>*:hover{
-	scale: 1.5;
+	scale: 1.1;
 }
 
 .contact_details img:hover{
-	scale: 1.1;
+	scale: 1;
 }
 

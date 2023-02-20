@@ -41,16 +41,19 @@
 	width: 20rem;
 	height: 20rem;
 	position: relative;
+    border-radius: 0.3rem;
 }
 .profile_pic>img {
 	width: 100%;
-	border-radius: 0.3rem;
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: 0;
+    border-radius: 0.3rem;
     filter: grayscale();
     transition: all .5s;
+    scale: 1.1;
+    filter:drop-shadow(0 0 10px black) brightness(80%);
 }
 .profile_pic>div{
     width: inherit;
@@ -63,9 +66,7 @@
     border-radius: .3rem;
     transition: all .5s;
 }
-.profile_pic>img:hover{
-    filter: none;
-}
+
 .profile_pic>img:hover + div{
     top: 1rem;
     left: 1rem;

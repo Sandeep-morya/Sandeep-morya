@@ -45,8 +45,8 @@ const About = () => {
 					</div>
 				</div>
 				<div className="profile">
-					<div className="profile_pic">
-						<img src="/profile.png" alt="sandeep-morya-profile-pic" />
+					<div className="profile_pic" style={{backgroundColor:color.main}}>
+						<img src="/vector.png" alt="sandeep-morya-profile-pic" />
 						<div style={{ borderColor: color.main }}></div>
 					</div>
 					<div>

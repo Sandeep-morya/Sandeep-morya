@@ -37,7 +37,13 @@ const ProjectCard = (props: Props) => {
 					<div style={{ backgroundColor: color.main }}></div>
 				</div>
 			</div>
-			<img src={props.imageUrl.toString()} alt={props.imageTitle.toString()} />
+			<div className="body">
+				<img
+					src={props.imageUrl.toString()}
+					alt={props.imageTitle.toString()}
+				/>
+				<div className="frame" style={{backgroundColor:color.dimmed}}></div>
+			</div>
 		</div>
 	);
 };

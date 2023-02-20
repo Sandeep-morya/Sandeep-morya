@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	z-index: 3;
-	backdrop-filter: blur(5px);
+	backdrop-filter:brightness(20%) blur(10px);
 }
 
 .navlinks {
@@ -27,6 +27,7 @@
 	letter-spacing: 1px;
 	font-weight: bold;
 	filter: drop-shadow(0 0 5px black);
+	transition: all 0.15s;
 }
 .navlinks a:hover {
 	color: rgba(255, 255, 255, 0.8);
