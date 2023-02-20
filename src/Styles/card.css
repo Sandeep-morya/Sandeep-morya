@@ -95,6 +95,8 @@
 	font-weight: 600;
 	font-size: 2rem;
 	text-transform: uppercase;
+	text-shadow: 0 0 10px black;
+	filter: drop-shadow(0 0 10px black);
 }
 
 .tech_skills {
@@ -103,7 +105,6 @@
 	background: none;
 	backdrop-filter: blur(10px);
 	font-size: 2rem;
-	font-weight: 600;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -117,4 +118,6 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	filter: drop-shadow(0 0 10px black);
 }
+/* https://codepen.io/nicolaspavlotsky/pen/wqGgLO?editors=1100 */
