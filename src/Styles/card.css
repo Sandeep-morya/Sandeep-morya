@@ -99,11 +99,12 @@
 	filter: drop-shadow(0 0 10px black);
 }
 
-.tech_skills {
-	width: 100%;
-	height: 100%;
+.back{
+	background-image: url(https://picsum.photos/400/500/?blur)
+}
+
+.back .inner {
 	background: none;
-	backdrop-filter: blur(10px);
 	font-size: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -114,7 +115,7 @@
 	filter: drop-shadow(0 0 10px black);
 	text-transform: uppercase;
 }
-.tech_skills > div {
+.back .inner > div {
 	display: flex;
 	align-items: center;
 	gap: 1rem;

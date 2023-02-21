@@ -28,18 +28,14 @@ const Card = ({ Icon, title, techIcons, techNames }: Props) => {
 					<span>{title}</span>
 				</div>
 			</div>
-			<div
-				className="back"
-				style={{ background: "url(https://unsplash.it/502/502/)" }}>
+			<div className="back">
 				<div className="inner">
-					<div className="tech_skills">
-						{techIcons.map((LeftIcon, index) => (
-							<div key={index + Date.now()}>
-								<LeftIcon />
-								<div>{techNames[index]}</div>
-							</div>
-						))}
-					</div>
+					{techIcons.map((LeftIcon, index) => (
+						<div key={index + Date.now()}>
+							<LeftIcon />
+							<div>{techNames[index]}</div>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
