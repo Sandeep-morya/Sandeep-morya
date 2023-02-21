@@ -1,15 +1,16 @@
 ﻿import { IconType } from "react-icons/lib/esm/iconBase";
-import { useState,useContext } from "react";
+import { useState, useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 interface Props {
 	title: string;
 	Icon: IconType;
+	url?: string;
 }
 
-const Button = ({ title, Icon }: Props) => {
+const Button = ({ title, Icon, url }: Props) => {
 	const { color } = useContext(ThemeContext);
-	const [isHover,setIsHover] = useState(false)
+	const [isHover, setIsHover] = useState(false);
 	return (
 		<div
 			className="global_button"
@@ -17,10 +18,13 @@ const Button = ({ title, Icon }: Props) => {
 				backgroundColor: color.dimmed,
 				color: color.main,
 				borderColor: color.main,
-				boxShadow: `0 0 10px 5px ${isHover ? color.dimmed : "rgba(0, 0, 0, 0.1)"}`,
+				boxShadow: `0 0 10px 5px ${
+					isHover ? color.dimmed : "rgba(0, 0, 0, 0.1)"
+				}`,
 			}}
 			onMouseEnter={() => setIsHover(true)}
-			onMouseLeave={() => setIsHover(false)}>
+			onMouseLeave={() => setIsHover(false)}
+			onClick={() => location.assign(url||'/')}>
 			<Icon />
 			{title}
 		</div>

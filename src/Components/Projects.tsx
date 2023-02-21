@@ -47,7 +47,7 @@ const projectDescList: ProjectItem[] = [
 	},
 ];
 
-export const ProjectType = typeof projectDescList;
+
 
 const Projects = () => {
 	return (
@@ -66,7 +66,11 @@ const Projects = () => {
 						imageTitle={"Railman"}
 					/>
 					<div className="project_btns">
-						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button
+							url="https://railman.netlify.app/"
+							Icon={FaLink}
+							title="Visit to the Website"
+						/>
 						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>
@@ -83,7 +87,11 @@ const Projects = () => {
 						imageTitle={"youtube_clone"}
 					/>
 					<div className="project_btns">
-						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button
+							url={"https://sandeepmorya.netlify.app/youtube_clone/"}
+							Icon={FaLink}
+							title="Visit to the Website"
+						/>
 						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>
@@ -98,7 +106,11 @@ const Projects = () => {
 						imageTitle={"hotstar_clone"}
 					/>
 					<div className="project_btns">
-						<Button Icon={FaLink} title="Visit to the Website" />
+						<Button
+							url="https://sandeepmorya.netlify.app/disney_plus-hotstar_clone/"
+							Icon={FaLink}
+							title="Visit to the Website"
+						/>
 						<Button Icon={FaGitAlt} title="Github Repository Link" />
 					</div>
 				</div>

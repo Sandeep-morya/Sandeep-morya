@@ -20,15 +20,13 @@ import {
 	SiSwagger,
 	SiTestinglibrary,
 	SiCypress,
-	SiEslint,
 	SiTypescript,
 	SiJquery,
 	SiRedux,
 	SiGit,
-	SiNpm,
 	SiFigma,
 	SiMocha,
-	SiChai,
+	SiEslint,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -39,13 +37,25 @@ const Skills = () => {
 				<Card
 					title={"ui design"}
 					Icon={MdStyle}
-					techIcons={[SiCss3, SiChakraui, SiMaterialui, SiTailwindcss]}
-					techNames={["CSS3", "Chakra UI", "MUI", "Tailwind"]}></Card>
+					techIcons={[SiHtml5, SiCss3, SiChakraui, SiMaterialui]}
+					techNames={["HTML5", "CSS3", "Chakra UI", "MUI"]}></Card>
 				<Card
 					title={"frontend"}
 					Icon={FaLaptopCode}
-					techIcons={[SiHtml5, SiJavascript, SiReact, SiNextdotjs]}
-					techNames={["HTML5", "javascript", "react", "nextjs"]}></Card>
+					techIcons={[
+						SiJavascript,
+						SiReact,
+						SiRedux,
+						SiTypescript,
+						SiNextdotjs,
+					]}
+					techNames={[
+						"javascript",
+						"react",
+						"redux",
+						"typescript",
+						"nextjs",
+					]}></Card>
 
 				<Card
 					title={"backend"}
@@ -56,19 +66,19 @@ const Skills = () => {
 				<Card
 					title={"Optimizing"}
 					Icon={FaCode}
-					techIcons={[SiTypescript, SiRedux, SiGit, SiNpm]}
-					techNames={["typescript", "redux", "git", "npm"]}></Card>
+					techIcons={[SiGit,SiEslint,]}
+					techNames={["git","eslint"]}></Card>
 
 				<Card
 					title={"testing"}
 					Icon={BiTestTube}
-					techIcons={[SiCypress, SiTestinglibrary, SiMocha, SiChai]}
-					techNames={["cypress", "rt library", "mocha", "chai"]}></Card>
+					techIcons={[SiCypress, SiMocha, SiTestinglibrary]}
+					techNames={["cypress", "mocha", "rt library"]}></Card>
 				<Card
 					title={"extra"}
 					Icon={FaTools}
-					techIcons={[SiEslint, SiJquery, SiFigma]}
-					techNames={["eslint", "jquery", "figma"]}></Card>
+					techIcons={[SiJquery, SiFigma]}
+					techNames={["jquery", "figma"]}></Card>
 			</div>
 		</div>
 	);
