@@ -12,12 +12,12 @@ const App = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setHidden(true);
-		}, 2000);
+		}, 1500);
 	}, []);
 
 	return (
 		<div>
-			
+
 			{!hidden ? (
 				<Boot />
 			) : (
