@@ -10,7 +10,6 @@
 }
 .intro * {
 	z-index: 2;
-	text-shadow: 0 0 10px black;
 }
 .intro > :last-child {
 	position: absolute;

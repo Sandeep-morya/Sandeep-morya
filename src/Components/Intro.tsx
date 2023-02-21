@@ -1,4 +1,4 @@
-﻿import { useState, useContext } from "react";
+﻿import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 
@@ -7,7 +7,7 @@ const Intro = () => {
 	return (
 		<div className="intro">
 			<div className="content_intro">
-				<span>Hi, my name is</span>
+				<span>Hi, i am</span>
 				<span style={{ color: color.main }}>Sandeep Morya</span>
 				<span>I build things for the web.</span>
 			</div>

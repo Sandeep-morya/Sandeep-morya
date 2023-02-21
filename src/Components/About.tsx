@@ -14,7 +14,7 @@ const About = () => {
 			<div className="about_description">
 				<div className="texts">
 					<div className="past">
-						Hello, I am Sandeep Morya. I{" "}
+						Hello, my name is Sandeep Morya. I{" "}
 						<Highlight>live in Ludhiana, Punjab</Highlight>. I enjoy creating
 						things that live on the internet. My interest in web development
 						started back in <Highlight>2015</Highlight>, when i was in
