@@ -111,13 +111,15 @@
 	gap: 1.2rem;
 	text-align: start !important;
 	color: rgba(255, 255, 255, 0.782) !important;
-	filter: drop-shadow(0 0 10px black);
 	text-transform: uppercase;
 }
 .back .inner > div {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	filter: drop-shadow(0 0 10px black);
 }
+.back .inner > div :first-child {
+	filter: drop-shadow(0 0 5px black);
+}
+
 /* https://codepen.io/nicolaspavlotsky/pen/wqGgLO?editors=1100 */
