@@ -14,7 +14,7 @@ const Navbar = () => {
 		<div
 			className="navbar"
 			style={{ backgroundColor: color.dimmed, color: color.main }}>
-			<Avatar title="sm" />
+			<Avatar title="_SM_" />
 			<div className="navlinks">
 				<a href="#" >intro</a>
 				<a href="#about">about me</a>

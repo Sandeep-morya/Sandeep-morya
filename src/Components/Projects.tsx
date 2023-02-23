@@ -53,10 +53,7 @@ const Projects = () => {
 	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
-			<div className="sub_heading">
-				Here, are some <Highlight>projects</Highlight> that i have worked on:
-			</div>
-
+			
 			{/*  CARD 1 */}
 			<div className="project one">
 				<div className="project_left">

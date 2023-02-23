@@ -13,7 +13,7 @@ const Avatar = ({ title }: Props) => {
 		<div className="avatar" id="#">
 			{/* <div className="box_1" style={{borderColor:color.main}}></div>
 			<div className="box_2" style={{borderColor:color.main,color:color.main}}>{title}</div> */}
-			<h1 style={{ borderColor: color.main, color: color.main }}> _SM_ </h1>
+			<h1 style={{ borderColor: color.main, color: color.main }}>{title}</h1>
 		</div>
 	);
 };
