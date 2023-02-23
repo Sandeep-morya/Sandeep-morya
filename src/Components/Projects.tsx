@@ -15,7 +15,7 @@ export interface ProjectItem {
 
 const projectDescList: ProjectItem[] = [
 	{
-		title: "Railman",
+		title: "01. Railman",
 		desc_body:
 			"Railman is an unofficial, IRCTC unauthorized travel agent where train ticket bookings can be done online. Since everything is online on your website you need not call or email anyone. But neither IRCTC nor Railman will ever charge you anything and then confirm your ticket.",
 		features: [
@@ -27,7 +27,7 @@ const projectDescList: ProjectItem[] = [
 		tech_stack: [0, 2, 7, 8, 9, 10, 11],
 	},
 	{
-		title: "Youtube Clone",
+		title: "02. Youtube Clone",
 		desc_body:
 			"This is an open-source YouTube clone that lets you play YouTube videos on your smartphone and PC. It can be helpful for users want Ad free Youtube Experience",
 		features: [
@@ -39,7 +39,7 @@ const projectDescList: ProjectItem[] = [
 		tech_stack: [0, 8],
 	},
 	{
-		title: "Disney + Hotstar Clone",
+		title: "03. Disney + Hotstar Clone",
 		desc_body:
 			"Disney+ Hotstar Clone (also known as Hotstar) is a subscription video on-demand over-the-top streaming service owned by The Walt Disney Company India and operated by Disney Entertainment, both divisions of The Walt Disney Company, featuring domestic Indian film, television and sport content for India itself and its worldwide diaspora.",
 		features: ["Light weight", "Fast", "Video Stream"],
@@ -53,7 +53,7 @@ const Projects = () => {
 	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
-			
+
 			{/*  CARD 1 */}
 			<div className="project one">
 				<div className="project_left">
