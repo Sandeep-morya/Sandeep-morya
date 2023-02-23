@@ -12,7 +12,7 @@ const About = () => {
 		<div className="about" id="about">
 			<Title title={"about me"} />
 			<div className="about_description">
-				<div className="texts">
+				<div className="texts" style={{backgroundColor:color.dimmed,borderColor:color.main}}>
 					<div className="past">
 						Hello, my name is Sandeep Morya. I{" "}
 						<Highlight>live in Ludhiana, Punjab</Highlight>. I enjoy creating
