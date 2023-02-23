@@ -23,7 +23,9 @@ const teach_list = [
 const ProjectDesc = (props: Props) => {
 	const { color } = useContext(ThemeContext);
 	return (
-		<div className="project_desc">
+		<div
+			className="project_desc"
+			style={{ backgroundColor: color.dimmed, borderColor: color.main }}>
 			<h1 style={{ color: color.main }}>{props.project_data.title}</h1>
 			<div className="desc_body">{props.project_data.desc_body}</div>
 			<div className="desc_features">
@@ -35,7 +37,7 @@ const ProjectDesc = (props: Props) => {
 				</ul>
 			</div>
 			<div className="desc_tech">
-				<h3>Technology Stack</h3>
+				<h3 style={{ color: color.main }}>Technology Stack</h3>
 				<ul>
 					{props.project_data.tech_stack.map((e) => {
 						return <li key={e.toString()}>{teach_list[Number(e)]}</li>;
