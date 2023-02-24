@@ -89,6 +89,7 @@ textarea {
 @media screen and (max-width: 32rem) {
 	.contact {
 		padding: 1rem;
+		padding-top: 7rem;
 	}
 	.contact h1 {
 		margin: 2rem 0;

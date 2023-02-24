@@ -58,12 +58,12 @@
 		line-height: 4rem;
 	}
 	.content_intro > :nth-child(1) {
-		font-size: 1.5rem;
-
+		font-size: 2rem;
 	}
 	.content_intro > :nth-child(2) {
-		font-size: 3rem;
-		margin-bottom: 2rem;
+		font-size: 4rem;
+		margin-bottom: 1rem;
+		line-height: 5rem;
 	}
 	.content_intro > :nth-child(3) {
 		font-size: 3rem;
