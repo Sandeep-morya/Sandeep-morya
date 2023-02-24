@@ -3,10 +3,10 @@ import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { colorPalettes } from "../Provider/ThemeContextProvider";
 import { MdClose, MdMenu } from "react-icons/md";
-type Props = {};
+
 import "../Styles/mobnav.css";
 
-const MobNav = (props: Props) => {
+const MobNav = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
 	return (
@@ -14,14 +14,7 @@ const MobNav = (props: Props) => {
 			className="mobnav"
 			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<div className="mobnav_top">
-				<div
-					className="nav_logo"
-					style={{
-						backgroundColor: color.main,
-						borderRadius: "50%",
-					}}>
-					<img style={{ outlineColor: color.main }} src="/vector.png" alt="" />
-				</div>
+				<Avatar />
 				{hidden ? (
 					<MdMenu size={40} onClick={() => setHidden(!hidden)} />
 				) : (
