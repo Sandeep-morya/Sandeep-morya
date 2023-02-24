@@ -1,19 +1,3 @@
-github profile markdown generator logo
-GitHub Profile README Generator
-Star this repo
-14610
-Fork on GitHub
-3915
-
-back to edit
-
-copy-markdown
-
-download markdown
-
-download backup
-
-preview
 <h1 align="center">Hi 👋, I'm Sandeep Morya</h1>
 <h3 align="center">A Passionate Full Stack Developer from India</h3>
 
