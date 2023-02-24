@@ -5,14 +5,13 @@
 	gap: 1rem;
 	border: 1px solid;
 	padding: 1rem;
-	border-radius: .3rem;
+	border-radius: 0.3rem;
 }
 
 .desc_body {
-    color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.8);
 	letter-spacing: 1px;
 	line-height: 1.2rem;
-
 }
 .desc_features {
 	margin-top: 1rem;
@@ -29,9 +28,27 @@
 	letter-spacing: 1px;
 }
 
-.project_desc li{
-    list-style-position: inside;
-    list-style-type:"📃 ";
-    color: rgba(255, 255, 255, 0.8);
+.project_desc li {
+	list-style-position: inside;
+	list-style-type: "📃 ";
+	color: rgba(255, 255, 255, 0.8);
 	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 32rem) {
+	.project_desc {
+		width: 100%;
+	}
+	.desc_features {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		letter-spacing: 1px;
+		line-height: 2rem;
+	}
+	.desc_tech {
+		line-height: 2rem;
+	}
+
 }

@@ -85,3 +85,35 @@ textarea {
 .contact_details img:hover {
 	scale: 1;
 }
+
+@media screen and (max-width: 32rem) {
+	.contact {
+		padding: 1rem;
+	}
+	.contact h1 {
+		margin: 2rem 0;
+		text-align: center;
+	}
+
+	.contact_body {
+		width: 100%;
+		grid-template-columns: 1fr;
+		border: none;
+		box-shadow: none !important;
+		gap: 4rem;
+	}
+	.contact_form input,
+	textarea {
+		padding: 1.1rem;
+		width: 100%;
+	}
+	.contact_form *:focus {
+		outline-width: 0.15rem;
+	}
+	.contact_details {
+		width: 100%;
+		gap: 3rem;
+		border-radius: 0.3rem;
+		padding: 3rem 0;
+	}
+}

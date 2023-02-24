@@ -1,21 +1,51 @@
 ﻿.projects {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	width: 100%;
 	padding: 7rem;
 }
-.project{
+.project {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	margin: 4rem 0;
 	width: 100%;
 }
-.project_left{
+.project_left {
 	width: 70%;
 }
-.project_btns{
+.project_btns {
 	display: flex;
 	margin: 2rem 0;
 	gap: 2rem;
+}
+
+@media screen and (max-width: 32rem) {
+	.projects {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 7rem 1rem;
+	}
+	.project {
+		display: flex;
+		flex-direction: column;
+		margin: 4rem 0;
+		width: 100%;
+		gap: 4rem;
+	}
+
+	.one,.three{
+    flex-direction: column-reverse;
+	}
+
+	.project_left {
+		width: 100%;
+	}
+	.project_btns {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0;
+		gap: 2rem;
+	}
 }

@@ -18,7 +18,6 @@
 	gap: 9rem;
 	padding: 4rem 0;
 	align-items: flex-start;
-
 }
 
 .texts {
@@ -31,7 +30,7 @@
 	gap: 2rem;
 	border-radius: 0.5rem;
 	backdrop-filter: blur(10px);
-    border: 1px solid;
+	border: 1px solid;
 }
 .texts * {
 	letter-spacing: 1px;
@@ -79,4 +78,57 @@
 .profile_pic > img:hover + div {
 	top: 1rem;
 	left: 1rem;
+}
+
+@media screen and (max-width: 32rem) {
+	.about {
+		padding:7rem 1rem;
+	}
+	/* .about_heading::before{
+    width: 10rem;
+    height: 1px;
+    content: '';
+    background-color: rgba(244, 191, 0,1);
+} */
+
+	.about_description {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 2rem;
+	}
+
+	.texts {
+		color: rgba(255, 255, 255, 0.8);
+		flex: 1;
+		font-size: 1.05rem;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.profile {
+		width: 100%;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+		filter: drop-shadow(0 0 10px black);
+	}
+
+	.profile_pic {
+		width: 18rem;
+		height: 18rem;
+	}
+	.profile_pic > div {
+		border-style: dashed;
+		top: -1rem;
+		left: 1rem;
+	}
+
+	.profile_pic > img:hover + div {
+		top: -1rem;
+		left: 1rem;
+	}
 }

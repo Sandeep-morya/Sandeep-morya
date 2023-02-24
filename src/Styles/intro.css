@@ -48,3 +48,27 @@
 	padding-top: 2rem;
 	filter: drop-shadow(0 0 10px black);
 }
+
+@media screen and (max-width: 32rem) {
+	.intro {
+		padding: 8rem 1rem;
+		background-image: url("/dark-wallpaper.png");
+	}
+	.content_intro {
+		line-height: 4rem;
+	}
+	.content_intro > :nth-child(1) {
+		font-size: 1.5rem;
+
+	}
+	.content_intro > :nth-child(2) {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.content_intro > :nth-child(3) {
+		font-size: 3rem;
+	}
+	.intro_desc {
+		width: 100%;
+	}
+}
