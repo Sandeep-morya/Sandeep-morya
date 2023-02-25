@@ -98,8 +98,8 @@
 	filter: drop-shadow(0 0 10px black);
 }
 
-.back{
-	background-image: url(https://picsum.photos/400/500/?blur)
+.back {
+	background-image: url(https://picsum.photos/400/500/?blur);
 }
 
 .back .inner {
@@ -120,6 +120,12 @@
 }
 .back .inner > div :first-child {
 	filter: drop-shadow(0 0 5px black);
+}
+
+@media screen and (max-width: 32rem) {
+	.back .inner > div :last-child {
+		font-size: 1.4rem;
+	}
 }
 
 /* https://codepen.io/nicolaspavlotsky/pen/wqGgLO?editors=1100 */
