@@ -9,7 +9,6 @@ const App = () => {
 	/* To hide the Loader  */
 	const [hidden, setHidden] = useState(false);
 
-
 	useEffect(() => {
 		setTimeout(() => {
 			setHidden(true);
