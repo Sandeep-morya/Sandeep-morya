@@ -23,21 +23,18 @@ export const colorPalettes = {
 		dimmed: "rgba(230, 0, 255,0.1)",
 	},
 };
-
+interface ThemeContextType  {
+    color: {
+        main: string;
+        dimmed: string;
+    };
+    setColor: React.Dispatch<React.SetStateAction<{
+        main: string;
+        dimmed: string;
+    }>>;
+}
 /* Context initialized */
-
-let ThemeContext: React.Context<{
-	color: {
-		main: string;
-		dimmed: string;
-	};
-	setColor: React.Dispatch<
-		React.SetStateAction<{
-			main: string;
-			dimmed: string;
-		}>
-	>;
-}>;
+const ThemeContext = React.createContext({} as ThemeContextType);
 
 /* Getting Inital value from localStorage */
 const initialValue:{
@@ -54,11 +51,9 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 		setColor,
 	};
 
-	ThemeContext = React.createContext(theme);
 
 	React.useEffect(() => {
 		localStorage.setItem("theme", JSON.stringify(color));
-		window.scrollTo(0, 0);
 	}, [color]);
 
 	return (

@@ -15,12 +15,9 @@ const Button = ({ title, Icon, url }: Props) => {
 		<div
 			className="global_button"
 			style={{
-				backgroundColor: isHover ? color.main : color.dimmed,
+				backgroundColor:  color.dimmed,
 				color: isHover ? "rgba(255, 255, 255, 1)" : color.main,
-				borderColor: color.main,
-				boxShadow: `0 0 10px 5px ${
-					isHover ? color.dimmed : "rgba(0, 0, 0, 0.1)"
-				}`,
+				borderColor: color.main
 			}}
 			onMouseEnter={() => setIsHover(true)}
 			onMouseLeave={() => setIsHover(false)}

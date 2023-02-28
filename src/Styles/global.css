@@ -59,11 +59,15 @@ a:hover {
 	gap: 1rem;
 	font-size: 1rem;
 	cursor: pointer;
+	scale: 1;
 	transition: all 0.3s;
 }
 .global_button :first-child {
 	filter: drop-shadow(0 0 5px black);
 	font-size: 1rem;
+}
+.global_button:hover{
+scale: 1.05;
 }
 
 body::-webkit-scrollbar {
