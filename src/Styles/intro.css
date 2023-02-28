@@ -50,7 +50,7 @@
 	filter: drop-shadow(0 0 10px black);
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.intro {
 		padding: 8rem 1rem;
 	}

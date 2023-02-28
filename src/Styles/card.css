@@ -123,7 +123,7 @@
 	filter: drop-shadow(0 0 5px black);
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.back .inner > div :last-child {
 		font-size: 1.4rem;
 	}

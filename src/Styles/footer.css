@@ -28,7 +28,7 @@
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.footer_top {
 		gap: 2rem;
 		grid-template-columns: 1fr;

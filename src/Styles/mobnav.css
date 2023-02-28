@@ -1,8 +1,7 @@
-﻿.mobnav{
+﻿.mobnav {
 	display: none;
 }
-@media screen and (max-width: 32rem) {
-
+@media screen and (max-width: 40rem) {
 	.mobnav {
 		display: flex;
 		width: 100vw;
@@ -16,13 +15,13 @@
 		z-index: 3;
 		backdrop-filter: brightness(60%) blur(10px);
 	}
-	.nav_logo{
+	.nav_logo {
 		width: auto;
 		height: 3rem;
 		overflow: hidden;
 		filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.83));
 	}
-	.nav_logo img{
+	.nav_logo img {
 		width: 100%;
 		height: 100%;
 	}
@@ -33,9 +32,8 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 1rem;
-
 	}
-	.mobnav_top :nth-child(2){
+	.mobnav_top :nth-child(2) {
 		filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.83));
 	}
 	.mobnav_bottom {
@@ -49,7 +47,6 @@
 		height: auto;
 		transition: all 0.2s linear;
 		overflow: hidden;
-
 	}
 	.mobnav_bottom a {
 		width: 100%;

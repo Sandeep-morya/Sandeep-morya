@@ -80,9 +80,9 @@
 	left: 1rem;
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.about {
-		padding:7rem 1rem;
+		padding: 7rem 1rem;
 	}
 	/* .about_heading::before{
     width: 10rem;

@@ -35,7 +35,7 @@
 	letter-spacing: 1px;
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.project_desc {
 		width: 100%;
 	}
@@ -50,5 +50,4 @@
 	.desc_tech {
 		line-height: 2rem;
 	}
-
 }

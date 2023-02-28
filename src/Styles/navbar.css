@@ -40,8 +40,8 @@
 	border-radius: 50%;
 }
 
-@media screen and (max-width: 32rem) {
-	.navbar{
+@media screen and (max-width: 40rem) {
+	.navbar {
 		display: none;
 	}
 }

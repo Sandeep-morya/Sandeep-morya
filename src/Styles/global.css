@@ -80,14 +80,13 @@ body::-webkit-scrollbar {
 .themeIcon > * {
 	font-size: 1.5rem;
 }
-
-/* .colors {
+.colors {
 	color: #0099ff;
 	color: rgb(65, 209, 3);
 	color: rgb(255, 0, 89);
 	color: rgb(244, 191, 0);
-	color: rgb(230, 0, 255);
-} */
+	color: rgb(183, 0, 255);
+} 
 
 .seven h1 {
 	text-align: center;

@@ -18,9 +18,13 @@ export const colorPalettes = {
 		main: "rgb(255, 0, 89)",
 		dimmed: "rgba(255, 0, 89,0.1)",
 	},
+	orange_fish: {
+		main: "rgb(255, 94, 0)",
+		dimmed: "rgba(255, 94, 0,0.1)",
+	},
 	purple_witch: {
-		main: "rgb(230, 0, 255)",
-		dimmed: "rgba(230, 0, 255,0.1)",
+		main: "rgb(183, 0, 255)",
+		dimmed: "rgba(183, 0, 255,0.1)",
 	},
 };
 interface ThemeContextType  {

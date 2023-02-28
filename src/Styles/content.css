@@ -18,7 +18,7 @@
 	}
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
 	.content {
 		margin: 0;
 		border: none;

@@ -48,6 +48,10 @@ const Navbar = () => {
 						hidden={color.main === colorPalettes.purple_witch.main}
 						style={{ backgroundColor: colorPalettes.purple_witch.main }}
 						onClick={() => setColor(colorPalettes.purple_witch)}></div>
+					<div
+						hidden={color.main === colorPalettes.orange_fish.main}
+						style={{ backgroundColor: colorPalettes.orange_fish.main }}
+						onClick={() => setColor(colorPalettes.orange_fish)}></div>
 				</div>
 			</div>
 		</div>
