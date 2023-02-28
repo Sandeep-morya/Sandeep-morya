@@ -1,10 +1,11 @@
 ﻿.intro {
 	width: 100%;
+	height: 90vh;
 	padding: 10rem 7rem;
 	display: flex;
 	flex-direction: column;
 	background-image: url("/dark-wallpaper.png");
-	background-size: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 	position: relative;
 }
@@ -52,7 +53,6 @@
 @media screen and (max-width: 32rem) {
 	.intro {
 		padding: 8rem 1rem;
-		background-image: url("/dark-wallpaper.png");
 	}
 	.content_intro {
 		line-height: 4rem;

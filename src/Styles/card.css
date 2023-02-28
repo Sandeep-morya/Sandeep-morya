@@ -21,6 +21,7 @@
 	color: inherit;
 	font-size: 1.5rem;
 	backface-visibility: hidden;
+	aspect-ratio: 30/33;
 }
 .back::after,
 .front:after {

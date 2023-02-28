@@ -1,6 +1,23 @@
 ﻿.content {
-    display: flex;
-    flex-direction: column;
+	padding: 0 15rem;
+	display: flex;
+	flex-direction: column;
 }
 
+@media screen and (max-width: 88rem) {
+	.content {
+		padding: 0;
+	}
+}
 
+@media screen and (max-width: 48rem) {
+	.content {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 32rem) {
+	.content {
+		padding: 0;
+	}
+}
