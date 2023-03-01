@@ -43,7 +43,7 @@ textarea {
 }
 .contact_form *:focus {
 	outline-width: 0.1rem;
-	outline-style: solid;
+	outline-style: dashed;
 }
 .contact_details {
 	display: flex;

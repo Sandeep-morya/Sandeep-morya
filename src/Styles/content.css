@@ -1,26 +1,31 @@
-﻿.content {
+﻿/* Desktop */
+.content {
+
 	margin: 0 15rem;
 	display: flex;
 	flex-direction: column;
 }
-
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+	.content {
+		margin: 0 5rem;
+	}
+}
+/* HD Laptops  */
 @media screen and (max-width: 88rem) {
 	.content {
 		margin: 0;
-		border: none;
 	}
 }
-
-@media screen and (max-width: 48rem) {
+/* Tablets */
+@media screen and (max-width: 64rem) {
 	.content {
 		margin: 0;
-		border: none;
 	}
 }
-
+/* Mobiles */
 @media screen and (max-width: 40rem) {
 	.content {
 		margin: 0;
-		border: none;
 	}
 }
