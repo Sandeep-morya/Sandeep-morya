@@ -1,14 +1,14 @@
- /* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:"ABeeZee",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "ABeeZee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-shadow: 0 0 0.5rem rgb(0, 0, 0);
 }
 
@@ -66,8 +66,8 @@ a:hover {
 	filter: drop-shadow(0 0 5px black);
 	font-size: 1rem;
 }
-.global_button:hover{
-scale: 1.05;
+.global_button:hover {
+	scale: 1.05;
 }
 
 body::-webkit-scrollbar {
@@ -75,6 +75,18 @@ body::-webkit-scrollbar {
 }
 *::selection {
 	background-color: rgba(255, 255, 255, 0.1);
+}
+.cursor {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid inherit;
+	border-radius: 50%;
+	z-index: 5;
+	background-color: white;
+	transition: transform 0.3s;
 }
 
 .themeIcon > * {
@@ -86,7 +98,7 @@ body::-webkit-scrollbar {
 	color: rgb(255, 0, 89);
 	color: rgb(244, 191, 0);
 	color: rgb(183, 0, 255);
-} 
+}
 
 .seven h1 {
 	text-align: center;

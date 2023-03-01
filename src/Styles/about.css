@@ -61,7 +61,7 @@
 	filter: grayscale();
 	transition: all 0.5s;
 	scale: 1.1;
-	filter: drop-shadow(0 0 10px black) brightness(80%);
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8)) brightness(80%);
 }
 .profile_pic > div {
 	width: inherit;
@@ -114,7 +114,6 @@
 		justify-content: center;
 		align-items: center;
 		gap: 4rem;
-		filter: drop-shadow(0 0 10px black);
 	}
 
 	.profile_pic {
