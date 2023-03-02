@@ -7,13 +7,15 @@
 
 <p align="left"> <a href="https://twitter.com/sandeep-morya" target="blank"><img src="https://img.shields.io/twitter/follow/sandeep-morya?logo=twitter&style=for-the-badge" alt="sandeep-morya" /></a> </p>
 
-- 🔭 I’m currently working on [My portfolio website](https://sandeep-morya.vercel.app/)
+- 🦉 My Portfolio [website ](https://sandeep-morya.vercel.app/)
+
+- 🔭 I’m currently working on [An online shopping Website with NextJS & Typescript](https://cloudynest.vercel.app/)
 
 - 🌱 I’m currently learning **Socket.io**
 
 - 👯 I’m looking to collaborate on **Facebook Clone**
 
-- 👨‍💻 All of my projects are available at [https://sandeep-morya.vercel.app/](https://sandeep-morya.vercel.app/)
+- 👨‍💻 All of my projects are available at [My project's Website](https://sandeepmorya.netlify.app/)
 
 - 💬 Ask me about **React, NextJS , Typescript, Express**
 
