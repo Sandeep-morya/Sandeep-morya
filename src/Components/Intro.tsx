@@ -1,24 +1,18 @@
 ﻿import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
+import Clock from "./Clock";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
 	return (
-		<div className="intro">
-			<div className="content_intro">
-				<span>Hi, i am</span>
-				<span style={{ color: color.main }}>Sandeep Morya</span>
-				<span>I build things for the web.</span>
+		<div className="intro" style={{ color: color.main }}>
+			<div className="intro_text">
+				<h1>SANDEEP MORYA</h1>
 			</div>
-			<div className="intro_desc">
-				An engineer or developer who works on both the front end (client-side)
-				and the back end (server-side) of a website or application is called a
-				full-stack developer. They may handle projects involving databases,
-				APIs, or designing user-facing websites, as well as interacting with
-				clients during development.
+			<div>
+				<Clock />
 			</div>
-			<div></div>
 		</div>
 	);
 };

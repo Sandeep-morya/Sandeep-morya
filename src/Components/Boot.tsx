@@ -6,6 +6,7 @@ const Boot = () => {
 	const { color } = useContext(ThemeContext);
 	return (
 		// <!-- SPINNING SQUARES -->
+
 		<div className="boot_shield">
 			<div className="boot_loader">
 				<div className="configure-border-1" style={{ background: color.main }}>
@@ -18,6 +19,7 @@ const Boot = () => {
 					<div className="configure-core"> </div>
 				</div>
 			</div>
+			<h1 style={{ color: color.main }}></h1>
 		</div>
 	);
 };

@@ -12,7 +12,9 @@ const About = () => {
 		<div className="about" id="about">
 			<Title title={"about me"} />
 			<div className="about_description">
-				<div className="texts" style={{backgroundColor:color.dimmed,borderColor:color.main}}>
+				<div
+					className="texts"
+					style={{ backgroundColor: color.dimmed, borderColor: color.main }}>
 					<div className="past">
 						Hello, my name is Sandeep Morya. I{" "}
 						<Highlight>live in Ludhiana, Punjab</Highlight>. I enjoy creating
@@ -45,12 +47,16 @@ const About = () => {
 					</div>
 				</div>
 				<div className="profile">
-					<div className="profile_pic" style={{backgroundColor:color.main}}>
+					<div className="profile_pic" style={{ backgroundColor: color.main }}>
 						<img src="/vector.png" alt="sandeep-morya-profile-pic" />
 						<div style={{ borderColor: color.main }}></div>
 					</div>
 					<div>
-						<Button Icon={MdDownload} title="Download Resume" />
+						<Button
+							url="https://drive.google.com/file/d/1mNoYEkJkJAp56BuRGEvMEl0ZmxdyBPI7/view?usp=share_link"
+							Icon={MdDownload}
+							title="Download Resume"
+						/>
 					</div>
 				</div>
 			</div>

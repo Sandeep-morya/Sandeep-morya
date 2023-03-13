@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext, useState, useEffect } from "react";
 import Boot from "./Components/Boot";
+import Clock from "./Components/Clock";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import MobNav from "./Components/MobNav";
@@ -17,7 +18,6 @@ const App = () => {
 
 	return (
 		<div>
-
 			{!hidden ? (
 				<Boot />
 			) : (
