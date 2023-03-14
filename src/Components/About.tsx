@@ -34,22 +34,22 @@ const About = () => {
 					</div>
 
 					<div className="today">
-						Today, I'm a web developer with great knowledge of{" "}
-						<Highlight>MERN stack</Highlight>, & some frameworks like{" "}
-						<Highlight>React, Next, Express</Highlight>. But still exploring
-						other technologies and frameworks that catch my interest! If you're
-						looking for a web developer to add to your team, I'd love to hear
-						from you!
+						Today, I am a qualified and professional web developer with great
+						knowledge of <Highlight>MERN stack</Highlight>, & some frameworks
+						like <Highlight>React, Next, Express</Highlight>. But still
+						exploring other technologies and frameworks that catch my interest!
+						If you're looking for a web developer to add to your team, I'd love
+						to hear from you!
 						<br />
 						<br /> - I have a good experience in HTML5 & CSS3, JavaScript &{" "}
 						<Highlight>TypeScript</Highlight>, React & Next.js, Express &
 						<Highlight> MongoDB</Highlight>.
-						<br /> - I have created so many fully functional, <Highlight>bugs free websites</Highlight>
+						<br /> - I have created so many fully functional,{" "}
+						<Highlight>bugs free websites</Highlight>
 						with attractive designs.
 						<br />
 						- I like to do my work deeply & sincerely.
-						<br />
-						- I would love to answers all the queries if you have any,
+						<br />- I would love to answers all the queries if you have any,
 						without any hesitation.
 					</div>
 				</div>
@@ -60,7 +60,7 @@ const About = () => {
 					</div>
 					<div>
 						<Button
-							url="https://drive.google.com/file/d/1mNoYEkJkJAp56BuRGEvMEl0ZmxdyBPI7/view?usp=share_link"
+							url="https://drive.google.com/file/d/1ZWoc4PciPTIc9PYDCt0P5oP-cp15h6c1/view?usp=share_link"
 							Icon={MdDownload}
 							title="Download Resume"
 						/>
