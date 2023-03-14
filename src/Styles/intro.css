@@ -260,11 +260,12 @@
 		padding: 3rem 8rem;
 		display: flex;
 		flex-direction: column;
+
 		gap: 0rem;
 		/* background-image: url("/dark-wallpaper.png"); */
 	}
 
-.mouse_scroll {
+	.mouse_scroll {
 		margin-top: 2rem;
 	}
 
@@ -300,9 +301,9 @@
 /* Mobiles */
 @media screen and (max-width: 40rem) {
 	.intro {
-		height: 100vh;
 		padding: 6rem 1rem;
-		gap: 1rem;
+		gap: 0.5rem;
+		align-items: center;
 		/* background-image: url("/dark-wallpaper.png"); */
 	}
 	.mouse_scroll {
