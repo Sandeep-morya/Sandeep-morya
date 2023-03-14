@@ -1,7 +1,7 @@
 ﻿.intro {
 	width: 100%;
 	height: 90vh;
-	padding: 7rem;
+	padding: 7rem ;
 	display: flex;
 	flex-direction: column;
 	gap: 5rem;
@@ -34,7 +34,7 @@
 	color: inherit;
 	font-size: 10rem;
 	text-transform: uppercase;
-	letter-spacing: 1.5rem;
+	letter-spacing: 4.5rem;
 }
 .part_three {
 	flex: 1;
@@ -270,12 +270,11 @@
 
 	.part_one {
 		font-size: 9rem;
-		letter-spacing: 0.5rem;
+		letter-spacing: 1.5rem;
 	}
 	.part_two {
 		font-size: 9rem;
-		letter-spacing: 0.5rem;
-		letter-spacing: 1.5rem;
+		letter-spacing: 4rem;
 	}
 	.part_three {
 		font-size: 2rem;
@@ -291,12 +290,12 @@
 		display: flex;
 		flex-direction: column;
 
-		gap: 0rem;
+		gap: 0.5rem;
 		/* background-image: url("/dark-wallpaper.png"); */
 	}
 
 	.mouse_scroll {
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	.part_one {
@@ -305,8 +304,7 @@
 	}
 	.part_two {
 		font-size: 9rem;
-		letter-spacing: 0.5rem;
-		letter-spacing: 1.5rem;
+		letter-spacing: 2.7rem;
 	}
 	.part_three {
 		font-size: 2rem;
@@ -331,7 +329,7 @@
 /* Mobiles */
 @media screen and (max-width: 40rem) {
 	.intro {
-		padding: 6rem 1rem;
+		padding: 6rem 0rem;
 		gap: 0.5rem;
 		align-items: center;
 		/* background-image: url("/dark-wallpaper.png"); */
@@ -350,7 +348,6 @@
 	}
 	.part_two {
 		font-size: 5rem;
-		letter-spacing: 0.5rem;
 		letter-spacing: 1.5rem;
 	}
 	.part_three {
