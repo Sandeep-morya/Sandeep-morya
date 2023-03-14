@@ -4,8 +4,8 @@
 }
 
 .clock {
-	height: 20em;
-	width: 20em;
+	height: 20rem;
+	width: 20rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -72,4 +72,12 @@
 	width: 2px;
 	background-color: #f00;
 	border-radius: 2px;
+}
+
+
+@media screen and (max-width: 40rem) {
+	.clock {
+	height: 17rem;
+	width: 17rem;
+	}
 }

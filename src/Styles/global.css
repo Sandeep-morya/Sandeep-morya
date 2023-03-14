@@ -3,7 +3,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap'); */
+
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"); */
+@font-face {
+	font-family: "Coco";
+	src: url(/fonts/Mozaik.otf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,6 +18,9 @@
 	font-family: "ABeeZee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-shadow: 0 0 0.5rem rgb(0, 0, 0);
 }
+/* *{
+	cursor: none !important;
+} */
 
 html {
 	scroll-behavior: smooth !important;
@@ -80,12 +90,11 @@ body::-webkit-scrollbar {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 10px;
-	height: 10px;
-	border: 1px solid inherit;
+	width: 1rem;
+	height: 1rem;;
+	border: 1px solid #181818;
 	border-radius: 50%;
 	z-index: 5;
-	background-color: white;
 	transition: transform 0.3s;
 }
 
@@ -106,7 +115,6 @@ body::-webkit-scrollbar {
 	font-size: 24px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-
 	display: grid;
 	grid-template-columns: 1fr max-content 8fr;
 	gap: 1rem;

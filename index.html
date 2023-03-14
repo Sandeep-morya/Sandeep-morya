@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/logo-min.png" />
+		<link rel="icon" type="image/svg+xml" href="/fav.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#4285f4" />
 		<meta
@@ -14,18 +14,5 @@
 		<div id="root"></div>
 		<script type="module" src="/src/main.tsx"></script>
 	</body>
-	<script>
-		const root = document.querySelector("html");
 
-		// Following  cursor element
-		const follower = document.createElement("div");
-		follower.classList.add("cursor", "follower");
-		root?.appendChild(follower);
-
-		root?.addEventListener("mousemove", (e) => {
-			follower.style.transform = `translate3d(${e.pageX}px, ${
-				e.pageY + 5
-			}px, 0)`;
-		});
-	</script>
 </html>
