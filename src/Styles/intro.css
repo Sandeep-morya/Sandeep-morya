@@ -1,7 +1,7 @@
 ﻿.intro {
 	width: 100%;
 	height: 90vh;
-	padding: 7rem ;
+	padding: 7rem;
 	display: flex;
 	flex-direction: column;
 	gap: 5rem;
@@ -19,7 +19,8 @@
 
 .intro * {
 	z-index: 2;
-	font-family: "coco", "Courier New", Courier, monospace;
+	font-family: "coco", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 }
 .intro_text {
 	height: 100%;
@@ -329,7 +330,7 @@
 /* Mobiles */
 @media screen and (max-width: 40rem) {
 	.intro {
-		padding: 6rem 0rem;
+		padding: 6rem 1rem;
 		gap: 0.5rem;
 		align-items: center;
 		/* background-image: url("/dark-wallpaper.png"); */

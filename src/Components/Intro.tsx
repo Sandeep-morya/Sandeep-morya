@@ -16,7 +16,7 @@ const Intro = () => {
 					<Clock />
 				</div>
 			</div>
-			<h1 className="part_three">A MERN STACK WEB DEVELPOER</h1>
+			<h1 className="part_three">MERN STACK WEB DEVELPOER</h1>
 			<div
 				className="mouse_scroll"
 				onClick={() => {
