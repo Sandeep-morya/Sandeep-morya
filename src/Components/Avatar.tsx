@@ -11,7 +11,8 @@ const Avatar = () => {
 			style={{
 				backgroundColor: color.main,
 				borderRadius: "50%",
-			}}>
+			}}
+			onClick={() => window.scrollTo(0, 0)}>
 			<img style={{ outlineColor: color.main }} src="/vector.png" alt="" />
 		</div>
 	);

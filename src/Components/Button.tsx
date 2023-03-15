@@ -15,13 +15,13 @@ const Button = ({ title, Icon, url }: Props) => {
 		<div
 			className="global_button"
 			style={{
-				backgroundColor:  color.dimmed,
+				backgroundColor: color.dimmed,
 				color: isHover ? "rgba(255, 255, 255, 1)" : color.main,
-				borderColor: color.main
+				borderColor: color.main,
 			}}
 			onMouseEnter={() => setIsHover(true)}
 			onMouseLeave={() => setIsHover(false)}
-			onClick={() => location.assign(url || "/")}>
+			onClick={() => window.open(url, "_blank")}>
 			<Icon />
 			{title}
 		</div>
