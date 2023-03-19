@@ -10,14 +10,13 @@
 .back {
 	background-size: cover;
 	box-shadow: 0 5px 10px 0 rgb(0, 0, 0);
-	border-radius: 10px;
 	background-position: center;
 	transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	text-align: center;
 	width: auto;
 	min-height: 20rem;
 	height: auto;
-	border-radius: 10px;
+	border-radius: 1rem;
 	color: inherit;
 	font-size: 1.5rem;
 	backface-visibility: hidden;
@@ -34,7 +33,7 @@
 	content: "";
 	display: block;
 	background-color: #1a1a19ae;
-	border-radius: 10px;
+	border-radius: 1rem;
 	backdrop-filter: blur(2px);
 }
 .container:hover .front,
@@ -87,14 +86,16 @@
 
 .front .inner div {
 	margin-bottom: 3rem;
+
 	position: relative;
 	filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 1));
 }
 
 .front .inner span {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 1);
 	font-weight: 600;
 	font-size: 2rem;
+
 	text-transform: uppercase;
 	filter: drop-shadow(0 0 10px black);
 }
@@ -111,11 +112,12 @@
 	justify-content: center;
 	gap: 1.2rem;
 	text-align: start !important;
-	color: rgba(255, 255, 255, 0.782) !important;
+	color: rgba(255, 255, 255, 1) !important;
 	text-transform: uppercase;
 }
 .back .inner > div {
 	display: flex;
+	padding-left: 10%;
 	align-items: center;
 	gap: 1rem;
 }

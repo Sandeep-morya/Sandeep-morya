@@ -11,8 +11,8 @@ export const colorPalettes = {
 		dimmed: "rgba(0, 153, 255,0.1)",
 	},
 	green_hacker: {
-		main: "rgb(65, 209, 3)",
-		dimmed: "rgb(65, 209, 3,0.1)",
+		main: "rgb(143, 216, 8)",
+		dimmed: "rgb(143, 216, 8,0.1)",
 	},
 	pink_Queen: {
 		main: "rgb(255, 0, 89)",
@@ -23,8 +23,8 @@ export const colorPalettes = {
 		dimmed: "rgba(255, 94, 0,0.1)",
 	},
 	purple_witch: {
-		main: "rgb(183, 0, 255)",
-		dimmed: "rgba(183, 0, 255,0.1)",
+		main: "rgb(163, 57, 250)",
+		dimmed: "rgba(163, 57, 250,0.1)",
 	},
 };
 interface ThemeContextType  {

@@ -9,7 +9,7 @@
 }
 
 .desc_body {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 	letter-spacing: 1px;
 	line-height: 1.2rem;
 }
@@ -31,7 +31,7 @@
 .project_desc li {
 	list-style-position: inside;
 	list-style-type: "📃 ";
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 	letter-spacing: 1px;
 }
 

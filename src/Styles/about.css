@@ -21,9 +21,9 @@
 }
 
 .texts {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 	flex: 1;
-	font-size: 1.05rem;
+	font-size: 1rem;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -66,8 +66,8 @@
 .profile_pic > div {
 	width: inherit;
 	height: inherit;
-	border-width: 0.1rem;
-	border-style: dashed;
+	border-width: 0.15rem;
+	border-style:dashed;
 	position: absolute;
 	top: 1rem;
 	left: 1rem;
@@ -75,10 +75,9 @@
 	transition: all 0.5s;
 }
 
-.profile_pic > img:hover + div {
-	top: -1rem;
-	left: -1rem;
-}
+/* .profile_pic > img:hover + div {
+	border-style: solid;
+} */
 
 @media screen and (max-width: 40rem) {
 	.about {
@@ -99,7 +98,7 @@
 	}
 
 	.texts {
-		color: rgba(255, 255, 255, 0.8);
+		color: rgba(255, 255, 255, 1);
 		flex: 1;
 		font-size: 1.05rem;
 		padding: 1rem;

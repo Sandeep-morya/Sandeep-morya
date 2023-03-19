@@ -5,6 +5,7 @@ import Highlight from "./Highlight";
 import Title from "./Title";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { GiStarShuriken } from "react-icons/gi";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
@@ -18,15 +19,8 @@ const About = () => {
 					<div className="past">
 						Hello, my name is Sandeep Morya.I{" "}
 						<Highlight>live in Ludhiana, Punjab</Highlight>.I build things for
-						the WEB. I enjoy creating things that live on the internet. My
-						interest in web development started back in{" "}
-						<Highlight>2015</Highlight>, when i was in intermidiate with
-						commerce as my stream. Later, i decided to get knowldege about web
-						develomment. So, I thought to complete my graduations in{" "}
-						<Highlight>Computer Science</Highlight>.
-					</div>
-					<div className="studies">
-						I have completed my graduations in Bachelor of Computer Applications{" "}
+						the WEB. I enjoy creating things that live on the internet. I have
+						completed my graduations in Bachelor of Computer Applications{" "}
 						<Highlight>{"(BCA)"}</Highlight> from{" "}
 						<Highlight>Integral University</Highlight> Lucknow. But as we know
 						degree in not sufficient, so i joined an Masai School for learning
@@ -41,22 +35,22 @@ const About = () => {
 						If you're looking for a web developer to add to your team, I'd love
 						to hear from you!
 						<br />
-						<br /> - I have a good experience in HTML5 & CSS3, JavaScript &{" "}
-						<Highlight>TypeScript</Highlight>, React & Next.js, Express &
-						<Highlight> MongoDB</Highlight>.
-						<br /> - I have created so many fully functional,{" "}
-						<Highlight>bugs free websites</Highlight>
+						<br /> <GiStarShuriken color={color.main} /> I have a good experience in HTML5 & CSS3,
+						JavaScript & <Highlight>TypeScript</Highlight>, React & Next.js,
+						Express &<Highlight> MongoDB</Highlight>.
+						<br /> <GiStarShuriken color={color.main} /> I have created so many fully functional,{" "}
+						<Highlight>bugs free websites </Highlight>
 						with attractive designs.
 						<br />
-						- I like to do my work deeply & sincerely.
-						<br />- I would love to answers all the queries if you have any,
-						without any hesitation.
+						<GiStarShuriken color={color.main} /> I like to do my work deeply & sincerely.
+						<br /> <GiStarShuriken color={color.main} /> I would love to answers all the queries if
+						you have any, without any hesitation.
 					</div>
 				</div>
 				<div className="profile">
 					<div className="profile_pic" style={{ backgroundColor: color.main }}>
 						<img src="/vector.png" alt="sandeep-morya-profile-pic" />
-						<div style={{ borderColor: color.main }}></div>
+						<div style={{ borderColor: color.main, backgroundColor:color.dimmed }}></div>
 					</div>
 					<div>
 						<Button

@@ -9,8 +9,8 @@ const Intro = () => {
 		<div className="intro" style={{ color: color.main }}>
 			<div className="big">
 				<div className="intro_text">
-					<h1 className="part_one">Sandeep</h1>
-					<h1 className="part_two">Morya</h1>
+					<h1 className="part_one">SANDEEP</h1>
+					<h1 className="part_two">MORYA</h1>
 				</div>
 				<div>
 					<Clock />

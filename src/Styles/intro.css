@@ -28,13 +28,11 @@
 .part_one {
 	font-size: 10rem;
 	letter-spacing: 1.5rem;
-	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.9);
 }
 .part_two {
 	color: inherit;
 	font-size: 10rem;
-	text-transform: uppercase;
 	letter-spacing: 4.5rem;
 }
 .part_three {

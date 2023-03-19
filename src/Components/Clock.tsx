@@ -22,13 +22,11 @@ const Clock = () => {
 	};
 
 	// first time
-
-	// Update every 1000 ms
-
 	React.useEffect(() => {
 		setClock();
 	}, []);
 
+	// Update every 1000 ms
 	React.useEffect(() => {
 		const id = setInterval(setClock, 1000);
 		return () => {

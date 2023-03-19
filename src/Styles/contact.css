@@ -20,7 +20,7 @@
 	position: relative;
 }
 .contact_body h2 {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 }
 
 .contact_form {
@@ -43,7 +43,7 @@ textarea {
 }
 .contact_form *:focus {
 	outline-width: 0.1rem;
-	outline-style: dashed;
+	outline-style: solid;
 }
 .contact_details {
 	display: flex;

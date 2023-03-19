@@ -63,7 +63,7 @@ const Skills = () => {
 					techIcons={[SiNodedotjs, SiExpress, SiMongodb, SiSwagger]}
 					techNames={["nodejs", "express", "mongodb", "swagger"]}></Card>
 
-				<Card
+				{/* <Card
 					title={"Optimizing"}
 					Icon={FaCode}
 					techIcons={[SiGit,SiEslint,]}
@@ -78,7 +78,7 @@ const Skills = () => {
 					title={"extra"}
 					Icon={FaTools}
 					techIcons={[SiJquery, SiFigma]}
-					techNames={["jquery", "figma"]}></Card>
+					techNames={["jquery", "figma"]}></Card> */}
 			</div>
 		</div>
 	);

@@ -67,7 +67,6 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	font-size: 1rem;
 	cursor: pointer;
 	scale: 1;
 	transition: all 0.3s;
@@ -103,16 +102,16 @@ body::-webkit-scrollbar {
 }
 .colors {
 	color: #0099ff;
-	color: rgb(65, 209, 3);
+	color: rgb(143, 216, 8);
 	color: rgb(255, 0, 89);
 	color: rgb(244, 191, 0);
-	color: rgb(183, 0, 255);
+	color: rgb(163, 57, 250);
 }
 
 .seven h1 {
 	text-align: center;
 	color: inherit;
-	font-size: 24px;
+	font-size: 2rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: grid;
@@ -132,7 +131,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 32rem) {
 	.seven h1 {
-		font-size: 30px;
+		font-size: 2rem;
 		grid-template-columns: 1fr max-content 1fr;
 	}
 }
