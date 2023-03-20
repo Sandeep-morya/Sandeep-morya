@@ -7,9 +7,11 @@ import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
+import useVisit from "../hooks/useVisit";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
+	const visit = useVisit();
 	return (
 		<div className="about" id="about">
 			<Title title={"about me"} />
@@ -65,7 +67,15 @@ const About = () => {
 							Icon={MdDownload}
 							title="Download Resume"
 						/> */}
-						<Button size="lg" leftIcon={<MdDownload />} colorScheme={color}>
+						<Button
+							onClick={() =>
+								visit(
+									"https://drive.google.com/file/d/1ZWoc4PciPTIc9PYDCt0P5oP-cp15h6c1/view?usp=share_link",
+								)
+							}
+							size="lg"
+							leftIcon={<MdDownload />}
+							colorScheme={color.main}>
 							Download Resume
 						</Button>
 					</div>

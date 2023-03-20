@@ -16,7 +16,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "ABeeZee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	text-shadow: 0 0 0.5rem rgb(0, 0, 0);
+	text-shadow: 0 0 0.5rem rgb(0, 0, 0,0.7);
 }
 /* *{
 	cursor: none !important;

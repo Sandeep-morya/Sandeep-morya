@@ -1,19 +1,21 @@
-﻿import React, { useState, useRef } from "react";
+﻿import React, { useState, useRef, CSSProperties } from "react";
 import { IconType } from "react-icons/lib/esm/iconBase";
 import "../Styles/bubble_button.css";
 type Props = {
 	children: React.ReactNode;
-	colorScheme: { main: string; dimmed?: string };
+	colorScheme: string
 	leftIcon?: React.ReactNode;
 	onClick?: () => void;
 	size?: "sm" | "lg" |"md" | "xl"
+	style?:CSSProperties
 };
 
-const BubbleButton = ({
+const Button = ({
 	children,
 	colorScheme,
 	leftIcon,
 	size,
+	style,
 	onClick = () => false,
 }: Props) => {
 	const [isHover, setIsHover] = useState(false);
@@ -39,9 +41,9 @@ const BubbleButton = ({
 				animateButton();
 			}}
 			style={{
-				backgroundColor: colorScheme.main,
+				backgroundColor: colorScheme,
 				boxShadow: `0 0 1rem 0px ${
-					isHover ? colorScheme.main : colorScheme.dimmed || "rgba(0,0,0,0.5)"
+					isHover ? colorScheme : "rgba(0,0,0,0.5)"
 				}`,
 				padding:
 					size == "sm"
@@ -51,11 +53,13 @@ const BubbleButton = ({
 						: size == "xl"
 						? "1rem 2rem"
 						: "0.5rem 1rem",
+				...style
+
 			}}>
 			<div
 				className="bubbly-button_before"
 				style={{
-					backgroundImage: `radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, transparent 20%, ${colorScheme.main} 20%, transparent 30%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, transparent 10%, ${colorScheme.main} 15%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%)`,
+					backgroundImage: `radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, transparent 20%, ${colorScheme} 20%, transparent 30%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, transparent 10%, ${colorScheme} 15%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%)`,
 				}}></div>
 			<div className="button_text">
 				<div className="button_left_icon">{leftIcon}</div>
@@ -65,10 +69,10 @@ const BubbleButton = ({
 			<div
 				className="bubbly-button_after"
 				style={{
-					backgroundImage: `radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, transparent 10%, ${colorScheme.main} 15%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%), radial-gradient(circle, ${colorScheme.main} 20%, transparent 20%)`,
+					backgroundImage: `radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, transparent 10%, ${colorScheme} 15%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%), radial-gradient(circle, ${colorScheme} 20%, transparent 20%)`,
 				}}></div>
 		</div>
 	);
 };
 
-export default BubbleButton;
+export default Button;
