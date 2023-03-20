@@ -3,7 +3,7 @@ import Button from "./BubbleButton";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
 import Title from "./Title";
-import { FaLink, FaGitAlt } from "react-icons/fa";
+import { FaLink, FaGitAlt, FaAngleDoubleRight } from "react-icons/fa";
 import Highlight from "./Highlight";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
@@ -134,6 +134,16 @@ const Projects = () => {
 				</div>
 				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
+
+
+				<h1
+					onClick={() => visit("https://sandeepmorya.netlify.app/")}
+					className="more_link"
+					>
+					<FaAngleDoubleRight />
+					More
+				</h1>
+
 		</div>
 	);
 };
