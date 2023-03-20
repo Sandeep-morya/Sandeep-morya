@@ -12,8 +12,8 @@
 		dimmed: "rgb(143, 216, 8,0.1)",
 	},
 	pink_Queen: {
-		main: "rgb(255, 0, 89)",
-		dimmed: "rgba(255, 0, 89,0.1)",
+		main: "rgb(238, 10, 181)",
+		dimmed: "rgba(238, 10, 181,0.1)",
 	},
 	orange_fish: {
 		main: "rgb(255, 94, 0)",
@@ -40,8 +40,8 @@ export const colorsArray = [
 		dimmed: "rgb(143, 216, 8,0.1)",
 	},
 	{
-		main: "rgb(255, 0, 89)",
-		dimmed: "rgba(255, 0, 89,0.1)",
+		main: "rgb(238, 10, 181)",
+		dimmed: "rgba(238, 10, 181,0.1)",
 	},
 	{
 		main: "rgb(255, 94, 0)",
