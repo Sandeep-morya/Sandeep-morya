@@ -1,11 +1,12 @@
 ﻿import { MdDownload } from "react-icons/md";
 import "../Styles/about.css";
-import Button from "./Button";
+// import Button from "./Button";
 import Highlight from "./Highlight";
 import Title from "./Title";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
+import Button from "./BubbleButton";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
@@ -35,29 +36,38 @@ const About = () => {
 						If you're looking for a web developer to add to your team, I'd love
 						to hear from you!
 						<br />
-						<br /> <GiStarShuriken color={color.main} /> I have a good experience in HTML5 & CSS3,
-						JavaScript & <Highlight>TypeScript</Highlight>, React & Next.js,
-						Express &<Highlight> MongoDB</Highlight>.
-						<br /> <GiStarShuriken color={color.main} /> I have created so many fully functional,{" "}
-						<Highlight>bugs free websites </Highlight>
+						<br /> <GiStarShuriken color={color.main} /> I have a good
+						experience in HTML5 & CSS3, JavaScript &{" "}
+						<Highlight>TypeScript</Highlight>, React & Next.js, Express &
+						<Highlight> MongoDB</Highlight>.
+						<br /> <GiStarShuriken color={color.main} /> I have created so many
+						fully functional, <Highlight>bugs free websites </Highlight>
 						with attractive designs.
 						<br />
-						<GiStarShuriken color={color.main} /> I like to do my work deeply & sincerely.
-						<br /> <GiStarShuriken color={color.main} /> I would love to answers all the queries if
-						you have any, without any hesitation.
+						<GiStarShuriken color={color.main} /> I like to do my work deeply &
+						sincerely.
+						<br /> <GiStarShuriken color={color.main} /> I would love to answers
+						all the queries if you have any, without any hesitation.
 					</div>
 				</div>
 				<div className="profile">
 					<div className="profile_pic" style={{ backgroundColor: color.main }}>
 						<img src="/vector.png" alt="sandeep-morya-profile-pic" />
-						<div style={{ borderColor: color.main, backgroundColor:color.dimmed }}></div>
+						<div
+							style={{
+								borderColor: color.main,
+								backgroundColor: color.dimmed,
+							}}></div>
 					</div>
 					<div>
-						<Button
+						{/* <Button
 							url="https://drive.google.com/file/d/1ZWoc4PciPTIc9PYDCt0P5oP-cp15h6c1/view?usp=share_link"
 							Icon={MdDownload}
 							title="Download Resume"
-						/>
+						/> */}
+						<Button size="lg" leftIcon={<MdDownload />} colorScheme={color}>
+							Download Resume
+						</Button>
 					</div>
 				</div>
 			</div>

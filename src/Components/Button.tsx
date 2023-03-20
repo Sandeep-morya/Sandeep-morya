@@ -20,8 +20,7 @@ const Button = ({ title, Icon, url }: Props) => {
 				color: isHover ? "rgba(255, 255, 255, 1)" : color.main,
 				borderColor: color.main,
 			}}
-			onMouseEnter={() => setIsHover(true)}
-			onMouseLeave={() => setIsHover(false)}
+
 			onClick={() => window.open(url, "_blank")}>
 			<Icon />
 			{title}
