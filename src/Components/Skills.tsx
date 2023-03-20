@@ -4,7 +4,7 @@ import Card from "./Card";
 import { MdStyle } from "react-icons/md";
 import { BiTestTube } from "react-icons/bi";
 import { FaDatabase, FaLaptopCode, FaTools, FaCode } from "react-icons/fa";
-import React from 'react'
+import React from "react";
 import {
 	SiChakraui,
 	SiCss3,
@@ -29,12 +29,13 @@ import {
 	SiEslint,
 } from "react-icons/si";
 import HexCard from "./HexCard";
-import colorPalettes from "../Styles/colorPalette";
+import colorPalettes, { randomColor } from "../Styles/colorPalette";
 import { colorsArray } from "../Styles/colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 const Skills = () => {
-const {color} = React.useContext(ThemeContext)
+	const { color } = React.useContext(ThemeContext);
+
 	return (
 		<div className="skills" id="skills">
 			<Title title={"Skills"} />
@@ -53,7 +54,12 @@ const {color} = React.useContext(ThemeContext)
 				/>
 				<HexCard
 					title="FRONTEND"
-					colorScheme={colorPalettes.orange_fish}
+					colorScheme={
+						colorPalettes.orange_fish.main === color.main
+							?{ main: "rgba(255, 255, 255, 1)",
+									dimmed: "rgba(255, 255, 255, 0.1)",}
+							: colorPalettes.orange_fish
+					}
 					Icons={[
 						SiJavascript,
 						SiReact,
@@ -65,7 +71,14 @@ const {color} = React.useContext(ThemeContext)
 				/>
 				<HexCard
 					title="BACKEND"
-					colorScheme={colorPalettes.green_hacker}
+					colorScheme={
+						colorPalettes.green_hacker.main === color.main
+							? {
+									main: "rgba(255, 255, 255, 1)",
+									dimmed: "rgba(255, 255, 255, 0.1)",
+							  }
+							: colorPalettes.green_hacker
+					}
 					Icons={[
 						SiNodedotjs,
 						SiExpress,

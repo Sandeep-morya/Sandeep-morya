@@ -20,8 +20,8 @@
 		dimmed: "rgba(255, 94, 0,0.1)",
 	},
 	purple_witch: {
-		main: "rgb(163, 57, 250)",
-		dimmed: "rgba(163, 57, 250,0.1)",
+		main: "rgb(139, 42, 250)",
+		dimmed: "rgba(139, 42, 250,0.1)",
 	},
 };
 export default colorPalettes;
@@ -48,7 +48,17 @@ export const colorsArray = [
 		dimmed: "rgba(255, 94, 0,0.1)",
 	},
 	{
-		main: "rgb(163, 57, 250)",
-		dimmed: "rgba(163, 57, 250,0.1)",
+		main: "rgb(139, 42, 250)",
+		dimmed: "rgba(139, 42, 250,0.1)",
 	},
 ];
+
+export function randomColor() {
+	const val1 = Math.floor(Math.random() * 256);
+	const val2 = Math.floor(Math.random() * 256);
+	const val3 = Math.floor(Math.random() * 256);
+	return {
+		main: `rgba(${val1},${val2},${val3},1)`,
+		dimmed: `rgba(${val1},${val2},${val3},0.1)`,
+	};
+}
