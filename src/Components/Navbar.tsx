@@ -3,12 +3,11 @@ import "../Styles/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { HiColorSwatch } from "react-icons/hi";
-import { colorPalettes } from "../Provider/ThemeContextProvider";
+import colorPalettes from "../Styles/colorPalette";
 
 const Navbar = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
-	const [hash,setHash] = useState(window.location.hash)
 
 	return (
 		<div

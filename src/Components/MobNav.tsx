@@ -1,7 +1,7 @@
 ﻿import { useContext, useState } from "react";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import { colorPalettes } from "../Provider/ThemeContextProvider";
+import colorPalettes from "../Styles/colorPalette";
 import { MdClose, MdMenu } from "react-icons/md";
 
 import "../Styles/mobnav.css";

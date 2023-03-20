@@ -4,7 +4,7 @@ import Card from "./Card";
 import { MdStyle } from "react-icons/md";
 import { BiTestTube } from "react-icons/bi";
 import { FaDatabase, FaLaptopCode, FaTools, FaCode } from "react-icons/fa";
-
+import React from 'react'
 import {
 	SiChakraui,
 	SiCss3,
@@ -18,7 +18,7 @@ import {
 	SiExpress,
 	SiMongodb,
 	SiSwagger,
-	SiTestinglibrary,
+	SiSocketdotio,
 	SiCypress,
 	SiTypescript,
 	SiJquery,
@@ -28,40 +28,53 @@ import {
 	SiMocha,
 	SiEslint,
 } from "react-icons/si";
+import HexCard from "./HexCard";
+import colorPalettes from "../Styles/colorPalette";
+import { colorsArray } from "../Styles/colorPalette";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 const Skills = () => {
+const {color} = React.useContext(ThemeContext)
 	return (
 		<div className="skills" id="skills">
 			<Title title={"Skills"} />
 			<div className="cards">
-				<Card
-					title={"ui design"}
-					Icon={MdStyle}
-					techIcons={[SiHtml5, SiCss3, SiChakraui, SiMaterialui]}
-					techNames={["HTML5", "CSS3", "Chakra UI", "MUI"]}></Card>
-				<Card
-					title={"frontend"}
-					Icon={FaLaptopCode}
-					techIcons={[
+				<HexCard
+					title="UI DESIGN"
+					colorScheme={color}
+					Icons={[
+						SiHtml5,
+						SiCss3,
+						SiFigma,
+						SiChakraui,
+						SiMaterialui,
+						SiTailwindcss,
+					]}
+				/>
+				<HexCard
+					title="FRONTEND"
+					colorScheme={colorPalettes.orange_fish}
+					Icons={[
 						SiJavascript,
 						SiReact,
-						SiRedux,
-						SiTypescript,
 						SiNextdotjs,
+						SiTypescript,
+						SiJquery,
+						SiRedux,
 					]}
-					techNames={[
-						"javascript",
-						"react",
-						"redux",
-						"typescript",
-						"nextjs",
-					]}></Card>
-
-				<Card
-					title={"backend"}
-					Icon={FaDatabase}
-					techIcons={[SiNodedotjs, SiExpress, SiMongodb, SiSwagger]}
-					techNames={["nodejs", "express", "mongodb", "swagger"]}></Card>
+				/>
+				<HexCard
+					title="BACKEND"
+					colorScheme={colorPalettes.green_hacker}
+					Icons={[
+						SiNodedotjs,
+						SiExpress,
+						SiMongodb,
+						SiSwagger,
+						SiSocketdotio,
+						SiCypress,
+					]}
+				/>
 
 				{/* <Card
 					title={"Optimizing"}
@@ -72,7 +85,7 @@ const Skills = () => {
 				<Card
 					title={"testing"}
 					Icon={BiTestTube}
-					techIcons={[SiCypress, SiMocha, SiTestinglibrary]}
+					techIcons={[SiCypress, SiMocha, SiSocketdotio]}
 					techNames={["cypress", "mocha", "rt library"]}></Card>
 				<Card
 					title={"extra"}

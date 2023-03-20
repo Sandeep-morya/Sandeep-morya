@@ -9,7 +9,7 @@ const Title = ({ title }: Props) => {
 	return (
 		// <div className='heading' style={{color:color.main}}>{title}<div style={{backgroundColor:color.main}}></div></div>
 		<div style={{ color: color.main }} className="seven">
-			<h1>{title}</h1>
+			<h1>{`< ${title} />`}</h1>
 		</div>
 	);
 };

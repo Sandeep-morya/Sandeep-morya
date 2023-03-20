@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	top: 0;
 	width: 1rem;
-	height: 1rem;;
+	height: 1rem;
 	border: 1px solid #181818;
 	border-radius: 50%;
 	z-index: 5;
