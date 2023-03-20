@@ -1,0 +1,129 @@
+﻿.hex_card {
+	position: relative;
+	border: 0.15rem solid;
+	height: 32rem;
+
+	border-radius: 0.3rem;
+}
+.hex_card_top {
+	position: absolute;
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+
+	width: 100%;
+	height: 3rem;
+	box-sizing: content-box;
+	padding: 0 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -5%;
+	border-radius: 0.3rem;
+}
+.hex_skill_title {
+	font-size: 3rem;
+	text-align: center;
+	top: 20%;
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+}
+.hexes {
+	position: absolute;
+	top: 45%;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	gap: 0;
+}
+.hex_pill {
+	position: relative;
+	text-align: center;
+}
+.hex_line {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: -5%;
+}
+
+.hex_icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* background-color: red; */
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+}
+.hex_icon_offset {
+	font-size: 2.5rem;
+}
+
+/* Icons */
+.each_icon {
+	position: relative;
+}
+.icon_1 {
+	position: absolute;
+	font-size: 2rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+		.hex_card {
+		height: 30rem;
+	}
+	.hexes {
+		top: 40%;
+	}
+	.hex_skill_title {
+		font-size: 2.5rem;
+
+		top: 18%;
+	}
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+		.hex_card {
+		height: 30rem;
+	}
+	.hexes {
+		top: 40%;
+	}
+	.hex_skill_title {
+		font-size: 2.5rem;
+
+		top: 18%;
+	}
+}
+/* Tablets */
+@media screen and (max-width: 64rem) {
+		.hex_card {
+		height: 30rem;
+	}
+	.hexes {
+		top: 40%;
+	}
+	.hex_skill_title {
+		font-size: 2.5rem;
+
+		top: 18%;
+	}
+}
+/* Mobiles */
+@media screen and (max-width: 40rem) {
+	.hex_card {
+		height: 30rem;
+	}
+	.hexes {
+		top: 40%;
+	}
+	.hex_skill_title {
+		font-size: 2.5rem;
+
+		top: 18%;
+	}
+}

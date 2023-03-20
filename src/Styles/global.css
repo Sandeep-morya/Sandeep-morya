@@ -16,7 +16,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "ABeeZee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	text-shadow: 0 0 0.5rem rgb(0, 0, 0);
+	text-shadow: 0 0 0.5rem rgb(0, 0, 0,0.7);
 }
 /* *{
 	cursor: none !important;
@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	top: 0;
 	width: 1rem;
-	height: 1rem;;
+	height: 1rem;
 	border: 1px solid #181818;
 	border-radius: 50%;
 	z-index: 5;
@@ -103,9 +103,9 @@ body::-webkit-scrollbar {
 .colors {
 	color: #0099ff;
 	color: rgb(143, 216, 8);
-	color: rgb(255, 0, 89);
+	color: rgb(238, 10, 181);
 	color: rgb(244, 191, 0);
-	color: rgb(163, 57, 250);
+	color: rgb(139, 42, 250);
 }
 
 .seven h1 {

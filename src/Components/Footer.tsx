@@ -28,6 +28,7 @@ const Footer = () => {
 					val={"saabmaurya@gmail.com"}
 				/>
 			</div>
+		
 			<div className="footer_bottom" style={{ borderColor: color.dimmed }}>
 				<p>
 					© Copyright 2023. &nbsp;&nbsp;<span>Made by - Sandeep Morya</span>

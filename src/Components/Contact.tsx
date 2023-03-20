@@ -1,6 +1,6 @@
 ﻿import Title from "./Title";
 import "../Styles/contact.css";
-import Button from "./Button";
+import Button from "./BubbleButton";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
@@ -11,7 +11,10 @@ import {
 	FaLinkedin,
 	FaTwitter,
 } from "react-icons/fa";
+import {RiWhatsappFill} from "react-icons/ri"
 import { MdSend } from "react-icons/md";
+import { SiUpwork } from "react-icons/si";
+import useVisit from "../hooks/useVisit";
 
 const initialValue = {
 	name: "",
@@ -21,6 +24,7 @@ const initialValue = {
 const Contact = () => {
 	const { color } = useContext(ThemeContext);
 	const [formData, setFormData] = useState(initialValue);
+	const visit = useVisit()
 
 	return (
 		<div className="contact" id="contact">
@@ -58,7 +62,18 @@ const Contact = () => {
 						onChange={(e) =>
 							setFormData({ ...formData, message: e.target.value })
 						}></textarea>
-					<Button Icon={MdSend} title="Send it to me !" />
+
+					<Button
+						onClick={() =>
+							visit(
+								`mailto:saabmaurya@gmail.com?subject=${formData.name}&body=${formData.message}`,
+							)
+						}
+						size="lg"
+						colorScheme={color.main}
+						leftIcon={<MdSend />}>
+						Send it to me !
+					</Button>
 				</form>
 				<div
 					className="contact_details"
@@ -77,11 +92,29 @@ const Contact = () => {
 					</div>
 
 					<div className="contact_icons" style={{ color: color.main }}>
-						<FaGithub />
-						<FaLinkedin />
-						<FaFacebook />
-						<FaInstagram />
-						<FaTwitter />
+						<FaGithub
+							onClick={() =>
+								visit("https://github.com/Sandeep-morya/Sandeep-morya")
+							}
+						/>
+						<FaLinkedin
+							onClick={() =>
+								visit("https://www.linkedin.com/in/sandeep-morya-7896ba111/")
+							}
+						/>
+						<SiUpwork
+							onClick={() =>
+								visit("https://www.upwork.com/workwith/sandeepm13")
+							}
+						/>
+						<FaFacebook
+							onClick={() => visit("https://www.facebook.com/Sandeepmaurya13/")}
+						/>
+						<RiWhatsappFill
+							onClick={() =>
+								visit("https://api.whatsapp.com/send?phone=919988885304")
+							}
+						/>
 					</div>
 
 					<h2>Have A Great Day !</h2>

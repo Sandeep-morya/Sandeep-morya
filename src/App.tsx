@@ -15,9 +15,13 @@ const App = () => {
 
 
 	useEffect(() => {
-		setTimeout(() => {
+		const id = setTimeout(() => {
 			setHidden(true);
 		}, 1500);
+
+		return ()=>{
+			clearTimeout(id)
+		}
 	}, []);
 
 	return (

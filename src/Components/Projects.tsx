@@ -1,10 +1,13 @@
 ﻿import "../Styles/projects.css";
-import Button from "./Button";
+import Button from "./BubbleButton";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
 import Title from "./Title";
-import { FaLink, FaGitAlt } from "react-icons/fa";
+import { FaLink, FaGitAlt, FaAngleDoubleRight } from "react-icons/fa";
 import Highlight from "./Highlight";
+import { useContext } from "react";
+import { ThemeContext } from "../Provider/ThemeContextProvider";
+import useVisit from "../hooks/useVisit";
 
 export interface ProjectItem {
 	title: String;
@@ -15,16 +18,16 @@ export interface ProjectItem {
 
 const projectDescList: ProjectItem[] = [
 	{
-		title: "01. Railman",
+		title: "01. CloudyNest",
 		desc_body:
-			"Railman is an unofficial, IRCTC unauthorized travel agent where train ticket bookings can be done online. Since everything is online on your website you need not call or email anyone. But neither IRCTC nor Railman will ever charge you anything and then confirm your ticket.",
+			"CloudyNest is an online shopping prototype website. This website is made by taking litte bit insperation from Meesho.com. Which is famous as India's largest and most trusted marketplace for Resellers, who sell products online through WhatsApp and Facebook." /* Trusted by over 50,000 Resellers, Meesho helps them grow their online business by providing, Hit products at Lowest prices. */,
 		features: [
-			"Online Ticket Booking",
-			"Pnr Stauts Enquiry",
-			"Check Trains Between Stations",
-			"Track Train Running Status",
+			"Online Products sell and purchase",
+			"Cart and Filter Options avialable",
+			"Full Stack website with frontend & backend",
+			"Fast and Reliable",
 		],
-		tech_stack: [0, 2, 7, 8, 9, 10, 11],
+		tech_stack: [1, 5, 7, 8, 9, 10, 11],
 	},
 	{
 		title: "02. Youtube Clone",
@@ -47,9 +50,9 @@ const projectDescList: ProjectItem[] = [
 	},
 ];
 
-
-
 const Projects = () => {
+	const { color } = useContext(ThemeContext);
+	const visit = useVisit();
 	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
@@ -58,17 +61,21 @@ const Projects = () => {
 			<div className="project one">
 				<div className="project_left">
 					<ProjectCard
-						url={"https://railman.netlify.app/"}
-						imageUrl={"/railman.png"}
-						imageTitle={"Railman"}
+						url={"https://cloudynest.vercel.app/"}
+						imageUrl={"/CloudyNest-Shopping.png"}
+						imageTitle={"CloudyNest-Shopping"}
 					/>
 					<div className="project_btns">
 						<Button
-							url="https://railman.netlify.app/"
-							Icon={FaLink}
-							title="Visit to the Website"
-						/>
-						<Button Icon={FaGitAlt} title="Github Repository Link" />
+							colorScheme={color.main}
+							onClick={() => visit("https://cloudynest.vercel.app/")}
+							size="lg"
+							leftIcon={<FaLink />}>
+							Visit to the Website
+						</Button>
+						<Button size="lg" leftIcon={<FaGitAlt />} colorScheme={color.main}>
+							Github Repository Link
+						</Button>
 					</div>
 				</div>
 				<ProjectDesc project_data={projectDescList[0]} />
@@ -85,11 +92,17 @@ const Projects = () => {
 					/>
 					<div className="project_btns">
 						<Button
-							url={"https://sandeepmorya.netlify.app/youtube_clone/"}
-							Icon={FaLink}
-							title="Visit to the Website"
-						/>
-						<Button Icon={FaGitAlt} title="Github Repository Link" />
+							colorScheme={color.main}
+							onClick={() =>
+								visit("https://sandeepmorya.netlify.app/youtube_clone/")
+							}
+							size="lg"
+							leftIcon={<FaLink />}>
+							Visit to the Website
+						</Button>
+						<Button size="lg" leftIcon={<FaGitAlt />} colorScheme={color.main}>
+							Github Repository Link
+						</Button>
 					</div>
 				</div>
 			</div>
@@ -104,15 +117,33 @@ const Projects = () => {
 					/>
 					<div className="project_btns">
 						<Button
-							url="https://sandeepmorya.netlify.app/disney_plus-hotstar_clone/"
-							Icon={FaLink}
-							title="Visit to the Website"
-						/>
-						<Button Icon={FaGitAlt} title="Github Repository Link" />
+							colorScheme={color.main}
+							onClick={() =>
+								visit(
+									"https://sandeepmorya.netlify.app/disney_plus-hotstar_clone/",
+								)
+							}
+							size="lg"
+							leftIcon={<FaLink />}>
+							Visit to the Website
+						</Button>
+						<Button size="lg" leftIcon={<FaGitAlt />} colorScheme={color.main}>
+							Github Repository Link
+						</Button>
 					</div>
 				</div>
 				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
+
+
+				<h1
+					onClick={() => visit("https://sandeepmorya.netlify.app/")}
+					className="more_link"
+					>
+					<FaAngleDoubleRight />
+					More
+				</h1>
+
 		</div>
 	);
 };

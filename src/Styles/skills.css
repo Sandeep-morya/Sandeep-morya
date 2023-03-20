@@ -5,14 +5,15 @@
 	width: 100%;
 }
 .cards {
-	/* margin: 0;
-	padding: 0;
-	gap: 0; */
-	margin-top: 7rem;
+	
+	margin-top: 5rem;
 	width: inherit;
 	display: grid;
+
+
 	grid-template-columns: repeat(3, 1fr);
-	gap: 7rem;
+
+	gap: 5rem;
 }
 
 @media screen and (max-width: 40rem) {
@@ -30,6 +31,6 @@
 		width: inherit;
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 2rem;
+		gap: 5rem
 	}
 }

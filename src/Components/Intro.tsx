@@ -3,6 +3,7 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Clock from "./Clock";
 
+
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
 	return (
@@ -16,7 +17,7 @@ const Intro = () => {
 					<Clock />
 				</div>
 			</div>
-			<h1 className="part_three">MERN STACK WEB DEVELPOER</h1>
+			<h1 className="part_three">MERN STACK WEB DEVELOPER</h1>
 			<div
 				className="mouse_scroll"
 				onClick={() => {
