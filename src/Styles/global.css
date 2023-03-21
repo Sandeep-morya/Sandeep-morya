@@ -16,7 +16,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "ABeeZee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	text-shadow: 0 0 0.5rem rgb(0, 0, 0,0.7);
+	text-shadow: 0 0 0.5rem rgb(0, 0, 0, 0.7);
 }
 /* *{
 	cursor: none !important;
@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
 .colors {
 	color: #0099ff;
 	color: rgb(143, 216, 8);
-	color: rgb(238, 10, 181);
+	color: rgb(224, 0, 75);
 	color: rgb(244, 191, 0);
 	color: rgb(139, 42, 250);
 }

@@ -1,13 +1,12 @@
 ﻿import React, { useState, useRef, CSSProperties } from "react";
-import { IconType } from "react-icons/lib/esm/iconBase";
 import "../Styles/bubble_button.css";
 type Props = {
 	children: React.ReactNode;
-	colorScheme: string
+	colorScheme: string;
 	leftIcon?: React.ReactNode;
 	onClick?: () => void;
-	size?: "sm" | "lg" |"md" | "xl"
-	style?:CSSProperties
+	size?: "sm" | "lg" | "md" | "xl";
+	style?: CSSProperties;
 };
 
 const Button = ({
@@ -42,9 +41,7 @@ const Button = ({
 			}}
 			style={{
 				backgroundColor: colorScheme,
-				boxShadow: `0 0 1rem 0px ${
-					isHover ? colorScheme : "rgba(0,0,0,0.5)"
-				}`,
+				boxShadow: `0 0 1rem 0px ${isHover ? colorScheme : "rgba(0,0,0,0.5)"}`,
 				padding:
 					size == "sm"
 						? "0.3rem 0.6rem"
@@ -53,8 +50,7 @@ const Button = ({
 						: size == "xl"
 						? "1rem 2rem"
 						: "0.5rem 1rem",
-				...style
-
+				...style,
 			}}>
 			<div
 				className="bubbly-button_before"

@@ -1,5 +1,5 @@
 ﻿const colorPalettes = {
-	orange_shadow: {
+	main_shadow: {
 		main: "rgb(244, 191, 0)",
 		dimmed: "rgba(244, 191, 0,0.1)",
 	},
@@ -12,8 +12,8 @@
 		dimmed: "rgb(143, 216, 8,0.1)",
 	},
 	pink_Queen: {
-		main: "rgb(238, 10, 181)",
-		dimmed: "rgba(238, 10, 181,0.1)",
+		main: "rgb(224, 0, 75)",
+		dimmed: "rgba(224, 0, 75,0.1)",
 	},
 	orange_fish: {
 		main: "rgb(255, 94, 0)",

@@ -5,11 +5,9 @@
 	width: 100%;
 }
 .cards {
-	
-	margin-top: 5rem;
+	margin-top: 10rem;
 	width: inherit;
 	display: grid;
-
 
 	grid-template-columns: repeat(3, 1fr);
 
@@ -31,6 +29,6 @@
 		width: inherit;
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 5rem
+		gap: 5rem;
 	}
 }
