@@ -1,11 +1,12 @@
 ﻿.skills {
 	padding: 7rem;
+	padding-top: 9rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
 .cards {
-	margin-top: 10rem;
+	margin-top: 8rem;
 	width: inherit;
 	display: grid;
 
