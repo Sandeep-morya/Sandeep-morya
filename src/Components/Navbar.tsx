@@ -15,7 +15,7 @@ const Navbar = () => {
 			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<Avatar />
 			<div className="navlinks">
-				<a href="#" >intro</a>
+				<a href="#">intro</a>
 				<a href="#about">about me</a>
 				<a href="#skills">skills</a>
 				<a href="#projects">projects</a>
@@ -28,9 +28,9 @@ const Navbar = () => {
 					className="colorPalettes"
 					style={{ display: hidden ? "none" : "flex" }}>
 					<div
-						hidden={color.main === colorPalettes.orange_shadow.main}
-						style={{ backgroundColor: colorPalettes.orange_shadow.main }}
-						onClick={() => setColor(colorPalettes.orange_shadow)}></div>
+						hidden={color.main === colorPalettes.main_shadow.main}
+						style={{ backgroundColor: colorPalettes.main_shadow.main }}
+						onClick={() => setColor(colorPalettes.main_shadow)}></div>
 					<div
 						hidden={color.main === colorPalettes.blue_whale.main}
 						style={{ backgroundColor: colorPalettes.blue_whale.main }}

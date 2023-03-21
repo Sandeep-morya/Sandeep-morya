@@ -46,9 +46,9 @@ const MobNav = () => {
 				</a>
 				<div className="accent_colors">
 					<div
-						hidden={color.main === colorPalettes.orange_shadow.main}
-						style={{ backgroundColor: colorPalettes.orange_shadow.main }}
-						onClick={() => setColor(colorPalettes.orange_shadow)}></div>
+						hidden={color.main === colorPalettes.main_shadow.main}
+						style={{ backgroundColor: colorPalettes.main_shadow.main }}
+						onClick={() => setColor(colorPalettes.main_shadow)}></div>
 					<div
 						hidden={color.main === colorPalettes.blue_whale.main}
 						style={{ backgroundColor: colorPalettes.blue_whale.main }}
