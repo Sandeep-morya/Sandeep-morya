@@ -32,7 +32,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 				<div className="hex_line hex1">
 					<div className="each_icon" title={skillNames[0]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<First title={skillNames[0]} />}
@@ -42,7 +42,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 				<div className="hex_line hex2">
 					<div className="each_icon" title={skillNames[1]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<Second title={skillNames[1]} />}
@@ -50,7 +50,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					</div>
 					<div className="each_icon" title={skillNames[2]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<Third title={skillNames[2]} />}
@@ -60,7 +60,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 				<div className="hex_line hex2">
 					<div className="each_icon" title={skillNames[3]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<Fourth title={skillNames[3]} />}
@@ -68,7 +68,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					</div>
 					<div className="each_icon" title={skillNames[4]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<Fifth title={skillNames[4]} />}
@@ -76,7 +76,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					</div>
 					<div className="each_icon" title={skillNames[5]}>
 						<div className="hex_pill">
-							<HexPill colorScheme={{ main: "rgb(255,255,255)", dimmed: "" }} />
+							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon_1" style={{ color: "white" }}>
 							{<Sixth title={skillNames[5]} />}
