@@ -42,6 +42,14 @@ const Skills = () => {
 			<div className="cards">
 				<HexCard
 					title="UI DESIGN"
+					skillNames={[
+						"HTML5",
+						"CSS3",
+						"Figma",
+						"Chakra-UI",
+						"Material-UI",
+						"Tailwind-CSS",
+					]}
 					colorScheme={color}
 					Icons={[
 						SiHtml5,
@@ -54,11 +62,19 @@ const Skills = () => {
 				/>
 				<HexCard
 					title="FRONTEND"
+					skillNames={[
+						"JavaScript",
+						"React",
+						"NextJS",
+						"TypeScript",
+						"JQuery",
+						"Redux",
+					]}
 					colorScheme={
-						colorPalettes.orange_fish.main === color.main
+						color /* Palettes.orange_fish.main === color.main
 							?{ main: "rgba(255, 255, 255, 1)",
 									dimmed: "rgba(255, 255, 255, 0.1)",}
-							: colorPalettes.orange_fish
+							: colorPalettes.orange_fish */
 					}
 					Icons={[
 						SiJavascript,
@@ -71,13 +87,21 @@ const Skills = () => {
 				/>
 				<HexCard
 					title="BACKEND"
+					skillNames={[
+						"NodeJS",
+						"ExpressJS",
+						"MongoDB",
+						"Swagger",
+						"Socket.io",
+						"Cypress",
+					]}
 					colorScheme={
-						colorPalettes.green_hacker.main === color.main
+						color /* Palettes.green_hacker.main === color.main
 							? {
 									main: "rgba(255, 255, 255, 1)",
 									dimmed: "rgba(255, 255, 255, 0.1)",
 							  }
-							: colorPalettes.green_hacker
+							: colorPalettes.green_hacker */
 					}
 					Icons={[
 						SiNodedotjs,

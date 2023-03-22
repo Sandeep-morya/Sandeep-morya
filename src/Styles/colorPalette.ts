@@ -12,16 +12,16 @@
 		dimmed: "rgb(143, 216, 8,0.1)",
 	},
 	pink_Queen: {
-		main: "rgb(224, 0, 75)",
-		dimmed: "rgba(224, 0, 75,0.1)",
+		main: "rgb(253, 35, 82)",
+		dimmed: "rgba(253, 35, 82,0.1)",
 	},
 	orange_fish: {
 		main: "rgb(255, 94, 0)",
 		dimmed: "rgba(255, 94, 0,0.1)",
 	},
 	purple_witch: {
-		main: "rgb(139, 42, 250)",
-		dimmed: "rgba(139, 42, 250,0.1)",
+		main: "rgb(149, 62, 248)",
+		dimmed: "rgba(149, 62, 248,0.1)",
 	},
 };
 export default colorPalettes;

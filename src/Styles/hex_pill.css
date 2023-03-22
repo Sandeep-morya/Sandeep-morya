@@ -1,28 +1,25 @@
-﻿.hex_pill{
-    width: 6rem;
-    height: 6rem;
-}
-/* Full HD Laptops */
-@media screen and (max-width: 100rem) {
-.hex_pill{
-    width: 5.5rem;
-    height: 5.5rem;
+﻿.hex_pill {
+	width: 6rem;
+	height: 6rem;
 }
 
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+	.hex_pill {
+		width: 5.5rem;
+		height: 5.5rem;
+	}
 }
 /* HD Laptops  */
 @media screen and (max-width: 88rem) {
-.hex_pill{
-    width: 5rem;
-    height: 5rem;
-}
+	.hex_pill {
+		width: 5rem;
+		height: 5rem;
+	}
 }
 /* Tablets */
 @media screen and (max-width: 64rem) {
-
 }
 /* Mobiles */
 @media screen and (max-width: 40rem) {
-
-
 }
