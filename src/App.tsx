@@ -9,19 +9,17 @@ import MobNav from "./Components/MobNav";
 import Navbar from "./Components/Navbar";
 const App = () => {
 	/* To hide the Loader  */
-	const [hidden, setHidden] = useState(true);
-    const cursorRef = React.useRef<HTMLDivElement>(null)
-
-
+	const [hidden, setHidden] = useState(false);
+	const cursorRef = React.useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const id = setTimeout(() => {
 			setHidden(true);
 		}, 1500);
 
-		return ()=>{
-			clearTimeout(id)
-		}
+		return () => {
+			clearTimeout(id);
+		};
 	}, []);
 
 	return (
@@ -29,7 +27,12 @@ const App = () => {
 			{!hidden ? (
 				<Boot />
 			) : (
-				<div onMouseMove={(e)=>cursorRef.current!.style.transform = `translate3d(${e.pageX}px, ${e.pageY + 5}px, 0)`}>
+				<div
+					onMouseMove={(e) =>
+						(cursorRef.current!.style.transform = `translate3d(${e.pageX}px, ${
+							e.pageY + 5
+						}px, 0)`)
+					}>
 					<Cursor refs={cursorRef} />
 					<Navbar />
 					<MobNav />
