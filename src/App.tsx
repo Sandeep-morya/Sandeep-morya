@@ -9,7 +9,7 @@ import MobNav from "./Components/MobNav";
 import Navbar from "./Components/Navbar";
 const App = () => {
 	/* To hide the Loader  */
-	const [hidden, setHidden] = useState(false);
+	const [hidden, setHidden] = useState(true);
     const cursorRef = React.useRef<HTMLDivElement>(null)
 
 

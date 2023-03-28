@@ -32,12 +32,15 @@ import HexCard from "./HexCard";
 import colorPalettes, { randomColor } from "../Styles/colorPalette";
 import { colorsArray } from "../Styles/colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
 	const { color } = React.useContext(ThemeContext);
+	const {ref,inView} = useInView()
+console.log("skills",inView);
 
 	return (
-		<div className="skills" id="skills">
+		<div ref={ref} className="skills" id="skills">
 			<Title title={"Skills"} />
 			<div className="cards">
 				<HexCard

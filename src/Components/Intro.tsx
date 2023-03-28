@@ -1,19 +1,22 @@
-﻿import { useContext } from "react";
+﻿import { useContext, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Clock from "./Clock";
-
+import Styles from "../Styles/observer/observer.module.css";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
+	const { ref, inView } = useInView();
+
 	return (
-		<div className="intro" style={{ color: color.main }}>
-			<div className="big">
+		<div ref={ref} className="intro" style={{ color: color.main }}>
+			<div className={`big ${Styles.to_right} ${inView && Styles.base}`}>
 				<div className="intro_text">
 					<h1 className="part_one">SANDEEP</h1>
 					<h1 className="part_two">MORYA</h1>
 				</div>
-				<div>
+				<div className={`${Styles.to_left} ${inView ? Styles.base : ""}`}>
 					<Clock />
 				</div>
 			</div>

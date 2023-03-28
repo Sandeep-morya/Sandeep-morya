@@ -1,0 +1,14 @@
+﻿.to_left {
+	opacity: 0.5;
+	margin-left: 50%;
+	transition: all 0.5s;
+}
+.to_right {
+	opacity: 0.5;
+	margin-left: -50%;
+	transition: all 0.5s;
+}
+.base {
+	margin: 0;
+	opacity: 1;
+}
