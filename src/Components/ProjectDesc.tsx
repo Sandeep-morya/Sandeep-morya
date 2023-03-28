@@ -7,28 +7,38 @@ interface Props {
 	project_data: ProjectItem;
 }
 const teach_list = [
-	"HTML - Css - JavaScript",
-	"HTML - Css - TypeScript",
-	"React JS",
-	"React TS",
-	"NextJS JavaScript",
-	"NextJS TypeScript",
+	"HTML 5",
+	"CSS 3",
+	"JavaScript",
+	"TypeScript",
+	"React",
+	"Vite",
+	"NextJS",
 	"Material UI",
 	"Chakra UI",
 	"Node JS",
 	"Express",
 	"Mongoose",
 	"MongoDB",
+	"Redux",
+	"Google Oauth2",
+	"JQuery",
 ];
 const ProjectDesc = (props: Props) => {
 	const { color } = useContext(ThemeContext);
 	return (
-		<div
-			className="project_desc"
-			style={{ backgroundColor: color.dimmed, borderColor: color.main }}>
-			<h1 style={{ color: color.main }}>{props.project_data.title}</h1>
-			<div className="desc_body">{props.project_data.desc_body}</div>
-			<div className="desc_features">
+		<div className="project_desc">
+			<div
+				style={{ borderColor: color.main, backgroundColor: color.dimmed }}
+				className="desc_body">
+				<h3 style={{ color: color.main }}>
+					What is <q>{props.project_data.title}</q>
+				</h3>
+				<p>{props.project_data.desc_body}</p>
+			</div>
+			<div
+				style={{ borderColor: color.main, backgroundColor: color.dimmed }}
+				className="desc_features">
 				<h3 style={{ color: color.main }}>Top Features of Railman Website</h3>
 				<ul>
 					{props.project_data.features.map((e) => {
@@ -36,7 +46,9 @@ const ProjectDesc = (props: Props) => {
 					})}
 				</ul>
 			</div>
-			<div className="desc_tech">
+			<div
+				style={{ borderColor: color.main, backgroundColor: color.dimmed }}
+				className="desc_tech">
 				<h3 style={{ color: color.main }}>Technology Stack</h3>
 				<ul>
 					{props.project_data.tech_stack.map((e) => {

@@ -1,0 +1,45 @@
+﻿.project_mobile_card_div {
+	height: 100%;
+	border: 0.15rem solid;
+	border-radius: 1rem;
+	overflow: hidden;
+	position: relative;
+	filter: drop-shadow(0 0 5px black) !important;
+}
+.project_mobile_card_div img {
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+.project_mobile_card_div .frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.project_mobile_card_div:hover .frame {
+	/* opacity: 0; */
+	height: 0;
+}
+.mobile_head {
+	position: absolute;
+	width: 10%;
+	height: 2rem;
+	top: -0.8rem;
+	left: 50%;
+	border-radius: 1rem;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.mobile_head .camera {
+	background-color: black;
+	width: 55%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	transform: translateY(-25%);
+}

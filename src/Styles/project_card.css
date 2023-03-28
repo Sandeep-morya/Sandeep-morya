@@ -1,23 +1,32 @@
 ﻿.project_card {
 	position: relative;
-	width: 100%;
+	width: fit-content;
+	height: 100%;
+	transform: translateY(1%);
+	filter: drop-shadow(0 0 10px black) !important;
 }
 .project_card .head {
 	width: 100%;
 	height: 2.2rem;
 	border-width: 0.1rem;
 	border-style: solid;
-	border-radius: 0.3rem 0.3rem 0rem 0rem;
+	border-radius: 1rem 1rem 0rem 0rem;
 }
 .project_card .body {
 	position: relative;
-	border-radius: 0rem 0rem 0.3rem 0.3rem;
+	border-radius: 0rem 0rem 1rem 1rem;
 	overflow: hidden;
+	width: 100%;
+	height: calc(100% - 2.2rem);
+	max-height: 60vh;
+	border: 0.1rem solid;
+	border-top: none;
 }
 
 .project_card img {
 	width: 100%;
 	object-fit: cover;
+	height: 100%;
 	transition: all 0.7s;
 }
 .project_card .frame {

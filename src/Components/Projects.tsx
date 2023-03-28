@@ -8,6 +8,7 @@ import Highlight from "./Highlight";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import useVisit from "../hooks/useVisit";
+import ProjectMobileCard from "./ProjectMobileCard";
 
 export interface ProjectItem {
 	title: String;
@@ -18,19 +19,20 @@ export interface ProjectItem {
 
 const projectDescList: ProjectItem[] = [
 	{
-		title: "01. CloudyNest",
+		title: "CloudyNest",
 		desc_body:
 			"CloudyNest is an online shopping prototype website. This website is made by taking litte bit insperation from Meesho.com. Which is famous as India's largest and most trusted marketplace for Resellers, who sell products online through WhatsApp and Facebook." /* Trusted by over 50,000 Resellers, Meesho helps them grow their online business by providing, Hit products at Lowest prices. */,
 		features: [
 			"Online Products sell and purchase",
 			"Cart and Filter Options avialable",
-			"Full Stack website with frontend & backend",
+			"Full Stack website (MERN used)",
 			"Fast and Reliable",
 		],
-		tech_stack: [1, 5, 7, 8, 9, 10, 11],
+
+		tech_stack: [0, 1, 3, 4, 6, 8, 9, 10, 11, 12],
 	},
 	{
-		title: "02. Youtube Clone",
+		title: "Auraly",
 		desc_body:
 			"This is an open-source YouTube clone that lets you play YouTube videos on your smartphone and PC. It can be helpful for users want Ad free Youtube Experience",
 		features: [
@@ -39,7 +41,8 @@ const projectDescList: ProjectItem[] = [
 			"Ad Free Experience",
 			"Light-weight",
 		],
-		tech_stack: [0, 8],
+
+		tech_stack: [0, 1, 3, 4, 5, 7, 13, 14],
 	},
 	{
 		title: "03. Disney + Hotstar Clone",
@@ -58,6 +61,72 @@ const Projects = () => {
 			<Title title={"projects"} />
 
 			{/*  CARD 1 */}
+			<div className="project">
+				<h1 style={{ color: color.main }}>{"01 - CloudyNest"}</h1>
+
+				<div className="project_view">
+					<ProjectCard
+						url={"https://cloudynest.vercel.app/"}
+						imageUrl={"/CloudyNest-Shopping.png"}
+						imageTitle={"CloudyNest-Shopping"}
+					/>
+
+					<ProjectMobileCard imageUrl={"/CloudyNest-Shopping-mobile.png"} />
+				</div>
+
+				<ProjectDesc project_data={projectDescList[0]} />
+			</div>
+
+			{/*  CARD 2 */}
+			<div className="project">
+				<h1 style={{ color: color.main }}>{"02 - Auraly"}</h1>
+
+				<div className="project_view">
+					<ProjectCard
+						url={"https://sandeep-auraly.vercel.app/"}
+						imageUrl={"/Auraly.png"}
+						imageTitle={"Auraly"}
+					/>
+
+					<ProjectMobileCard imageUrl={"/Auraly-mobile-1.png"} />
+				</div>
+
+				<ProjectDesc project_data={projectDescList[1]} />
+			</div>
+
+			{/*  CARD 3 */}
+			{/* <div className="project">
+				<h1 style={{ color: color.main }}>{"03 - CloudyNest"}</h1>
+				<div className="project_view">
+					<ProjectCard
+						url={"https://cloudynest.vercel.app/"}
+						imageUrl={"/CloudyNest-Shopping.png"}
+						imageTitle={"CloudyNest-Shopping"}
+					/>
+
+					<ProjectMobileCard imageUrl={"/Auraly-mobile-2.png"} />
+				</div>
+
+				<ProjectDesc project_data={projectDescList[0]} />
+			</div> */}
+
+			<h1
+				onClick={() => visit("https://sandeepmorya.netlify.app/")}
+				className="more_link">
+				<FaAngleDoubleRight />
+				More
+			</h1>
+		</div>
+	);
+};
+
+export default Projects;
+
+/*
+<div className="projects" id="projects">
+			<Title title={"projects"} />
+
+
 			<div className="project one">
 				<div className="project_left">
 					<ProjectCard
@@ -79,9 +148,10 @@ const Projects = () => {
 					</div>
 				</div>
 				<ProjectDesc project_data={projectDescList[0]} />
+				<ProjectMobileCard />
 			</div>
 
-			{/*  CARD 2 */}
+
 			<div className="project two">
 				<ProjectDesc project_data={projectDescList[1]} />
 				<div className="project_left">
@@ -107,7 +177,7 @@ const Projects = () => {
 				</div>
 			</div>
 
-			{/*  CARD 3 */}
+
 			<div className="project three">
 				<div className="project_left">
 					<ProjectCard
@@ -135,17 +205,10 @@ const Projects = () => {
 				<ProjectDesc project_data={projectDescList[2]} />
 			</div>
 
-
-				<h1
-					onClick={() => visit("https://sandeepmorya.netlify.app/")}
-					className="more_link"
-					>
-					<FaAngleDoubleRight />
-					More
-				</h1>
-
-		</div>
-	);
-};
-
-export default Projects;
+			<h1
+				onClick={() => visit("https://sandeepmorya.netlify.app/")}
+				className="more_link">
+				<FaAngleDoubleRight />
+				More
+			</h1>
+		</div> */
