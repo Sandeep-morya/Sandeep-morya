@@ -1,16 +1,22 @@
-﻿type Props = {
+﻿import { useState } from "react";
+
+type Props = {
 	colorScheme: { main: string; dimmed: string };
 };
 
 const HexPill = ({ colorScheme }: Props) => {
+	const [isHover, setIsHover] = useState(false);
+
 	return (
 		<svg
 			fill={colorScheme.main}
 			width="6rem"
 			height="6rem"
+			onMouseOver={() => setIsHover(true)}
+			onMouseLeave={() => setIsHover(false)}
 			viewBox="0 0 256 256"
 			id="Flat">
-			<g opacity="0.1">
+			<g style={{ transition: "all 0.3s" }} opacity={isHover ? "0.1" : "1"}>
 				<path d="M220,175.33228V80.66772a8,8,0,0,0-4.06354-6.9645l-84-47.47826a8,8,0,0,0-7.87292,0l-84,47.47826A8,8,0,0,0,36,80.66772v94.66456a8,8,0,0,0,4.06354,6.96451l84,47.47826a8,8,0,0,0,7.87292,0l84-47.47826A8,8,0,0,0,220,175.33228Z" />
 			</g>
 

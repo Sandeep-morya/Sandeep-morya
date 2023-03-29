@@ -26,7 +26,7 @@ const About = () => {
 						completed my graduations in Bachelor of Computer Applications{" "}
 						<Highlight>{"(BCA)"}</Highlight> from{" "}
 						<Highlight>Integral University</Highlight> Lucknow. But as we know
-						degree in not sufficient, so i joined an Masai School for learning
+						degree in not sufficient, so i joined Masai School for learning
 						web development.
 					</div>
 

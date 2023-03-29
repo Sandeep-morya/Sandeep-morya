@@ -69,11 +69,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	filter: drop-shadow(0 0 5px black);
 }
 
 /* Full HD Laptops */
 @media screen and (max-width: 100rem) {
-		.hex_card {
+	.hex_card {
 		height: 30rem;
 	}
 	.hexes {
@@ -87,7 +88,7 @@
 }
 /* HD Laptops  */
 @media screen and (max-width: 88rem) {
-		.hex_card {
+	.hex_card {
 		height: 30rem;
 	}
 	.hexes {
@@ -101,7 +102,7 @@
 }
 /* Tablets */
 @media screen and (max-width: 64rem) {
-		.hex_card {
+	.hex_card {
 		height: 30rem;
 	}
 	.hexes {
