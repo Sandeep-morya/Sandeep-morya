@@ -20,7 +20,7 @@ const teach_list = [
 	"Express",
 	"Mongoose",
 	"MongoDB",
-	"Redux",
+	"React Redux",
 	"Google Oauth2",
 	"JQuery",
 ];
