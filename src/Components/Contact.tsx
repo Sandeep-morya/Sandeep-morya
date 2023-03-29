@@ -11,7 +11,7 @@ import {
 	FaLinkedin,
 	FaTwitter,
 } from "react-icons/fa";
-import {RiWhatsappFill} from "react-icons/ri"
+import { RiWhatsappFill } from "react-icons/ri";
 import { MdSend } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
 import useVisit from "../hooks/useVisit";
@@ -24,7 +24,7 @@ const initialValue = {
 const Contact = () => {
 	const { color } = useContext(ThemeContext);
 	const [formData, setFormData] = useState(initialValue);
-	const visit = useVisit()
+	const visit = useVisit();
 
 	return (
 		<div className="contact" id="contact">
@@ -86,7 +86,7 @@ const Contact = () => {
 						}}>
 						<img
 							style={{ outlineColor: color.main }}
-							src="/vector.png"
+							src="https://res.cloudinary.com/due9pi68z/image/upload/v1680098809/uevnv967xka4pcxzcfky.png"
 							alt=""
 						/>
 					</div>

@@ -54,7 +54,10 @@ const About = () => {
 				</div>
 				<div className="profile">
 					<div className="profile_pic" style={{ backgroundColor: color.main }}>
-						<img src="/vector.png" alt="sandeep-morya-profile-pic" />
+						<img
+							src="https://res.cloudinary.com/due9pi68z/image/upload/v1680098809/uevnv967xka4pcxzcfky.png"
+							alt="sandeep-morya-profile-pic"
+						/>
 						<div
 							style={{
 								borderColor: color.main,

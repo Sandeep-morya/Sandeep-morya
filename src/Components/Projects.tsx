@@ -38,7 +38,7 @@ const projectList: ProjectItem[] = [
 		tech_stack: [0, 1, 3, 4, 6, 8, 9, 10, 11, 12],
 	},
 	{
-		title: "Auraly",
+		title: "Giphy Clone",
 		laptop_image:
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1680072768/gvsuekdx3wt7pyjkpzpn.png",
 		mobile_image:
@@ -55,8 +55,26 @@ const projectList: ProjectItem[] = [
 			"Free HD content",
 			"No need to install any plugin",
 		],
-
 		tech_stack: [0, 1, 3, 4, 5, 7, 13, 14],
+	},
+	{
+		title: "Giphy-Clone",
+		laptop_image:
+			"https://res.cloudinary.com/due9pi68z/image/upload/v1680098697/rgurecagu4n1lyzk4ppt.png",
+		mobile_image:
+			"https://res.cloudinary.com/due9pi68z/image/upload/v1680098696/lunp0rbzqvs5uci5vriy.png",
+		liveUrl: " https://giphy-clone-sage.vercel.app",
+		githubUrl: "https://github.com/Sandeep-morya/Giphy_clone",
+		desc_body:
+			"Giphy, styled as GIPHY, is an American online database and search engine that allows users to search for and share short looping videos with no sound that resemble animated GIF files",
+		features: [
+			"Copy Animated Gifs",
+			"Share Stickers & emoji",
+			"High Quality gifs",
+			"Looping video with no audio",
+		],
+
+		tech_stack: [0, 1, 2],
 	},
 ];
 
