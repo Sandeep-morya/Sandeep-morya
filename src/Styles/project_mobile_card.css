@@ -43,3 +43,23 @@
 	border-radius: 50%;
 	transform: translateY(-25%);
 }
+
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+	.project_card .body {
+		max-height: 80vh;
+	}
+}
+/* Tablets */
+@media screen and (max-width: 64rem) {
+}
+/* Mobiles */
+@media screen and (max-width: 40rem) {
+	.project_mobile_card_div {
+		width: 80%;
+		margin: auto;
+	}
+}

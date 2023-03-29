@@ -10,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 5rem 0;
+	margin: 2rem 0;
 	width: 100%;
 	gap: 3rem;
 }
@@ -27,13 +27,24 @@
 	gap: 3rem;
 }
 .project_data {
-	border: 2px solid red;
 	width: 100%;
 	border-radius: 1rem;
 	padding: 1rem;
 	color: white;
 }
-
+.project_btns {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+.left_line,
+.right_line {
+	flex-grow: 1;
+	background-color: rgb(255, 255, 255);
+	height: 0.15rem;
+}
 .more_link {
 	margin-top: 2rem;
 	color: white;
@@ -45,33 +56,66 @@
 	text-decoration: underline;
 }
 
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+	.projects {
+		padding-top: 5rem;
+	}
+	.project {
+		margin: 0;
+		width: 100%;
+		gap: 3rem;
+	}
+
+	.project_view {
+		max-height: 80vh;
+	}
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+	.projects {
+		padding-top: 5rem;
+	}
+	.project {
+		margin: 0;
+		gap: 4rem;
+	}
+
+	.project_view {
+		max-height: 80vh;
+	}
+}
+/* Tablets */
+@media screen and (max-width: 64rem) {
+}
+/* Mobiles */
 @media screen and (max-width: 40rem) {
-	/* .projects {
+	.projects {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 7rem 1rem;
+		padding: 1rem;
+		padding-top: 0rem;
+		gap: 2rem;
 	}
 	.project {
-		display: flex;
-		flex-direction: column;
-		margin: 4rem 0;
+		margin-top: 2rem;
 		width: 100%;
 		gap: 4rem;
 	}
 
-	.one,
-	.three {
-		flex-direction: column-reverse;
+	.project_view {
+		max-height: 80vh;
+		grid-template-columns: 1fr;
 	}
 
-	.project_left {
-		width: 100%;
-	}
 	.project_btns {
-		display: flex;
 		flex-direction: column;
-		margin: 2rem 0;
-		gap: 2rem;
-	} */
+		gap: 1rem;
+	}
+	.right_line {
+		width: 100%;
+		margin-top: 3rem;
+		height: 0.1rem;
+	}
 }

@@ -62,7 +62,7 @@ const Projects = () => {
 
 			{/*  CARD 1 */}
 			<div className="project">
-				<h1 style={{ color: color.main }}>{"01 - CloudyNest"}</h1>
+				{/* <h1 style={{ color: color.main }}>{"01 - CloudyNest"}</h1> */}
 
 				<div className="project_view">
 					<ProjectCard
@@ -75,11 +75,25 @@ const Projects = () => {
 				</div>
 
 				<ProjectDesc project_data={projectDescList[0]} />
+				<div className="project_btns">
+					<div className="left_line"></div>
+					<Button
+						colorScheme={color.main}
+						onClick={() => visit("https://cloudynest.vercel.app/")}
+						size="lg"
+						leftIcon={<FaLink />}>
+						Visit to the Website
+					</Button>
+					<Button size="lg" leftIcon={<FaGitAlt />} colorScheme={color.main}>
+						Github Repository Link
+					</Button>
+					<div className="right_line"></div>
+				</div>
 			</div>
 
 			{/*  CARD 2 */}
 			<div className="project">
-				<h1 style={{ color: color.main }}>{"02 - Auraly"}</h1>
+				{/* <h1 style={{ color: color.main }}>{"02 - Auraly"}</h1> */}
 
 				<div className="project_view">
 					<ProjectCard
@@ -92,6 +106,20 @@ const Projects = () => {
 				</div>
 
 				<ProjectDesc project_data={projectDescList[1]} />
+				<div className="project_btns">
+					<div className="left_line"></div>
+					<Button
+						colorScheme={color.main}
+						onClick={() => visit("https://cloudynest.vercel.app/")}
+						size="lg"
+						leftIcon={<FaLink />}>
+						Visit to the Website
+					</Button>
+					<Button size="lg" leftIcon={<FaGitAlt />} colorScheme={color.main}>
+						Github Repository Link
+					</Button>
+					<div className="right_line"></div>
+				</div>
 			</div>
 
 			{/*  CARD 3 */}

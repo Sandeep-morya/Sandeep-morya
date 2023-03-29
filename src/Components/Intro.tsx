@@ -1,18 +1,13 @@
-﻿import { useContext, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+﻿import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Clock from "./Clock";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
-	const { ref, inView } = useInView();
 
 	return (
-		<div
-			ref={ref}
-			className={`intro ${inView && "puffIn"}`}
-			style={{ color: color.main }}>
+		<div className={`intro puffIn`} style={{ color: color.main }}>
 			<div className={`big`}>
 				<div className="intro_text">
 					<h1 className="part_one">SANDEEP</h1>

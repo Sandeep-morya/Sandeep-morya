@@ -39,7 +39,9 @@ const ProjectDesc = (props: Props) => {
 			<div
 				style={{ borderColor: color.main, backgroundColor: color.dimmed }}
 				className="desc_features">
-				<h3 style={{ color: color.main }}>Top Features of Railman Website</h3>
+				<h3 style={{ color: color.main }}>
+					Features in <q>{props.project_data.title}</q> Website
+				</h3>
 				<ul>
 					{props.project_data.features.map((e) => {
 						return <li key={e.toString()}>{e}</li>;

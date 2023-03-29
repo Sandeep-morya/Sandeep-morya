@@ -4,8 +4,9 @@
  * Copyright (c) 2022 Christian Pucci
  */
 .puffIn {
-	-webkit-animation: puffIn 2s;
-	animation: puffIn 1s linear;
+	-webkit-animation: puffIn 1s;
+	animation: puffIn 1s ease-out;
+	animation-delay: 0;
 	opacity: 1;
 }
 
