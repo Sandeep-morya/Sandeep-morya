@@ -26,8 +26,8 @@ const About = () => {
 						completed my graduations in Bachelor of Computer Applications{" "}
 						<Highlight>{"(BCA)"}</Highlight> from{" "}
 						<Highlight>Integral University</Highlight> Lucknow. But as we know
-						degree in not sufficient, so i joined Masai School for learning
-						web development.
+						degree in not sufficient, so i joined Masai School for learning web
+						development.
 					</div>
 
 					<div className="today">
@@ -73,7 +73,7 @@ const About = () => {
 						<Button
 							onClick={() =>
 								visit(
-									"https://drive.google.com/file/d/1ZWoc4PciPTIc9PYDCt0P5oP-cp15h6c1/view?usp=share_link",
+									"https://drive.google.com/file/d/1mUVPtu4Y6aotLn06NjC-MOpVe7vXMKV9/view?usp=share_link",
 								)
 							}
 							size="lg"
