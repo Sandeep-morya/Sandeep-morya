@@ -28,10 +28,10 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 			<div
 				style={{ backgroundColor: colorScheme.main }}
 				className="hex_card_top"></div>
-			<h1 ref={ref} className="hex_skill_title" style={{ color: "white" }}>
+			<h1 className="hex_skill_title" style={{ color: "white" }}>
 				{title}
 			</h1>
-			<div className="hexes">
+			<div ref={ref} className="hexes">
 				<div className="hex_line hex1">
 					<div
 						style={{ opacity: "0", transitionDelay: `0.3s` }}
