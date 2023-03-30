@@ -38,7 +38,7 @@ const projectList: ProjectItem[] = [
 		tech_stack: [0, 1, 3, 4, 6, 8, 9, 10, 11, 12],
 	},
 	{
-		title: "Giphy Clone",
+		title: "Auraly",
 		laptop_image:
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1680072768/gvsuekdx3wt7pyjkpzpn.png",
 		mobile_image:

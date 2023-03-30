@@ -20,11 +20,11 @@ const About = () => {
 		<div className="about" id="about">
 			<Title title={"about me"} />
 			<div
-				ref={ref}
 				className={`about_description ${Styles.from_bottom} ${
 					inView && Styles.base
 				}`}>
 				<div
+					ref={ref}
 					className="texts"
 					style={{ backgroundColor: color.dimmed, borderColor: color.main }}>
 					<div className="past">

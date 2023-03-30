@@ -2,7 +2,6 @@
 	position: relative;
 	border: 0.15rem solid;
 	height: 32rem;
-
 	border-radius: 0.3rem;
 }
 .hex_card_top {
@@ -63,7 +62,7 @@
 .each_icon {
 	position: relative;
 }
-.icon_1 {
+.icon {
 	position: absolute;
 	font-size: 2rem;
 	top: 50%;

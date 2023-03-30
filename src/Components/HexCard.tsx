@@ -4,6 +4,8 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import colorPalettes from "../Styles/colorPalette";
 import HexPill from "./HexPill";
 import "../Styles/hex_card.css";
+import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
 
 type Props = {
 	title: string;
@@ -15,6 +17,7 @@ type Props = {
 const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 	const [First, Second, Third, Fourth, Fifth, Sixth] = Icons;
 	const { color } = React.useContext(ThemeContext);
+	const { ref, inView } = useInView();
 	return (
 		<div
 			className="hex_card"
@@ -25,17 +28,20 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 			<div
 				style={{ backgroundColor: colorScheme.main }}
 				className="hex_card_top"></div>
-			<h1 className="hex_skill_title" style={{ color: "white" }}>
+			<h1 ref={ref} className="hex_skill_title" style={{ color: "white" }}>
 				{title}
 			</h1>
 			<div className="hexes">
 				<div className="hex_line hex1">
-					<div className="each_icon" title={skillNames[0]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `0.3s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[0]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div
-							className="icon_1"
+							className="icon"
 							style={{
 								color: "white",
 								// cursor:
@@ -46,45 +52,60 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					</div>
 				</div>
 				<div className="hex_line hex2">
-					<div className="each_icon" title={skillNames[1]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `0.4s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[1]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div className="icon" style={{ color: "white" }}>
 							{<Second title={skillNames[1]} />}
 						</div>
 					</div>
-					<div className="each_icon" title={skillNames[2]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `0.55s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[2]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div className="icon" style={{ color: "white" }}>
 							{<Third title={skillNames[2]} />}
 						</div>
 					</div>
 				</div>
 				<div className="hex_line hex2">
-					<div className="each_icon" title={skillNames[3]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `0.7s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[3]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div className="icon" style={{ color: "white" }}>
 							{<Fourth title={skillNames[3]} />}
 						</div>
 					</div>
-					<div className="each_icon" title={skillNames[4]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `0.85s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[4]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div className="icon" style={{ color: "white" }}>
 							{<Fifth title={skillNames[4]} />}
 						</div>
 					</div>
-					<div className="each_icon" title={skillNames[5]}>
+					<div
+						style={{ opacity: "0", transitionDelay: `1s` }}
+						className={`each_icon ${inView && Styles.base}`}
+						title={skillNames[5]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div className="icon" style={{ color: "white" }}>
 							{<Sixth title={skillNames[5]} />}
 						</div>
 					</div>

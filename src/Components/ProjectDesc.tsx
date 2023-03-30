@@ -36,6 +36,7 @@ const ProjectDesc = (props: Props) => {
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
 					transform: "translateX(-50%)",
+					transitionDelay: "0.15s",
 					opacity: "0",
 				}}
 				className={`desc_body ${inView && Styles.base}`}>
@@ -49,7 +50,7 @@ const ProjectDesc = (props: Props) => {
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
 					transform: "translateX(-100%)",
-					transitionDelay: "0.15s",
+					transitionDelay: "0.3s",
 					opacity: "0",
 				}}
 				className={`desc_features ${inView && Styles.base}`}>
@@ -67,7 +68,7 @@ const ProjectDesc = (props: Props) => {
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
 					transform: "translateX(-150%)",
-					transitionDelay: "0.3s",
+					transitionDelay: "0.5s",
 					opacity: "0",
 				}}
 				className={`desc_tech ${inView && Styles.base}`}>
