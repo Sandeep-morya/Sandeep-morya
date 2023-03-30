@@ -1,17 +1,24 @@
 ﻿import React from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/project_mobile_card.css";
+import Styles from "../Styles/observer.module.css";
+import { useInView } from "react-intersection-observer";
+
 type Props = {
 	imageUrl: string;
 };
 
 const ProjectMobileCard = ({ imageUrl }: Props) => {
 	const { color } = React.useContext(ThemeContext);
+	const { ref, inView } = useInView();
 
 	return (
 		<div
-			style={{ borderColor: color.main }}
-			className="project_mobile_card_div">
+			ref={ref}
+			style={{ borderColor: color.main, transitionDelay: "0.5s" }}
+			className={`project_mobile_card_div  ${Styles.from_right} ${
+				inView && Styles.base
+			}`}>
 			<div style={{ backgroundColor: color.main }} className="mobile_head">
 				<div className="camera"></div>
 			</div>

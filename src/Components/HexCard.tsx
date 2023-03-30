@@ -34,7 +34,13 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
-						<div className="icon_1" style={{ color: "white" }}>
+						<div
+							className="icon_1"
+							style={{
+								color: "white",
+								// cursor:
+								// 	"url(https://icons.iconarchive.com/icons/graphics-vibe/developer/128/html-icon.png), auto",
+							}}>
 							{<First title={skillNames[0]} />}
 						</div>
 					</div>

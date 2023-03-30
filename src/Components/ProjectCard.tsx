@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
 
 interface Props {
 	imageUrl: String;
@@ -12,9 +14,11 @@ interface Props {
 
 const ProjectCard = (props: Props) => {
 	const { color } = useContext(ThemeContext);
+	const { ref, inView } = useInView();
 	return (
 		<div
-			className="project_card"
+			ref={ref}
+			className={`project_card`}
 			style={{
 				color: color.main,
 				filter: `drop-shadow(0 0 2px ${color.dimmed}`,
