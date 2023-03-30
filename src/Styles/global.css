@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 	border: 1px solid #181818;
 	border-radius: 50%;
 	z-index: 5;
-	transition: transform 0.3s;
+	transition: transform 0.3s ease-out;
 }
 
 .themeIcon > * {

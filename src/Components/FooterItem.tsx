@@ -2,17 +2,24 @@
 import "../Styles/footer_item.css";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
 
 interface Props {
 	title: String;
 	val: String;
 	Icon: IconType;
+	style?: React.CSSProperties;
 }
 
-const FooterItem = ({ title, val, Icon }: Props) => {
+const FooterItem = ({ title, val, Icon, style }: Props) => {
 	const { color } = useContext(ThemeContext);
+	const { ref, inView } = useInView();
 	return (
-		<div className="footer_item">
+		<div
+			style={{ ...style }}
+			ref={ref}
+			className={`footer_item ${inView && Styles.base}`}>
 			<Icon size={40} color={color.main} />
 			<div>
 				<h3 style={{ color: color.main }}>{title}</h3>

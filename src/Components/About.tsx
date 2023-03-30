@@ -8,14 +8,22 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
 import useVisit from "../hooks/useVisit";
+import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
+import Animation from "../Styles/animations.module.css";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
 	const visit = useVisit();
+	const { ref, inView } = useInView();
 	return (
 		<div className="about" id="about">
 			<Title title={"about me"} />
-			<div className="about_description">
+			<div
+				ref={ref}
+				className={`about_description ${Styles.from_bottom} ${
+					inView && Styles.base
+				}`}>
 				<div
 					className="texts"
 					style={{ backgroundColor: color.dimmed, borderColor: color.main }}>

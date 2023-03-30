@@ -15,6 +15,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { MdSend } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
 import useVisit from "../hooks/useVisit";
+import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
 
 const initialValue = {
 	name: "",
@@ -25,13 +27,15 @@ const Contact = () => {
 	const { color } = useContext(ThemeContext);
 	const [formData, setFormData] = useState(initialValue);
 	const visit = useVisit();
+	const { ref, inView } = useInView();
 
 	return (
 		<div className="contact" id="contact">
 			<Title title={"Contact"} />
 			<h1 style={{ color: color.main }}>Hire Me</h1>
 			<div
-				className="contact_body"
+				className={`contact_body ${Styles.from_left} ${inView && Styles.base}`}
+				ref={ref}
 				style={{
 					borderColor: color.main,
 					boxShadow: `0 0 5px  ${color.dimmed}`,

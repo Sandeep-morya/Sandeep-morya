@@ -9,8 +9,6 @@
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
-	backdrop-filter: blur(5px);
-	opacity: 0;
 }
 .big {
 	display: flex;

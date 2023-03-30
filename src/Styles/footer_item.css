@@ -1,15 +1,15 @@
-﻿.footer_item{
+﻿.footer_item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 }
 
-.footer_item>div{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.footer_item > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
-.footer_item p{
-    color: rgba(255, 255, 255, 1);
+.footer_item p {
+	color: rgba(255, 255, 255, 1);
 }
