@@ -15,18 +15,20 @@ import Animation from "../Styles/animations.module.css";
 const About = () => {
 	const { color } = useContext(ThemeContext);
 	const visit = useVisit();
-	const { ref, inView } = useInView();
+	const [desRef, desInView] = useInView();
+	const [picRef, picInView] = useInView();
 	return (
 		<div className="about" id="about">
 			<Title title={"about me"} />
-			<div
-				className={`about_description ${Styles.from_bottom} ${
-					inView && Styles.base
-				}`}>
+			<div className={`about_description`}>
 				<div
-					ref={ref}
-					className="texts"
-					style={{ backgroundColor: color.dimmed, borderColor: color.main }}>
+					ref={desRef}
+					className={`texts ${Styles.from_left} ${desInView && Styles.base}`}
+					style={{
+						backgroundColor: color.dimmed,
+						borderColor: color.main,
+						transitionDelay: "0.2s",
+					}}>
 					<div className="past">
 						Hello, my name is Sandeep Morya.I{" "}
 						<Highlight>live in Ludhiana, Punjab</Highlight>.I build things for
@@ -60,7 +62,12 @@ const About = () => {
 						all the queries if you have any, without any hesitation.
 					</div>
 				</div>
-				<div className="profile">
+				<div
+					ref={picRef}
+					style={{ transitionDelay: "0.5s" }}
+					className={`profile ${Styles.from_right} ${
+						desInView && Styles.base
+					}`}>
 					<div className="profile_pic" style={{ backgroundColor: color.main }}>
 						<img
 							src="https://res.cloudinary.com/due9pi68z/image/upload/v1680098809/uevnv967xka4pcxzcfky.png"

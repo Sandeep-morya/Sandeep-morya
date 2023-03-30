@@ -27,7 +27,7 @@ const Footer = () => {
 						key={item.title}
 						{...item}
 						style={{
-							// transform: `translateX(${(index + 1) * 50})%`,
+							transform: `translate(-${(index + 1) * 30}%)`,
 							opacity: "0",
 							transitionDelay: `${(index + 1) * 0.1}s`,
 						}}

@@ -35,7 +35,7 @@ const ProjectDesc = (props: Props) => {
 				style={{
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
-					transform: "translateX(-50%)",
+					transform: "translateX(-30%)",
 					transitionDelay: "0.15s",
 					opacity: "0",
 				}}
@@ -49,7 +49,7 @@ const ProjectDesc = (props: Props) => {
 				style={{
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
-					transform: "translateX(-100%)",
+					transform: "translateX(-60%)",
 					transitionDelay: "0.3s",
 					opacity: "0",
 				}}
@@ -67,7 +67,7 @@ const ProjectDesc = (props: Props) => {
 				style={{
 					borderColor: color.main,
 					backgroundColor: color.dimmed,
-					transform: "translateX(-150%)",
+					transform: "translateX(-90%)",
 					transitionDelay: "0.5s",
 					opacity: "0",
 				}}

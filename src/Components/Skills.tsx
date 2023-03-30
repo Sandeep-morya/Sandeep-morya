@@ -33,90 +33,89 @@ import colorPalettes, { randomColor } from "../Styles/colorPalette";
 import { colorsArray } from "../Styles/colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { useInView } from "react-intersection-observer";
+import Styles from "../Styles/observer.module.css";
+
+const skillsData = [
+	{
+		title: "UI DESIGN",
+		skillNames: [
+			"HTML5",
+			"CSS3",
+			"Figma",
+			"Chakra-UI",
+			"Material-UI",
+			"Tailwind-CSS",
+		],
+		Icons: [SiHtml5, SiCss3, SiFigma, SiChakraui, SiMaterialui, SiTailwindcss],
+	},
+	{
+		title: "FRONTEND",
+		skillNames: [
+			"JavaScript",
+			"React",
+			"NextJS",
+			"TypeScript",
+			"JQuery",
+			"Redux",
+		],
+		Icons: [
+			SiJavascript,
+			SiReact,
+			SiNextdotjs,
+			SiTypescript,
+			SiJquery,
+			SiRedux,
+		],
+	},
+	{
+		title: "BACKEND",
+		skillNames: [
+			"NodeJS",
+			"ExpressJS",
+			"MongoDB",
+			"Swagger",
+			"Socket.io",
+			"Cypress",
+		],
+		Icons: [
+			SiNodedotjs,
+			SiExpress,
+			SiMongodb,
+			SiSwagger,
+			SiSocketdotio,
+			SiCypress,
+		],
+	},
+];
 
 const Skills = () => {
 	const { color } = React.useContext(ThemeContext);
-	const {ref,inView} = useInView()
-console.log("skills",inView);
+	const { ref, inView } = useInView();
 
 	return (
-		<div ref={ref} className="skills" id="skills">
+		<div className="skills" id="skills">
 			<Title title={"Skills"} />
 			<div className="cards">
-				<HexCard
-					title="UI DESIGN"
-					skillNames={[
-						"HTML5",
-						"CSS3",
-						"Figma",
-						"Chakra-UI",
-						"Material-UI",
-						"Tailwind-CSS",
-					]}
-					colorScheme={color}
-					Icons={[
-						SiHtml5,
-						SiCss3,
-						SiFigma,
-						SiChakraui,
-						SiMaterialui,
-						SiTailwindcss,
-					]}
-				/>
-				<HexCard
-					title="FRONTEND"
-					skillNames={[
-						"JavaScript",
-						"React",
-						"NextJS",
-						"TypeScript",
-						"JQuery",
-						"Redux",
-					]}
-					colorScheme={
-						color /* Palettes.orange_fish.main === color.main
-							?{ main: "rgba(255, 255, 255, 1)",
-									dimmed: "rgba(255, 255, 255, 0.1)",}
-							: colorPalettes.orange_fish */
-					}
-					Icons={[
-						SiJavascript,
-						SiReact,
-						SiNextdotjs,
-						SiTypescript,
-						SiJquery,
-						SiRedux,
-					]}
-				/>
-				<HexCard
-					title="BACKEND"
-					skillNames={[
-						"NodeJS",
-						"ExpressJS",
-						"MongoDB",
-						"Swagger",
-						"Socket.io",
-						"Cypress",
-					]}
-					colorScheme={
-						color /* Palettes.green_hacker.main === color.main
-							? {
-									main: "rgba(255, 255, 255, 1)",
-									dimmed: "rgba(255, 255, 255, 0.1)",
-							  }
-							: colorPalettes.green_hacker */
-					}
-					Icons={[
-						SiNodedotjs,
-						SiExpress,
-						SiMongodb,
-						SiSwagger,
-						SiSocketdotio,
-						SiCypress,
-					]}
-				/>
+				{skillsData.map((skill, index) => (
+					<div
+						ref={ref}
+						style={{
+							transform: "rotateZ(-15deg)",
+							transitionDelay: `${(index + 1) * 0.1}s`,
+						}}
+						key={skill.title}
+						className={`${inView && Styles.base}`}>
+						<HexCard colorScheme={color} {...skill} />
+					</div>
+				))}
+			</div>
+		</div>
+	);
+};
 
-				{/* <Card
+export default Skills;
+
+/* 				<Card
 					title={"Optimizing"}
 					Icon={FaCode}
 					techIcons={[SiGit,SiEslint,]}
@@ -127,14 +126,9 @@ console.log("skills",inView);
 					Icon={BiTestTube}
 					techIcons={[SiCypress, SiMocha, SiSocketdotio]}
 					techNames={["cypress", "mocha", "rt library"]}></Card>
+
 				<Card
 					title={"extra"}
 					Icon={FaTools}
 					techIcons={[SiJquery, SiFigma]}
-					techNames={["jquery", "figma"]}></Card> */}
-			</div>
-		</div>
-	);
-};
-
-export default Skills;
+					techNames={["jquery", "figma"]}></Card> */
