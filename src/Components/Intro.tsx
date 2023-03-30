@@ -18,6 +18,7 @@ const Intro = () => {
 				</div>
 				<div
 					ref={ref}
+					style={{ transitionDelay: "0.3s" }}
 					className={`${Styles.from_right} ${inView && Styles.base}`}>
 					<Clock />
 				</div>
