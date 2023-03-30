@@ -1,5 +1,6 @@
 ﻿.from_right {
 	transform: translateX(50%);
+	transition-delay: 0.5s;
 	opacity: 0;
 }
 .from_left {
