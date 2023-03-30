@@ -34,7 +34,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 			<div ref={ref} className="hexes">
 				<div className="hex_line hex1">
 					<div
-						style={{ opacity: "0", transitionDelay: `0.4s` }}
+						style={{ opacity: "0", transitionDelay: `0.1s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[0]}>
 						<div className="hex_pill">
@@ -53,7 +53,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 				</div>
 				<div className="hex_line hex2">
 					<div
-						style={{ opacity: "0", transitionDelay: `0.55s` }}
+						style={{ opacity: "0", transitionDelay: `0.25s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[1]}>
 						<div className="hex_pill">
@@ -64,7 +64,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 						</div>
 					</div>
 					<div
-						style={{ opacity: "0", transitionDelay: `0.7s` }}
+						style={{ opacity: "0", transitionDelay: `0.4s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[2]}>
 						<div className="hex_pill">
@@ -77,7 +77,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 				</div>
 				<div className="hex_line hex2">
 					<div
-						style={{ opacity: "0", transitionDelay: `0.85s` }}
+						style={{ opacity: "0", transitionDelay: `0.65s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[3]}>
 						<div className="hex_pill">
@@ -88,7 +88,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 						</div>
 					</div>
 					<div
-						style={{ opacity: "0", transitionDelay: `1s` }}
+						style={{ opacity: "0", transitionDelay: `0.8s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[4]}>
 						<div className="hex_pill">
@@ -99,7 +99,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 						</div>
 					</div>
 					<div
-						style={{ opacity: "0", transitionDelay: `1.15s` }}
+						style={{ opacity: "0", transitionDelay: `1s` }}
 						className={`each_icon ${inView && Styles.base}`}
 						title={skillNames[5]}>
 						<div className="hex_pill">

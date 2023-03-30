@@ -100,7 +100,7 @@ const Skills = () => {
 					<div
 						ref={ref}
 						style={{
-							transform: "rotateZ(-15deg)",
+							transform: "rotateZ(-10deg)",
 							transitionDelay: `${(index + 1) * 0.1}s`,
 						}}
 						key={skill.title}
