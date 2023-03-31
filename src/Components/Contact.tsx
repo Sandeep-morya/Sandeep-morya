@@ -37,10 +37,11 @@ const Contact = () => {
 		if (inView) {
 			setLinkName("contact");
 		}
+		console.log("contact", inView);
 	}, [inView]);
 
 	return (
-		<div className="contact" id="contact">
+		<div ref={ref} className="contact" id="contact">
 			<Title title={"Contact"} />
 			<h1 style={{ color: color.main }}>Hire Me</h1>
 			<div
@@ -48,6 +49,7 @@ const Contact = () => {
 				ref={ref}
 				style={{
 					borderColor: color.main,
+					transitionDelay: "0.5s",
 					boxShadow: `0 0 5px  ${color.dimmed}`,
 				}}>
 				<form className="contact_form">

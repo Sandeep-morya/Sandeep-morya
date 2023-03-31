@@ -16,6 +16,7 @@ const Intro = () => {
 		if (inView) {
 			setLinkName("");
 		}
+		console.log("intro", inView);
 	}, [inView]);
 
 	return (

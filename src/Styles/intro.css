@@ -6,6 +6,8 @@
 	flex-direction: column;
 	gap: 5rem;
 	padding-top: 12rem;
+	padding-bottom: 2rem;
+
 	/* background-image: url("/dark-wallpaper.png"); */
 	background-size: cover;
 	background-attachment: fixed;

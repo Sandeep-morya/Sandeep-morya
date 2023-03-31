@@ -83,23 +83,32 @@ const projectList: ProjectItem[] = [
 
 const Projects = () => {
 	const visit = useVisit();
+	const { ref, inView } = useObserver();
+	const { setLinkName } = React.useContext(NavbarContext);
 
+	React.useEffect(() => {
+		if (inView) {
+			setLinkName("projects");
+		}
+		console.log("project", inView);
+	}, [inView]);
 	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />
 
 			{/*--->  All Projects  <---*/}
+			<div ref={ref}>
+				{projectList.map((project) => (
+					<Project key={project.title} {...{ project }} />
+				))}
 
-			{projectList.map((project) => (
-				<Project key={project.title} {...{ project }} />
-			))}
-
-			<h1
-				onClick={() => visit("https://sandeepmorya.netlify.app/")}
-				className="more_link">
-				<FaAngleDoubleRight />
-				See More
-			</h1>
+				<h1
+					onClick={() => visit("https://sandeepmorya.netlify.app/")}
+					className="more_link">
+					<FaAngleDoubleRight />
+					See More
+				</h1>
+			</div>
 		</div>
 	);
 };

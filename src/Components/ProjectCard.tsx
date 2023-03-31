@@ -1,10 +1,11 @@
 ﻿import "../Styles/project_card.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 interface Props {
 	imageUrl: String;
@@ -15,6 +16,7 @@ interface Props {
 const ProjectCard = (props: Props) => {
 	const { color } = useContext(ThemeContext);
 	const { ref, inView } = useObserver();
+
 	return (
 		<div
 			ref={ref}

@@ -1,16 +1,11 @@
 ﻿.about {
 	padding: 7rem;
 	padding-top: 9rem;
+	padding-bottom: 2rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
-/* .about_heading::before{
-    width: 10rem;
-    height: 1px;
-    content: '';
-    background-color: rgba(244, 191, 0,1);
-} */
 
 .about_description {
 	width: 100%;
@@ -50,6 +45,7 @@
 	width: 20rem;
 	height: 20rem;
 	position: relative;
+
 	border-radius: 0.3rem;
 }
 .profile_pic > img {

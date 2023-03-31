@@ -1,9 +1,9 @@
 ﻿/* Desktop */
 .content {
-
 	margin: 0 15rem;
 	display: flex;
 	flex-direction: column;
+	gap: 5rem;
 }
 /* Full HD Laptops */
 @media screen and (max-width: 100rem) {

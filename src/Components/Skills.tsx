@@ -100,12 +100,13 @@ const Skills = () => {
 		if (inView) {
 			setLinkName("skills");
 		}
+		console.log("skills", inView);
 	}, [inView]);
 
 	return (
-		<div ref={ref} className="skills" id="skills">
+		<div className="skills" id="skills">
 			<Title title={"Skills"} />
-			<div className="cards">
+			<div ref={ref} className="cards">
 				{skillsData.map((skill, index) => (
 					<div
 						style={{

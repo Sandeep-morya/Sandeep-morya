@@ -17,18 +17,20 @@ const About = () => {
 	const { color } = useContext(ThemeContext);
 
 	const visit = useVisit();
+	const { ref, inView } = useObserver();
 	const { ref: desRef, inView: desInView } = useObserver();
 	const { ref: picRef, inView: picInView } = useObserver();
 
 	const { setLinkName } = useContext(NavbarContext);
 
 	useEffect(() => {
-		if (picInView) {
+		if (inView) {
 			setLinkName("about");
 		}
-	}, [picInView]);
+		console.log("about", inView);
+	}, [inView]);
 	return (
-		<div className="about" id="about">
+		<div ref={ref} className="about" id="about">
 			<Title title={"about me"} />
 			<div className={`about_description`}>
 				<div
