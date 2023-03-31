@@ -32,7 +32,7 @@ import HexCard from "./HexCard";
 import colorPalettes, { randomColor } from "../colorPalette";
 import { colorsArray } from "../colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-// import { useInView } from "react-intersection-observer";
+
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 

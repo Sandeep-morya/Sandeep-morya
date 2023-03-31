@@ -4,7 +4,7 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import colorPalettes from "../colorPalette";
 import HexPill from "./HexPill";
 import "../Styles/hex_card.css";
-// import { useInView } from "react-intersection-observer";
+
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 

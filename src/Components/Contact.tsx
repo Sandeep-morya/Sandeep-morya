@@ -15,7 +15,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { MdSend } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
 import useVisit from "../hooks/useVisit";
-// import { useInView } from "react-intersection-observer";
+
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 

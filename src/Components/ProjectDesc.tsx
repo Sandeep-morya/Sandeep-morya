@@ -3,7 +3,7 @@ import { ProjectItem } from "./Projects";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import Styles from "../Styles/observer.module.css";
-// import { useInView } from "react-intersection-observer";
+
 import useObserver from "../hooks/useObserver";
 
 interface Props {

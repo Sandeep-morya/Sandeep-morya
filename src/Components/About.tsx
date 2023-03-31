@@ -8,7 +8,7 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
 import useVisit from "../hooks/useVisit";
-// import { useInView } from "react-intersection-observer";
+
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 

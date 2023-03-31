@@ -2,7 +2,7 @@
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/project_mobile_card.css";
 import Styles from "../Styles/observer.module.css";
-// import { useInView } from "react-intersection-observer";
+
 import useObserver from "../hooks/useObserver";
 
 type Props = {

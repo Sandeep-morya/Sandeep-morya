@@ -2,7 +2,7 @@
 import "../Styles/footer_item.css";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-// import { useInView } from "react-intersection-observer";
+
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 

@@ -1,5 +1,5 @@
 ﻿import { useContext } from "react";
-// import { useInView } from "react-intersection-observer";
+
 import useObserver from "../hooks/useObserver";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
