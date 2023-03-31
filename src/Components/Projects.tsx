@@ -1,9 +1,11 @@
 ﻿import "../Styles/projects.css";
 import Title from "./Title";
+import React from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import useVisit from "../hooks/useVisit";
 import Project from "./Project";
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 export interface ProjectItem {
 	title: string;
@@ -81,6 +83,7 @@ const projectList: ProjectItem[] = [
 
 const Projects = () => {
 	const visit = useVisit();
+
 	return (
 		<div className="projects" id="projects">
 			<Title title={"projects"} />

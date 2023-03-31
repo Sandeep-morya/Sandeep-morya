@@ -1,7 +1,7 @@
 ﻿import React from "react";
 
 const useVisit = () => {
-	return (url: string) => {
+	return (url: string | URL) => {
 		setTimeout(() => {
 			window.open(url, "_blank");
 		}, 700);

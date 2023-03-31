@@ -3,7 +3,7 @@ import "../Styles/about.css";
 // import Button from "./Button";
 import Highlight from "./Highlight";
 import Title from "./Title";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
@@ -11,12 +11,22 @@ import useVisit from "../hooks/useVisit";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
+
 	const visit = useVisit();
 	const { ref: desRef, inView: desInView } = useObserver();
 	const { ref: picRef, inView: picInView } = useObserver();
+
+	const { setLinkName } = useContext(NavbarContext);
+
+	useEffect(() => {
+		if (picInView) {
+			setLinkName("about");
+		}
+	}, [picInView]);
 	return (
 		<div className="about" id="about">
 			<Title title={"about me"} />

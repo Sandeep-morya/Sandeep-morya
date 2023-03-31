@@ -1,6 +1,7 @@
-﻿import { useContext } from "react";
+﻿import { useContext, useEffect } from "react";
 
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Styles from "../Styles/observer.module.css";
@@ -9,9 +10,16 @@ import Clock from "./Clock";
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
 	const { ref, inView } = useObserver();
+	const { setLinkName } = useContext(NavbarContext);
+
+	useEffect(() => {
+		if (inView) {
+			setLinkName("");
+		}
+	}, [inView]);
 
 	return (
-		<div className={`intro`} style={{ color: color.main }}>
+		<div id="#intro" className={`intro`} style={{ color: color.main }}>
 			<div className={`big`}>
 				<div className="intro_text">
 					<h1 className="part_one">SANDEEP</h1>

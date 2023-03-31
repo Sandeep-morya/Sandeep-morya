@@ -35,6 +35,7 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 const skillsData = [
 	{
@@ -93,10 +94,18 @@ const Skills = () => {
 	const { color } = React.useContext(ThemeContext);
 	const { ref, inView } = useObserver();
 
+	const { setLinkName } = React.useContext(NavbarContext);
+
+	React.useEffect(() => {
+		if (inView) {
+			setLinkName("skills");
+		}
+	}, [inView]);
+
 	return (
-		<div className="skills" id="skills">
+		<div ref={ref} className="skills" id="skills">
 			<Title title={"Skills"} />
-			<div ref={ref} className="cards">
+			<div className="cards">
 				{skillsData.map((skill, index) => (
 					<div
 						style={{

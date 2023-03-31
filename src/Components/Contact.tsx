@@ -1,7 +1,7 @@
 ﻿import Title from "./Title";
 import "../Styles/contact.css";
 import Button from "./BubbleButton";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 
 import {
@@ -18,6 +18,7 @@ import useVisit from "../hooks/useVisit";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 const initialValue = {
 	name: "",
@@ -29,6 +30,14 @@ const Contact = () => {
 	const [formData, setFormData] = useState(initialValue);
 	const visit = useVisit();
 	const { ref, inView } = useObserver();
+
+	const { setLinkName } = useContext(NavbarContext);
+
+	useEffect(() => {
+		if (inView) {
+			setLinkName("contact");
+		}
+	}, [inView]);
 
 	return (
 		<div className="contact" id="contact">

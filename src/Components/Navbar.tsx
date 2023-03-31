@@ -4,10 +4,18 @@ import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { HiColorSwatch } from "react-icons/hi";
 import colorPalettes from "../colorPalette";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 const Navbar = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
+	const { linkname } = useContext(NavbarContext);
+
+	useEffect(() => {
+		console.log(linkname);
+	}, [linkname]);
+
+	const Links = ["about", "skills", "projects", "contact"];
 
 	return (
 		<div
@@ -15,11 +23,22 @@ const Navbar = () => {
 			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<Avatar />
 			<div className="navlinks">
-				<a href="#">intro</a>
-				<a href="#about">about me</a>
-				<a href="#skills">skills</a>
-				<a href="#projects">projects</a>
-				<a href="#contact">contact</a>
+				<a
+					key={"intro"}
+					style={{ backgroundColor: linkname === "" ? "red" : "" }}
+					href="#">
+					intro
+				</a>
+				{Links.map((link) => (
+					<a
+						key={link}
+						style={{
+							backgroundColor: linkname === link ? "red" : "transparent",
+						}}
+						href={`#${link}`}>
+						{link}
+					</a>
+				))}
 			</div>
 			<div className="themeIcon" style={{ color: color.main }}>
 				<HiColorSwatch size={30} onClick={() => setHidden(!hidden)} />

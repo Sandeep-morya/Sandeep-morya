@@ -4,6 +4,7 @@ import "../Styles/project_mobile_card.css";
 import Styles from "../Styles/observer.module.css";
 
 import useObserver from "../hooks/useObserver";
+import { NavbarContext } from "../Provider/NavbarStateProvider";
 
 type Props = {
 	imageUrl: string;
@@ -12,6 +13,13 @@ type Props = {
 const ProjectMobileCard = ({ imageUrl }: Props) => {
 	const { color } = React.useContext(ThemeContext);
 	const { ref, inView } = useObserver();
+	const { setLinkName } = React.useContext(NavbarContext);
+
+	React.useEffect(() => {
+		if (inView) {
+			setLinkName("projects");
+		}
+	}, [inView]);
 
 	return (
 		<div

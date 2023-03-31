@@ -25,6 +25,7 @@
 html {
 	scroll-behavior: smooth !important;
 	background-color: #181818;
+	overflow-x: hidden;
 	/* background-color:black; */
 	background-image: radial-gradient(
 			white,
