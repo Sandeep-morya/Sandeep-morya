@@ -2,7 +2,8 @@
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/project_mobile_card.css";
 import Styles from "../Styles/observer.module.css";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
+import useObserver from "../hooks/useObserver";
 
 type Props = {
 	imageUrl: string;
@@ -10,7 +11,7 @@ type Props = {
 
 const ProjectMobileCard = ({ imageUrl }: Props) => {
 	const { color } = React.useContext(ThemeContext);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useObserver();
 
 	return (
 		<div

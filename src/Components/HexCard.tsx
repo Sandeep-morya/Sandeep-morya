@@ -4,8 +4,9 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import colorPalettes from "../colorPalette";
 import HexPill from "./HexPill";
 import "../Styles/hex_card.css";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import Styles from "../Styles/observer.module.css";
+import useObserver from "../hooks/useObserver";
 
 type Props = {
 	title: string;
@@ -17,7 +18,7 @@ type Props = {
 const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 	const [First, Second, Third, Fourth, Fifth, Sixth] = Icons;
 	const { color } = React.useContext(ThemeContext);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useObserver();
 	return (
 		<div
 			className={`hex_card`}

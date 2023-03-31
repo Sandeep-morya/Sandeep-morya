@@ -3,7 +3,8 @@ import { ProjectItem } from "./Projects";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import Styles from "../Styles/observer.module.css";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
+import useObserver from "../hooks/useObserver";
 
 interface Props {
 	project_data: ProjectItem;
@@ -28,7 +29,7 @@ const teach_list = [
 ];
 const ProjectDesc = (props: Props) => {
 	const { color } = useContext(ThemeContext);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useObserver();
 	return (
 		<div ref={ref} className="project_desc">
 			<div

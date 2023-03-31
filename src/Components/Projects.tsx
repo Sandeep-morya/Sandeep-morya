@@ -3,6 +3,7 @@ import Title from "./Title";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import useVisit from "../hooks/useVisit";
 import Project from "./Project";
+import useObserver from "../hooks/useObserver";
 
 export interface ProjectItem {
 	title: string;

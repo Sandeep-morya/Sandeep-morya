@@ -1,5 +1,6 @@
 ﻿import { useContext } from "react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
+import useObserver from "../hooks/useObserver";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Styles from "../Styles/observer.module.css";
@@ -7,7 +8,7 @@ import Clock from "./Clock";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useObserver();
 
 	return (
 		<div className={`intro`} style={{ color: color.main }}>

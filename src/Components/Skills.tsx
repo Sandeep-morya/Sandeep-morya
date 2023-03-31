@@ -32,8 +32,9 @@ import HexCard from "./HexCard";
 import colorPalettes, { randomColor } from "../colorPalette";
 import { colorsArray } from "../colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import Styles from "../Styles/observer.module.css";
+import useObserver from "../hooks/useObserver";
 
 const skillsData = [
 	{
@@ -90,7 +91,7 @@ const skillsData = [
 
 const Skills = () => {
 	const { color } = React.useContext(ThemeContext);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useObserver();
 
 	return (
 		<div className="skills" id="skills">

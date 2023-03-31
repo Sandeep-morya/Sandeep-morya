@@ -8,15 +8,15 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
 import useVisit from "../hooks/useVisit";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import Styles from "../Styles/observer.module.css";
-import Animation from "../Styles/animations.module.css";
+import useObserver from "../hooks/useObserver";
 
 const About = () => {
 	const { color } = useContext(ThemeContext);
 	const visit = useVisit();
-	const [desRef, desInView] = useInView();
-	const [picRef, picInView] = useInView();
+	const { ref: desRef, inView: desInView } = useObserver();
+	const { ref: picRef, inView: picInView } = useObserver();
 	return (
 		<div className="about" id="about">
 			<Title title={"about me"} />
