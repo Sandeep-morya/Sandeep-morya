@@ -20,13 +20,12 @@ const Intro = () => {
 
 	return (
 		<div id="#intro" className={`intro`} style={{ color: color.main }}>
-			<div className={`big`}>
+			<div ref={ref} className={`big`}>
 				<div className="intro_text">
 					<h1 className="part_one">SANDEEP</h1>
 					<h1 className="part_two">MORYA</h1>
 				</div>
 				<div
-					ref={ref}
 					style={{ transitionDelay: "0.3s" }}
 					className={`${Styles.from_right} ${inView && Styles.base}`}>
 					<Clock />

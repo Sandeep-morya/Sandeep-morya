@@ -49,7 +49,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	font-weight: bold;
 	filter: drop-shadow(0 0 5px black);
 	transition: all 0.15s;
