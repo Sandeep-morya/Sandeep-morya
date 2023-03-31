@@ -15,7 +15,7 @@ const Link = ({ children, to, isActive }: Props) => {
 			<div
 				style={{
 					width: isActive ? "100%" : "0",
-					backgroundImage: `linear-gradient(to left, ${color.main} , white, ${color.dimmed})`,
+					backgroundImage: `linear-gradient(to left, ${color.main} , white)`,
 				}}
 				className="navlink_botttom_slider"></div>
 		</div>
