@@ -7,10 +7,6 @@
 	transform: translateX(-50%);
 	opacity: 0;
 }
-.from_bottom {
-	transform: translateY(20%);
-	opacity: 0;
-}
 
 .base {
 	transform: none !important;

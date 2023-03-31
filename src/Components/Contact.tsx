@@ -62,6 +62,7 @@ const Contact = () => {
 							color: color.main,
 							outlineColor: color.main,
 							backgroundColor: color.dimmed,
+							resize: "none",
 						}}
 						placeholder={"Your Message"}
 						onChange={(e) =>
