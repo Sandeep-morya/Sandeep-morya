@@ -1,5 +1,5 @@
 import React from "react";
-import colorPalettes from "../Styles/colorPalette";
+import colorPalettes from "../colorPalette";
 /*  All Colors */
 
 interface ThemeContextType {

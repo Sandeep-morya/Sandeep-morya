@@ -3,7 +3,7 @@ import "../Styles/navbar.css";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { HiColorSwatch } from "react-icons/hi";
-import colorPalettes from "../Styles/colorPalette";
+import colorPalettes from "../colorPalette";
 
 const Navbar = () => {
 	const { color, setColor } = useContext(ThemeContext);

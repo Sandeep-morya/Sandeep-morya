@@ -94,7 +94,7 @@ const Projects = () => {
 				onClick={() => visit("https://sandeepmorya.netlify.app/")}
 				className="more_link">
 				<FaAngleDoubleRight />
-				More
+				See More
 			</h1>
 		</div>
 	);

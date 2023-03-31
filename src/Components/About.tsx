@@ -30,35 +30,34 @@ const About = () => {
 						transitionDelay: "0.2s",
 					}}>
 					<div className="past">
-						Hello, my name is Sandeep Morya.I{" "}
-						<Highlight>live in Ludhiana, Punjab</Highlight>.I build things for
-						the WEB. I enjoy creating things that live on the internet. I have
-						completed my graduations in Bachelor of Computer Applications{" "}
-						<Highlight>{"(BCA)"}</Highlight> from{" "}
-						<Highlight>Integral University</Highlight> Lucknow. But as we know
-						degree in not sufficient, so i joined Masai School for learning web
-						development.
+						Hello, my name is Sandeep Morya. I{" "}
+						<Highlight>live in Ludhiana, Punjab</Highlight>. I build things for
+						the WEB and I enjoy creating things that live on the internet.
+						<br />I have completed my graduations in Bachelor of Computer
+						Applications <Highlight>{"(BCA)"}</Highlight> from{" "}
+						<Highlight>Integral University</Highlight>, Lucknow. After that, I
+						joined Masai School{" "}
+						<Highlight>{"(Online coding bootcamp)"}</Highlight> for learning web
+						development
 					</div>
-
 					<div className="today">
-						Today, I am a qualified and professional web developer with great
-						knowledge of <Highlight>MERN stack</Highlight>, & some frameworks
+						Today, I am a qualified and professional web developer with good
+						knowledge of <Highlight>MERN stack</Highlight>, and some frameworks
 						like <Highlight>React, Next, Express</Highlight>. But still
-						exploring other technologies and frameworks that catch my interest!
+						exploring other technologies and frameworks that catch my interest.
 						If you're looking for a web developer to add to your team, I'd love
 						to hear from you!
 						<br />
-						<br /> <GiStarShuriken color={color.main} /> I have a good
-						experience in HTML5 & CSS3, JavaScript &{" "}
-						<Highlight>TypeScript</Highlight>, React & Next.js, Express &
-						<Highlight> MongoDB</Highlight>.
-						<br /> <GiStarShuriken color={color.main} /> I have created so many
+						<br /> <GiStarShuriken color={color.main} /> Have a good experience
+						in HTML5 & CSS3, JavaScript & <Highlight>TypeScript</Highlight>,
+						React & Next.js, Express &<Highlight> MongoDB</Highlight>.
+						<br /> <GiStarShuriken color={color.main} /> Had created so many
 						fully functional, <Highlight>bugs free websites </Highlight>
 						with attractive designs.
 						<br />
-						<GiStarShuriken color={color.main} /> I like to do my work deeply &
+						<GiStarShuriken color={color.main} /> Likes to do my work deeply &
 						sincerely.
-						<br /> <GiStarShuriken color={color.main} /> I would love to answers
+						<br /> <GiStarShuriken color={color.main} /> Would love to answers
 						all the queries if you have any, without any hesitation.
 					</div>
 				</div>
@@ -66,7 +65,7 @@ const About = () => {
 					ref={picRef}
 					style={{ transitionDelay: "0.5s" }}
 					className={`profile ${Styles.from_right} ${
-						desInView && Styles.base
+						picInView && Styles.base
 					}`}>
 					<div className="profile_pic" style={{ backgroundColor: color.main }}>
 						<img

@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import { IconType } from "react-icons/lib";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import colorPalettes from "../Styles/colorPalette";
+import colorPalettes from "../colorPalette";
 import HexPill from "./HexPill";
 import "../Styles/hex_card.css";
 import { useInView } from "react-intersection-observer";

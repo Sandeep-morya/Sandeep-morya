@@ -29,8 +29,8 @@ import {
 	SiEslint,
 } from "react-icons/si";
 import HexCard from "./HexCard";
-import colorPalettes, { randomColor } from "../Styles/colorPalette";
-import { colorsArray } from "../Styles/colorPalette";
+import colorPalettes, { randomColor } from "../colorPalette";
+import { colorsArray } from "../colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import { useInView } from "react-intersection-observer";
 import Styles from "../Styles/observer.module.css";
@@ -95,10 +95,9 @@ const Skills = () => {
 	return (
 		<div className="skills" id="skills">
 			<Title title={"Skills"} />
-			<div className="cards">
+			<div ref={ref} className="cards">
 				{skillsData.map((skill, index) => (
 					<div
-						ref={ref}
 						style={{
 							transform: "rotateZ(-10deg)",
 							transitionDelay: `${(index + 1) * 0.1}s`,
