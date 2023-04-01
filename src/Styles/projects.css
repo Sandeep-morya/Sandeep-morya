@@ -61,7 +61,7 @@
 /* Full HD Laptops */
 @media screen and (max-width: 100rem) {
 	.projects {
-		padding-top: 5rem;
+		padding-top: 9rem;
 	}
 	.project {
 		margin: 0;
@@ -76,7 +76,7 @@
 /* HD Laptops  */
 @media screen and (max-width: 88rem) {
 	.projects {
-		padding-top: 5rem;
+		padding-top: 9rem;
 	}
 	.project {
 		margin: 0;
@@ -97,7 +97,7 @@
 		flex-direction: column;
 		width: 100%;
 		padding: 1rem;
-		padding-top: 0rem;
+		padding-top: 5rem;
 		gap: 2rem;
 	}
 	.project {
