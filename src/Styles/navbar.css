@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	z-index: 3;
-	backdrop-filter: brightness(20%) blur(10px);
+	backdrop-filter: brightness(30%) blur(10px);
 }
 
 .navlinks {
@@ -33,7 +33,6 @@
 
 .themeIcon {
 	position: relative;
-	filter: drop-shadow(0 0 5px black);
 }
 .colorPalettes {
 	flex-direction: column;
@@ -41,13 +40,20 @@
 	top: 3rem;
 	left: 0rem;
 	gap: 0.7rem;
-	filter: drop-shadow(0 0 5px black);
 	z-index: 4;
+	filter: drop-shadow(0 0 5px black);
 }
-.colorPalettes > div {
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
+
+.flower_icon {
+	animation: circles 3s linear infinite forwards;
+}
+@keyframes circles {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
 }
 
 @media screen and (max-width: 40rem) {

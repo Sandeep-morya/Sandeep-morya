@@ -73,11 +73,24 @@
 	background-color: red;
 	border-radius: 2px;
 }
-
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+	.clock {
+		height: 19rem;
+		width: 19rem;
+	}
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+	.clock {
+		height: 18rem;
+		width: 18rem;
+	}
+}
 
 @media screen and (max-width: 40rem) {
 	.clock {
-	height: 17rem;
-	width: 17rem;
+		height: 17rem;
+		width: 17rem;
 	}
 }

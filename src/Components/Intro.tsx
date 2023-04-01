@@ -6,7 +6,6 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Styles from "../Styles/observer.module.css";
 import Clock from "./Clock";
-import { FaCloud } from "react-icons/fa";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);

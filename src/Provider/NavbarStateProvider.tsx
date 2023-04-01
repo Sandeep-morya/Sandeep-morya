@@ -7,7 +7,7 @@ export const NavbarContext = React.createContext(
 	},
 );
 
-type LinkName = "" | "about" | "skills" | "projects" | "contact";
+type LinkName = "" | "about" | "skills" | "projects" | "contact" | "resume";
 
 const NavbarStateProvider = ({ children }: { children: React.ReactNode }) => {
 	const [linkname, setLinkName] = React.useState<LinkName>("");
