@@ -6,6 +6,7 @@ import { ThemeContext } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Styles from "../Styles/observer.module.css";
 import Clock from "./Clock";
+import { FaCloud } from "react-icons/fa";
 
 const Intro = () => {
 	const { color } = useContext(ThemeContext);
@@ -27,7 +28,7 @@ const Intro = () => {
 					<h1 className="part_two">MORYA</h1>
 				</div>
 				<div
-					style={{ transitionDelay: "0.3s" }}
+					style={{ transitionDelay: "0.5s" }}
 					className={`${Styles.from_right} ${inView && Styles.base}`}>
 					<Clock />
 				</div>

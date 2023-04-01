@@ -37,7 +37,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					<div
 						style={{ opacity: "0", transitionDelay: `0.1s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[0]}>
+						data-title={skillNames[0]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
@@ -48,7 +48,7 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 								// cursor:
 								// 	"url(https://icons.iconarchive.com/icons/graphics-vibe/developer/128/html-icon.png), auto",
 							}}>
-							{<First title={skillNames[0]} />}
+							{<First data-title={skillNames[0]} />}
 						</div>
 					</div>
 				</div>
@@ -56,23 +56,23 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					<div
 						style={{ opacity: "0", transitionDelay: `0.25s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[1]}>
+						data-title={skillNames[1]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon" style={{ color: "white" }}>
-							{<Second title={skillNames[1]} />}
+							{<Second data-title={skillNames[1]} />}
 						</div>
 					</div>
 					<div
 						style={{ opacity: "0", transitionDelay: `0.4s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[2]}>
+						data-title={skillNames[2]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon" style={{ color: "white" }}>
-							{<Third title={skillNames[2]} />}
+							{<Third data-title={skillNames[2]} />}
 						</div>
 					</div>
 				</div>
@@ -80,34 +80,34 @@ const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 					<div
 						style={{ opacity: "0", transitionDelay: `0.65s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[3]}>
+						data-title={skillNames[3]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon" style={{ color: "white" }}>
-							{<Fourth title={skillNames[3]} />}
+							{<Fourth data-title={skillNames[3]} />}
 						</div>
 					</div>
 					<div
 						style={{ opacity: "0", transitionDelay: `0.8s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[4]}>
+						data-title={skillNames[4]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon" style={{ color: "white" }}>
-							{<Fifth title={skillNames[4]} />}
+							{<Fifth data-title={skillNames[4]} />}
 						</div>
 					</div>
 					<div
 						style={{ opacity: "0", transitionDelay: `1s` }}
 						className={`each_icon ${inView && Styles.base}`}
-						title={skillNames[5]}>
+						data-title={skillNames[5]}>
 						<div className="hex_pill">
 							<HexPill colorScheme={colorScheme} />
 						</div>
 						<div className="icon" style={{ color: "white" }}>
-							{<Sixth title={skillNames[5]} />}
+							{<Sixth data-title={skillNames[5]} />}
 						</div>
 					</div>
 				</div>

@@ -29,6 +29,7 @@ import {
 	SiEslint,
 } from "react-icons/si";
 import HexCard from "./HexCard";
+import MantineLogo from "./MantineLogo";
 import colorPalettes, { randomColor } from "../colorPalette";
 import { colorsArray } from "../colorPalette";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
@@ -43,12 +44,19 @@ const skillsData = [
 		skillNames: [
 			"HTML5",
 			"CSS3",
-			"Figma",
 			"Chakra-UI",
 			"Material-UI",
+			"Mantine-UI",
 			"Tailwind-CSS",
 		],
-		Icons: [SiHtml5, SiCss3, SiFigma, SiChakraui, SiMaterialui, SiTailwindcss],
+		Icons: [
+			SiHtml5,
+			SiCss3,
+			SiChakraui,
+			SiMaterialui,
+			MantineLogo,
+			SiTailwindcss,
+		],
 	},
 	{
 		title: "FRONTEND",
