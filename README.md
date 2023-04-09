@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Sandeep Morya</h1>
 <h3 align="center">A Passionate Full Stack Developer from India</h3>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=sandeep-morya&label=Profile%20views&color=0e75b6&style=flat" alt="sandeep-morya" /> </p>
+
 ## 🌐 Socials:
 
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/sandeepmorya#8054) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/Sandeepmaurya13) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/13Sandeepmaurya) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sandeep-morya-dev/) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/sandeep-maurya) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/Sandeep60852208) [![Codepen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/Sandeep-morya)
@@ -34,9 +36,3 @@
 ### 😂 Random Dev Meme
 
 <img src="https://rm.up.railway.app/" width="512px"/>
-
----
-
-[![](https://visitcount.itsvg.in/api?id=Sandeep-morya&icon=5&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
