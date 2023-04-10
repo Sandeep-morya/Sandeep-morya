@@ -21,17 +21,11 @@
 
 ![](https://github-profile-trophy.vercel.app/?username=Sandeep-morya&theme=monokai&no-frame=false&no-bg=false&margin-w=4)
 
-## 🐦 Latest Tweet
-
-[![](https://gtce.itsvg.in/api?username=Sandeep60852208)](https://github.com/VishwaGauravIn/github-twitter-card-embed)
 
 ### ✍️ Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
-### 🔝 Top Contributed Repo
-
-![](https://github-contributor-stats.vercel.app/api?username=Sandeep-morya&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ### 😂 Random Dev Meme
 
