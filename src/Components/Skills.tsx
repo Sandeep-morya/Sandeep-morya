@@ -27,6 +27,7 @@ import {
 	SiFigma,
 	SiMocha,
 	SiEslint,
+	SiWebrtc,
 } from "react-icons/si";
 import HexCard from "./HexCard";
 import MantineLogo from "./MantineLogo";
@@ -65,16 +66,16 @@ const skillsData = [
 			"React",
 			"NextJS",
 			"TypeScript",
-			"JQuery",
 			"Redux",
+			"Cypress.io",
 		],
 		Icons: [
 			SiJavascript,
 			SiReact,
 			SiNextdotjs,
 			SiTypescript,
-			SiJquery,
 			SiRedux,
+			SiCypress,
 		],
 	},
 	{
@@ -85,7 +86,7 @@ const skillsData = [
 			"MongoDB",
 			"Swagger",
 			"Socket.io",
-			"Cypress",
+			"Web-RTC",
 		],
 		Icons: [
 			SiNodedotjs,
@@ -93,7 +94,7 @@ const skillsData = [
 			SiMongodb,
 			SiSwagger,
 			SiSocketdotio,
-			SiCypress,
+			SiWebrtc,
 		],
 	},
 ];
