@@ -1,7 +1,9 @@
 <h1 align="center">Hi 👋, I'm Sandeep Morya</h1>
 <h3 align="center">A Passionate Full Stack Developer from India</h3>
-
+<div align="center">
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sandeep-morya&label=Profile%20views&color=0e75b6&style=flat" alt="sandeep-morya" /> </p>
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sandeep-morya&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🌐 Socials:
 
@@ -15,18 +17,16 @@
 
 ![](https://github-readme-stats.vercel.app/api?username=Sandeep-morya&theme=monokai&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Sandeep-morya&theme=monokai&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sandeep-morya&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🏆 GitHub Trophies
 
 ![](https://github-profile-trophy.vercel.app/?username=Sandeep-morya&theme=monokai&no-frame=false&no-bg=false&margin-w=4)
 
-
 ### ✍️ Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
-
 ### 😂 Random Dev Meme
 
 <img src="https://rm.up.railway.app/" width="512px"/>
+</div>
