@@ -35,6 +35,8 @@ export const teach_list = [
 	"Google Oauth2",
 	"JQuery",
 	"Mantine UI",
+	"Cypess.io",
+	"Socket.io",
 ];
 
 const projectList: ProjectItem[] = [
@@ -58,7 +60,7 @@ const projectList: ProjectItem[] = [
 			"Responsive",
 		],
 
-		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12],
+		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12,18],
 	},
 	{
 		title: "CloudyNest",
