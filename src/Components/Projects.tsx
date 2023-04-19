@@ -17,8 +17,49 @@ export interface ProjectItem {
 	liveUrl: string;
 	githubUrl: string;
 }
+export const teach_list = [
+	"HTML 5",
+	"CSS 3",
+	"JavaScript",
+	"TypeScript",
+	"React",
+	"Vite",
+	"NextJS",
+	"Material UI",
+	"Chakra UI",
+	"Node JS",
+	"Express",
+	"Mongoose",
+	"MongoDB",
+	"React Redux",
+	"Google Oauth2",
+	"JQuery",
+	"Mantine UI",
+];
 
 const projectList: ProjectItem[] = [
+	{
+		title: "Facebook-Clone",
+		laptop_image:
+			"https://res.cloudinary.com/due9pi68z/image/upload/v1681892135/oixgy7kod7nrjulc9rhu.png",
+		mobile_image:
+			"https://res.cloudinary.com/due9pi68z/image/upload/v1681892123/yytncbjq6ypemshiwmpv.png",
+		liveUrl: "https://advance-facebook-clone.vercel.app/",
+		githubUrl: "https://github.com/Sandeep-morya/Facebook_clone",
+		desc_body:
+			"This project is a clone of offical facebook website. I have tried to make it look similar like facebook. Although it does not have all the fetures of facebook, but it consists some major features like create a post, chating, add friend & responsiveness",
+		features: [
+			"Chat with friends and Strangers",
+			"Uplaod Photos",
+			"CRUD Operations on posts",
+			"Change Profile picture",
+			"Separate User management",
+			"Lightweight",
+			"Responsive",
+		],
+
+		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12],
+	},
 	{
 		title: "CloudyNest",
 		laptop_image:

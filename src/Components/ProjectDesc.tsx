@@ -3,30 +3,14 @@ import { ProjectItem } from "./Projects";
 import { useContext } from "react";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
 import Styles from "../Styles/observer.module.css";
+import { teach_list } from "./Projects";
 
 import useObserver from "../hooks/useObserver";
 
 interface Props {
 	project_data: ProjectItem;
 }
-const teach_list = [
-	"HTML 5",
-	"CSS 3",
-	"JavaScript",
-	"TypeScript",
-	"React",
-	"Vite",
-	"NextJS",
-	"Material UI",
-	"Chakra UI",
-	"Node JS",
-	"Express",
-	"Mongoose",
-	"MongoDB",
-	"React Redux",
-	"Google Oauth2",
-	"JQuery",
-];
+
 const ProjectDesc = (props: Props) => {
 	const { color } = useContext(ThemeContext);
 	const { ref, inView } = useObserver();
