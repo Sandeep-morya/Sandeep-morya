@@ -37,7 +37,13 @@ const Footer = () => {
 
 			<div className="footer_bottom" style={{ borderColor: color.dimmed }}>
 				<p>
-					© Copyright 2023. &nbsp;&nbsp;<span>Designed by - Sandeep Morya</span>
+					© Copyright 2023. &nbsp;&nbsp;
+					<span>
+						Designed by -{" "}
+						<a href="https://github.com/Sandeep-morya/Sandeep-morya">
+							Sandeep Morya
+						</a>
+					</span>
 				</p>
 			</div>
 		</footer>
