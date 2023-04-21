@@ -53,13 +53,12 @@ const projectList: ProjectItem[] = [
 		features: [
 		
 		
-			"One-o-One and Group Videocall","Chat with friends and Strangers",
+			"One-o-One and Group Videocall",
+			"Chat with friends and Strangers",
 			"Uplaod Photos",
 			"CRUD Operations on posts",
-			"Change Profile picture",
 			"Separate User management",
-			"Lightweight",
-			"Responsive",
+			"Lightweight & Responsive",
 		],
 
 		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12,18],
