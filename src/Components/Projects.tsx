@@ -51,7 +51,9 @@ const projectList: ProjectItem[] = [
 		desc_body:
 			"This project is a clone of offical facebook website. I have tried to make it look similar like facebook. Although it does not have all the fetures of facebook, but it consists some major features like create a post, chating, add friend & responsiveness",
 		features: [
-			"Chat with friends and Strangers",
+		
+		
+			"One-o-One and Group Videocall","Chat with friends and Strangers",
 			"Uplaod Photos",
 			"CRUD Operations on posts",
 			"Change Profile picture",
