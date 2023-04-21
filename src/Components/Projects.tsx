@@ -88,7 +88,7 @@ const projectList: ProjectItem[] = [
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1680072768/gvsuekdx3wt7pyjkpzpn.png",
 		mobile_image:
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1680072768/e44roo2hyreonhinqxzt.png",
-		liveUrl: "https://sandeep-auraly.vercel.app/",
+		liveUrl: "https://auraly.netlify.app/",
 		githubUrl: "https://github.com/Sandeep-morya/Auraly",
 		desc_body:
 			"This is an open-source website for watching and downloading videos & music in HD quality. It can be helpful for peoples who wants an ad-free experience while watching movies and music",
