@@ -46,13 +46,11 @@ const projectList: ProjectItem[] = [
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1681892135/oixgy7kod7nrjulc9rhu.png",
 		mobile_image:
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1681892123/yytncbjq6ypemshiwmpv.png",
-		liveUrl: "https://advance-facebook-clone.vercel.app/",
+		liveUrl: "https://sandeep-facebook.netlify.app/",
 		githubUrl: "https://github.com/Sandeep-morya/Facebook_clone",
 		desc_body:
 			"This project is a clone of offical facebook website. I have tried to make it look similar like facebook. Although it does not have all the fetures of facebook, but it consists some major features like create a post, chating, add friend & responsiveness",
 		features: [
-		
-		
 			"One-o-One and Group Videocall",
 			"Chat with friends and Strangers",
 			"Uplaod Photos",
@@ -61,7 +59,7 @@ const projectList: ProjectItem[] = [
 			"Lightweight & Responsive",
 		],
 
-		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12,18],
+		tech_stack: [0, 1, 2, 3, 4, 5, 16, 9, 10, 11, 12, 18],
 	},
 	{
 		title: "CloudyNest",
