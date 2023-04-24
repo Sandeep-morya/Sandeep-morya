@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	z-index: 3;
-	backdrop-filter: brightness(30%) blur(10px);
+	backdrop-filter: brightness(40%) blur(10px);
 }
 
 .navlinks {
