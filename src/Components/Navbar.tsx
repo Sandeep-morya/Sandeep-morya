@@ -1,7 +1,7 @@
-﻿import { useContext, useEffect, useState } from "react";
+﻿import { useContext, useEffect, useMemo, useState } from "react";
 import "../Styles/navbar.css";
 import Avatar from "./Avatar";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { ColorType, ThemeContext } from "../Provider/ThemeContextProvider";
 import { GiSpotedFlower } from "react-icons/gi";
 import colorPalettes, { colorsArray } from "../colorPalette";
 import { NavbarContext } from "../Provider/NavbarStateProvider";
@@ -10,18 +10,45 @@ import useObserver from "../hooks/useObserver";
 import Styles from "../Styles/observer.module.css";
 import { FaFilePdf } from "react-icons/fa";
 
+export const generateStyles = (isScrolled: boolean, color: ColorType) =>
+	isScrolled
+		? {
+				backgroundColor: color.dimmed,
+				backdropFilter: "brightness(40%) blur(10px)",
+				boxShadow: "0 8px 6px -6px black",
+		  }
+		: {
+				background: "none",
+		  };
+
 const Navbar = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
 	const { linkname } = useContext(NavbarContext);
 	const { ref, inView } = useObserver();
 
+	const [isScrolled, setIsScrolled] = useState(false);
+
 	const Links = ["about", "skills", "projects", "contact"];
 
+	const styles = useMemo(
+		() => generateStyles(isScrolled, color),
+		[isScrolled, color],
+	);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.pageYOffset > 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
-		<div
-			className="navbar"
-			style={{ backgroundColor: color.dimmed, color: color.main }}>
+		<div className="navbar" style={{ ...styles, color: color.main }}>
 			<Avatar />
 			<div className="navlinks">
 				<Link isActive={linkname === ""} to="#">

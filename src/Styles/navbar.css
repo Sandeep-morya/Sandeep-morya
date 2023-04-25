@@ -4,12 +4,11 @@
 	height: 5rem;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 0 8px 6px -6px black;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 3;
-	backdrop-filter: brightness(40%) blur(10px);
+	transition: all 0.1s;
 }
 
 .navlinks {

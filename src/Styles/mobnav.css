@@ -8,12 +8,12 @@
 		min-height: 5rem;
 		flex-direction: column;
 		align-items: center;
-		box-shadow: 0 8px 6px -6px black;
+		/* box-shadow: 0 8px 6px -6px black; */
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 3;
-		backdrop-filter: brightness(60%) blur(10px);
+		/* backdrop-filter: brightness(60%) blur(10px); */
 	}
 	.nav_logo {
 		width: auto;
