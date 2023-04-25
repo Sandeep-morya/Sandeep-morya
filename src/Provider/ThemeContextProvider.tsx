@@ -25,7 +25,6 @@ const initialValue: {
 	JSON.parse(localStorage.getItem("theme") as string) ||
 	colorPalettes.main_shadow;
 
-/* Component */
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 	const [color, setColor] = React.useState(initialValue);
 
@@ -36,6 +35,9 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
 	React.useEffect(() => {
 		localStorage.setItem("theme", JSON.stringify(color));
+
+		const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+		metaThemeColor!.setAttribute("content", color.main);
 	}, [color]);
 
 	return (
