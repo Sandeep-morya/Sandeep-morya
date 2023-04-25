@@ -25,7 +25,12 @@ const ProjectMobileCard = ({ imageUrl }: Props) => {
 				<div className="camera"></div>
 			</div>
 			<img src={imageUrl} alt={imageUrl} />
-			<div className="frame" style={{ backgroundColor: color.dimmed }}></div>
+			<div
+				className="frame"
+				style={{
+					backgroundColor: color.main,
+					opacity: 0.3,
+				}}></div>
 		</div>
 	);
 };

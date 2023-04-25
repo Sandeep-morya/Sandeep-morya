@@ -6,16 +6,18 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
 import { NavbarContext } from "../Provider/NavbarStateProvider";
+import useVisit from "../hooks/useVisit";
 
 interface Props {
-	imageUrl: String;
-	imageTitle: String;
-	url: String;
+	imageUrl: string;
+	imageTitle: string;
+	url: string;
 }
 
 const ProjectCard = (props: Props) => {
 	const { color } = useContext(ThemeContext);
 	const { ref, inView } = useObserver();
+	const visit = useVisit();
 
 	return (
 		<div
@@ -32,9 +34,7 @@ const ProjectCard = (props: Props) => {
 					<BsArrowLeftCircle />
 					<BsArrowRightCircle />
 				</div>
-				<div
-					className="url"
-					onClick={() => window.location.assign(props.url.toString())}>
+				<div className="url" onClick={() => visit(props.url)}>
 					{props.url}
 				</div>
 				<div className="dots">
@@ -44,11 +44,10 @@ const ProjectCard = (props: Props) => {
 				</div>
 			</div>
 			<div style={{ borderColor: color.main }} className="body">
-				<img
-					src={props.imageUrl.toString()}
-					alt={props.imageTitle.toString()}
-				/>
-				<div className="frame" style={{ backgroundColor: color.dimmed }}></div>
+				<img src={props.imageUrl} alt={props.imageTitle} />
+				<div
+					className="frame"
+					style={{ backgroundColor: color.main, opacity: 0.3 }}></div>
 			</div>
 		</div>
 	);

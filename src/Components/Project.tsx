@@ -18,7 +18,7 @@ const Project = ({ project }: Props) => {
 
 	return (
 		<div className="project">
-			{/* <h1 style={{ color: color.main }}>{"01 - CloudyNest"}</h1> */}
+		
 
 			<div className="project_view">
 				<ProjectCard
