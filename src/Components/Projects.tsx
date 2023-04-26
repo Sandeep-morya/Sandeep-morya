@@ -42,7 +42,8 @@ export const teach_list = [
 const projectList: ProjectItem[] = [
 	{
 		title: "Facebook-Clone",
-		laptop_image: "/fc.png",
+		laptop_image:
+			"https://res.cloudinary.com/due9pi68z/image/upload/v1682512291/c3hdq72yfcmginysteec.png",
 		mobile_image:
 			"https://res.cloudinary.com/due9pi68z/image/upload/v1681892123/yytncbjq6ypemshiwmpv.png",
 		liveUrl: "https://sandeep-facebook.netlify.app/",

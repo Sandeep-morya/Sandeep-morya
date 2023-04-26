@@ -11,6 +11,7 @@ const App = () => {
 	/* To hide the Loader  */
 	const [hidden, setHidden] = useState(false);
 	const cursorRef = React.useRef<HTMLDivElement>(null);
+	const followerRef = React.useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const id = setTimeout(() => {
@@ -33,7 +34,7 @@ const App = () => {
 							e.pageY + 5
 						}px, 0)`)
 					}>
-					<Cursor refs={cursorRef} />
+					<Cursor refs={[cursorRef, followerRef]} />
 					<Navbar />
 					<MobNav />
 					<Content />

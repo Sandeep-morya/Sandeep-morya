@@ -47,7 +47,7 @@ const ProjectCard = (props: Props) => {
 				<img src={props.imageUrl} alt={props.imageTitle} />
 				<div
 					className="frame"
-					style={{ backgroundColor: color.main, opacity: 0.3 }}></div>
+					style={{ backgroundColor: color.main, opacity: 0.2 }}></div>
 			</div>
 		</div>
 	);

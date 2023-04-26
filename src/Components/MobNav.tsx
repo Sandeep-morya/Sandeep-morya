@@ -1,34 +1,19 @@
 ﻿import { useContext, useEffect, useMemo, useState } from "react";
 import Avatar from "./Avatar";
 import { ThemeContext } from "../Provider/ThemeContextProvider";
-import colorPalettes from "../colorPalette";
+import colorPalettes, { colorsArray } from "../colorPalette";
 import { MdClose, MdMenu } from "react-icons/md";
 
 import "../Styles/mobnav.css";
-import { generateStyles } from "./Navbar";
 
 const MobNav = () => {
 	const { color, setColor } = useContext(ThemeContext);
 	const [hidden, setHidden] = useState(true);
-	const [isScrolled, setIsScrolled] = useState(false);
-	const styles = useMemo(
-		() => generateStyles(isScrolled, color),
-		[isScrolled, color],
-	);
 
-	useEffect(() => {
-		const handleScroll = () => {
-			setIsScrolled(window.pageYOffset > 0);
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
 	return (
-		<div className="mobnav" style={{ ...styles, color: color.main }}>
+		<div
+			className="mobnav"
+			style={{ backgroundColor: color.dimmed, color: color.main }}>
 			<div className="mobnav_top">
 				<Avatar />
 				{hidden ? (
@@ -61,6 +46,18 @@ const MobNav = () => {
 					contact
 				</a>
 				<div className="accent_colors">
+					{colorsArray.map((palette) => (
+						<div
+							key={palette.main}
+							style={{
+								display: color.main === palette.main ? "none" : "block",
+								backgroundColor: palette.main,
+							}}
+							onClick={() => setColor(palette)}
+						/>
+					))}
+
+					{/* :: OR ::
 					<div
 						hidden={color.main === colorPalettes.main_shadow.main}
 						style={{ backgroundColor: colorPalettes.main_shadow.main }}
@@ -84,7 +81,7 @@ const MobNav = () => {
 					<div
 						hidden={color.main === colorPalettes.orange_fish.main}
 						style={{ backgroundColor: colorPalettes.orange_fish.main }}
-						onClick={() => setColor(colorPalettes.orange_fish)}></div>
+						onClick={() => setColor(colorPalettes.orange_fish)}></div> */}
 				</div>
 			</div>
 		</div>
