@@ -1,4 +1,4 @@
-﻿import React from "react";
+﻿import React, { useContext } from "react";
 
 export const NavbarContext = React.createContext(
 	{} as {
@@ -6,6 +6,10 @@ export const NavbarContext = React.createContext(
 		setLinkName: React.Dispatch<React.SetStateAction<LinkName>>;
 	},
 );
+
+export const useNavLink = () =>{
+	return useContext(NavbarContext)
+}
 
 type LinkName = "" | "about" | "skills" | "projects" | "contact" | "resume";
 

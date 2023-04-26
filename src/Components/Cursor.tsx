@@ -1,12 +1,12 @@
-﻿import React from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+﻿import { RefObject } from "react";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 type Props = {
-	refs: React.RefObject<HTMLDivElement>[];
+	refs: RefObject<HTMLDivElement>[];
 };
 
 const Cursor = ({ refs }: Props) => {
-	const { color } = React.useContext(ThemeContext);
+	const { color } = useTheme();
 	return (
 		<>
 			<div
@@ -15,7 +15,7 @@ const Cursor = ({ refs }: Props) => {
 				style={{ backgroundColor: color.main }}></div>
 			{/* <div
 				ref={refs[1]}
-				className={"cursor"}
+				className={"follower"}
 				style={{ backgroundColor: color.main }}></div> */}
 		</>
 	);

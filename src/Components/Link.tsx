@@ -1,5 +1,4 @@
-﻿import React from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+﻿import { useTheme } from "../Provider/ThemeContextProvider";
 
 type Props = {
 	children: React.ReactNode;
@@ -8,7 +7,7 @@ type Props = {
 };
 
 const Link = ({ children, to, isActive }: Props) => {
-	const { color } = React.useContext(ThemeContext);
+	const { color } = useTheme()
 	return (
 		<div className="navlink">
 			<a href={to}>{children}</a>

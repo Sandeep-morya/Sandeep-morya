@@ -1,7 +1,4 @@
-﻿import React from "react";
-import { IconType } from "react-icons/lib";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
-import colorPalettes from "../colorPalette";
+﻿import { IconType } from "react-icons/lib";
 import HexPill from "./HexPill";
 import "../Styles/hex_card.css";
 
@@ -17,7 +14,6 @@ type Props = {
 
 const HexCard = ({ title, colorScheme, Icons, skillNames }: Props) => {
 	const [First, Second, Third, Fourth, Fifth, Sixth] = Icons;
-	const { color } = React.useContext(ThemeContext);
 	const { ref, inView } = useObserver();
 	return (
 		<div

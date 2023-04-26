@@ -1,22 +1,22 @@
-﻿import { useContext, useEffect } from "react";
+﻿import {  useEffect } from "react";
 
 import useObserver from "../hooks/useObserver";
-import { NavbarContext } from "../Provider/NavbarStateProvider";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useNavLink } from "../Provider/NavbarStateProvider";
+import { useTheme } from "../Provider/ThemeContextProvider";
 import "../Styles/intro.css";
 import Styles from "../Styles/observer.module.css";
 import Clock from "./Clock";
 
 const Intro = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	const { ref, inView } = useObserver();
-	const { setLinkName } = useContext(NavbarContext);
+	const { setLinkName } = useNavLink();
 
 	useEffect(() => {
 		if (inView) {
 			setLinkName("");
 		}
-		console.log("intro", inView);
+		//console.log("intro", inView);
 	}, [inView]);
 
 	return (

@@ -3,36 +3,38 @@ import "../Styles/about.css";
 // import Button from "./Button";
 import Highlight from "./Highlight";
 import Title from "./Title";
-import { useContext, useEffect } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useEffect } from "react";
+import { useTheme } from "../Provider/ThemeContextProvider";
 import { GiStarShuriken } from "react-icons/gi";
 import Button from "./BubbleButton";
 import useVisit from "../hooks/useVisit";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
-import { NavbarContext } from "../Provider/NavbarStateProvider";
+import { useNavLink } from "../Provider/NavbarStateProvider";
 
 const About = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 
 	const visit = useVisit();
 	const { ref, inView } = useObserver();
 	const { ref: desRef, inView: desInView } = useObserver();
 	const { ref: picRef, inView: picInView } = useObserver();
 
-	const { setLinkName } = useContext(NavbarContext);
+	const { setLinkName } = useNavLink();
 
 	useEffect(() => {
 		if (inView) {
 			setLinkName("about");
 		}
-		console.log("about", inView);
 	}, [inView]);
+
 	return (
 		<div ref={ref} className="about" id="about">
 			<Title title={"about me"} />
 			<div className={`about_description`}>
+
+				{/*---:: About Section ::---*/}
 				<div
 					ref={desRef}
 					className={`texts ${Styles.from_left} ${desInView && Styles.base}`}
@@ -52,6 +54,7 @@ const About = () => {
 						<Highlight>{"(Online coding bootcamp)"}</Highlight> for learning web
 						development
 					</div>
+
 					<div className="today">
 						Today, I am a qualified and professional web developer with good
 						knowledge of <Highlight>MERN stack</Highlight>, and some frameworks
@@ -73,6 +76,8 @@ const About = () => {
 						all the queries if you have any, without any hesitation.
 					</div>
 				</div>
+
+				{/*---:: Profile Picture ::---*/}
 				<div
 					ref={picRef}
 					style={{ transitionDelay: "0.5s" }}
@@ -91,11 +96,9 @@ const About = () => {
 							}}></div>
 					</div>
 					<div>
-						{/* <Button
-							url="https://drive.google.com/file/d/1ZWoc4PciPTIc9PYDCt0P5oP-cp15h6c1/view?usp=share_link"
-							Icon={MdDownload}
-							title="Download Resume"
-						/> */}
+
+						{/*---:: Download Resume Button ::---*/}
+						
 						<Button
 							onClick={() =>
 								visit(

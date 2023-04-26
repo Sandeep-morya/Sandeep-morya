@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import colorPalettes from "../colorPalette";
 /*  All Colors */
 
@@ -15,6 +15,11 @@ interface ThemeContextType {
 }
 /* Context initialized */
 export const ThemeContext = React.createContext({} as ThemeContextType);
+
+
+export const useTheme = () =>{
+	return useContext(ThemeContext)
+}
 
 /* Getting Inital value from localStorage */
 const initialValue:ColorType =

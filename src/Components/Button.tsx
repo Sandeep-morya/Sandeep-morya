@@ -1,7 +1,6 @@
 ﻿import { IconType } from "react-icons/lib/esm/iconBase";
-import { useState, useContext } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
-
+import { useState } from "react";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 interface Props {
 	title: string;
@@ -10,7 +9,7 @@ interface Props {
 }
 
 const Button = ({ title, Icon, url }: Props) => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	const [isHover, setIsHover] = useState(false);
 	return (
 		<div
@@ -20,7 +19,6 @@ const Button = ({ title, Icon, url }: Props) => {
 				color: isHover ? "rgba(255, 255, 255, 1)" : color.main,
 				borderColor: color.main,
 			}}
-
 			onClick={() => window.open(url, "_blank")}>
 			<Icon />
 			{title}

@@ -1,46 +1,48 @@
-﻿import React from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+﻿import useTime from "../hooks/useTime";
+import {  useTheme } from "../Provider/ThemeContextProvider";
 import "../Styles/clock.css";
 
 const Clock = () => {
-	const { color } = React.useContext(ThemeContext);
+	const { hour, minutes, seconds } = useTime();
+	const { color } = useTheme();
 
-	const { current: deg } = React.useRef(6);
-	const hourRef = React.useRef<HTMLInputElement>(null);
-	const minRef = React.useRef<HTMLInputElement>(null);
-	const secRef = React.useRef<HTMLInputElement>(null);
+	// const setClock = () => {
+	// 	let day = new Date();
+	// 	let hh = day.getHours() * 30;
+	// 	let mm = day.getMinutes() * 6;
+	// 	let ss = day.getSeconds() * 6;
 
-	const setClock = () => {
-		let day = new Date();
-		let hh = day.getHours() * 30;
-		let mm = day.getMinutes() * deg;
-		let ss = day.getSeconds() * deg;
+	// 	hourRef.current!.style.transform = `rotateZ(${hh + mm / 12}deg)`;
+	// 	minRef.current!.style.transform = `rotateZ(${mm}deg)`;
+	// 	secRef.current!.style.transform = `rotateZ(${ss}deg)`;
+	// };
 
-		hourRef.current!.style.transform = `rotateZ(${hh + mm / 12}deg)`;
-		minRef.current!.style.transform = `rotateZ(${mm}deg)`;
-		secRef.current!.style.transform = `rotateZ(${ss}deg)`;
-	};
+	// // first time
+	// React.useEffect(() => {
+	// 	setClock();
+	// }, []);
 
-	// first time
-	React.useEffect(() => {
-		setClock();
-	}, []);
-
-	// Update every 1000 ms
-	React.useEffect(() => {
-		const id = setInterval(setClock, 1000);
-		return () => {
-			clearInterval(id);
-		};
-	}, []);
+	// // Update every 1000 ms
+	// React.useEffect(() => {
+	// 	const id = setInterval(setClock, 1000);
+	// 	return () => {
+	// 		clearInterval(id);
+	// 	};
+	// }, []);
 	return (
 		<div className="clock_parent">
 			<div
 				style={{ backgroundColor: color.dimmed, borderColor: color.main }}
 				className="clock">
-				<div ref={hourRef} className="hour"></div>
-				<div ref={minRef} className="min"></div>
-				<div ref={secRef} className="sec"></div>
+				<div
+					style={{ transform: `rotateZ(${hour * 30}deg)` }}
+					className="hour"></div>
+				<div
+					style={{ transform: `rotateZ(${minutes * 6}deg)` }}
+					className="min"></div>
+				<div
+					style={{ transform: `rotateZ(${seconds * 6}deg)` }}
+					className="sec"></div>
 			</div>
 		</div>
 	);

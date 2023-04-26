@@ -1,8 +1,4 @@
-﻿import React from "react";
-
-type Props = {};
-
-const MantineLogo = (props: Props) => {
+﻿const MantineLogo = () => {
 	return (
 		<svg
 			width="100%"

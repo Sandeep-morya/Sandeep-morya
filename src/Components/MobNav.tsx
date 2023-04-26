@@ -46,6 +46,8 @@ const MobNav = () => {
 					contact
 				</a>
 				<div className="accent_colors">
+					
+					{/*---:: Theme Colors ::---*/}
 					{colorsArray.map((palette) => (
 						<div
 							key={palette.main}

@@ -3,6 +3,7 @@
 const useObserver = () => {
 	const ref = React.useRef<any>(null);
 	const [inView, setInView] = React.useState(false);
+	
 	React.useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
 			setInView(entries[0].isIntersecting);

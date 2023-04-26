@@ -1,10 +1,8 @@
-﻿import React from "react";
-import "../Styles/avatar.css";
-import { useContext } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+﻿import "../Styles/avatar.css";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 const Avatar = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	return (
 		<div
 			className="avatar"

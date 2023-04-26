@@ -1,7 +1,6 @@
 ﻿import "../Styles/project_desc.css";
 import { ProjectItem } from "./Projects";
-import { useContext } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useTheme } from "../Provider/ThemeContextProvider";
 import Styles from "../Styles/observer.module.css";
 import { teach_list } from "./Projects";
 
@@ -12,7 +11,7 @@ interface Props {
 }
 
 const ProjectDesc = (props: Props) => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	const { ref, inView } = useObserver();
 	return (
 		<div ref={ref} className="project_desc">

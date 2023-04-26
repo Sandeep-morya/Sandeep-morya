@@ -1,8 +1,7 @@
 ﻿import Title from "./Title";
 import "../Styles/contact.css";
 import Button from "./BubbleButton";
-import { useContext, useState, useEffect } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useState, useEffect } from "react";
 
 import {
 	FaFacebook,
@@ -18,7 +17,8 @@ import useVisit from "../hooks/useVisit";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
-import { NavbarContext } from "../Provider/NavbarStateProvider";
+import { NavbarContext, useNavLink } from "../Provider/NavbarStateProvider";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 const initialValue = {
 	name: "",
@@ -26,18 +26,18 @@ const initialValue = {
 };
 
 const Contact = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	const [formData, setFormData] = useState(initialValue);
 	const visit = useVisit();
 	const { ref, inView } = useObserver();
 
-	const { setLinkName } = useContext(NavbarContext);
+	const { setLinkName } = useNavLink();
 
 	useEffect(() => {
 		if (inView) {
 			setLinkName("contact");
 		}
-		console.log("contact", inView);
+		//console.log("contact", inView);
 	}, [inView]);
 
 	return (

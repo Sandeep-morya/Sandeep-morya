@@ -1,9 +1,8 @@
 ﻿import "../Styles/boot.css";
-import { useContext } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 const Boot = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 	return (
 		// <!-- SPINNING SQUARES -->
 

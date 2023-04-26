@@ -1,10 +1,6 @@
 ﻿import "../Styles/skills.css";
 import Title from "./Title";
-import Card from "./Card";
-import { MdStyle } from "react-icons/md";
-import { BiTestTube } from "react-icons/bi";
-import { FaDatabase, FaLaptopCode, FaTools, FaCode } from "react-icons/fa";
-import React from "react";
+import { useEffect } from "react";
 import {
 	SiChakraui,
 	SiCss3,
@@ -21,23 +17,16 @@ import {
 	SiSocketdotio,
 	SiCypress,
 	SiTypescript,
-	SiJquery,
 	SiRedux,
-	SiGit,
-	SiFigma,
-	SiMocha,
-	SiEslint,
 	SiWebrtc,
 } from "react-icons/si";
 import HexCard from "./HexCard";
 import MantineLogo from "./MantineLogo";
-import colorPalettes, { randomColor } from "../colorPalette";
-import { colorsArray } from "../colorPalette";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+import { useTheme } from "../Provider/ThemeContextProvider";
 
 import Styles from "../Styles/observer.module.css";
 import useObserver from "../hooks/useObserver";
-import { NavbarContext } from "../Provider/NavbarStateProvider";
+import { useNavLink } from "../Provider/NavbarStateProvider";
 
 const skillsData = [
 	{
@@ -100,16 +89,16 @@ const skillsData = [
 ];
 
 const Skills = () => {
-	const { color } = React.useContext(ThemeContext);
+	const { color } = useTheme();
 	const { ref, inView } = useObserver();
 
-	const { setLinkName } = React.useContext(NavbarContext);
+	const { setLinkName } = useNavLink();
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (inView) {
 			setLinkName("skills");
 		}
-		console.log("skills", inView);
+		//console.log("skills", inView);
 	}, [inView]);
 
 	return (
@@ -134,20 +123,3 @@ const Skills = () => {
 
 export default Skills;
 
-/* 				<Card
-					title={"Optimizing"}
-					Icon={FaCode}
-					techIcons={[SiGit,SiEslint,]}
-					techNames={["git","eslint"]}></Card>
-
-				<Card
-					title={"testing"}
-					Icon={BiTestTube}
-					techIcons={[SiCypress, SiMocha, SiSocketdotio]}
-					techNames={["cypress", "mocha", "rt library"]}></Card>
-
-				<Card
-					title={"extra"}
-					Icon={FaTools}
-					techIcons={[SiJquery, SiFigma]}
-					techNames={["jquery", "figma"]}></Card> */

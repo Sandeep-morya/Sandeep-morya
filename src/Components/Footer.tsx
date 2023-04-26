@@ -1,10 +1,7 @@
-﻿import { useContext } from "react";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
-
+﻿import { useTheme } from "../Provider/ThemeContextProvider";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import "../Styles/footer.css";
 import FooterItem from "./FooterItem";
-import { IconType } from "react-icons/lib";
 
 const footerItems = [
 	{
@@ -17,7 +14,7 @@ const footerItems = [
 ];
 
 const Footer = () => {
-	const { color } = useContext(ThemeContext);
+	const { color } = useTheme();
 
 	return (
 		<footer className="footer">

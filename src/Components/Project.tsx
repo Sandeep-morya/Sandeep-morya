@@ -1,6 +1,4 @@
-﻿import React from "react";
-import { FaGitAlt, FaLink } from "react-icons/fa";
-import { ThemeContext } from "../Provider/ThemeContextProvider";
+﻿import { FaGitAlt, FaLink } from "react-icons/fa";
 import Button from "./BubbleButton";
 import ProjectCard from "./ProjectCard";
 import ProjectDesc from "./ProjectDesc";
@@ -8,17 +6,18 @@ import ProjectMobileCard from "./ProjectMobileCard";
 import "../Styles/projects.css";
 import { ProjectItem } from "./Projects";
 import useVisit from "../hooks/useVisit";
+import { useTheme } from "../Provider/ThemeContextProvider";
 type Props = {
 	project: ProjectItem;
 };
 
 const Project = ({ project }: Props) => {
-	const { color } = React.useContext(ThemeContext);
+	const { color } = useTheme()
 	const visit = useVisit();
 
 	return (
 		<div className="project">
-		
+
 
 			<div className="project_view">
 				<ProjectCard
