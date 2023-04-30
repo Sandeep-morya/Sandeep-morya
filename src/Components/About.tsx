@@ -102,7 +102,7 @@ const About = () => {
 						<Button
 							onClick={() =>
 								visit(
-									"https://drive.google.com/file/d/1siHlD4n_j4i3-jKvad9kg7uUoiDg8TbA/view?usp=share_link",
+									"https://drive.google.com/file/d/1CYjMfzl4AIaDlEHBCLKGTudTunboultA/view?usp=share_link",
 								)
 							}
 							size="lg"
