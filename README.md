@@ -9,7 +9,7 @@
 
 -  📃 [Resume](https://drive.google.com/file/d/1SZ8y1Sg93E783uPnGZUA9YXha74H-hMh/view?usp=sharing)
   
-- 🔭 I’m currently working on [Foodiezy-Web](https://github.com/Sandeep-morya/Foodizey-Web)  
+- 🔭 I’m currently working as Full Stack Developer at [Design Dot]([https://github.com/Sandeep-morya/Foodizey-Web](https://designdot.org.in/))  
 
 - ❓ Ask me about anything related to MERN stack and related technologies  
   
